@@ -41,7 +41,7 @@ function App() {
             <Redirect to="/artikel/blog" />
           </Route>
 
-          <Route path="/" component={Homepage} exact />
+          <Route path="/" component={HomepageFix} exact />
           <Route path="/HomepageFix" component={HomepageFix} exact />
           <Route path="/product/motor" component={MotorPage} exact />
           <Route path="/product/car" component={CarPage} exact />
