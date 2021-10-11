@@ -1,0 +1,456 @@
+#tentang {
+  #about-top {
+    padding: 170px 0 50px;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+
+    // .shape26 {
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   max-width: 50vw;
+    //   width: 700px;
+    //   transform: translate(-20%, 20%);
+    //   z-index: 2;
+    // }
+
+    // .shape25 {
+    //   position: absolute;
+    //   bottom: 0;
+    //   right: 0;
+    //   max-width: 50vw;
+    //   width: 700px;
+    //   transform: translate(20%, 20%);
+    //   z-index: 2;
+    // }
+
+    .shape42 {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 70vw;
+      transform: translate(5%, -53%);
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 3;
+
+      h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+
+      .sub-title {
+        font-size: 26px;
+        margin-bottom: 50px;
+        color: #04325f;
+        padding-right: 30px;
+      }
+
+      .download-btn {
+        margin-bottom: 30px;
+
+        a {
+          &:first-child {
+            margin-right: 10px;
+          }
+
+          img {
+            height: 45px;
+          }
+        }
+      }
+
+      .phone-slider {
+        position: relative;
+        width: 400px;
+        height: auto;
+        margin: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        .phones-slider {
+          .slick-slide {
+            div {
+              outline: none;
+            }
+          }
+
+          .custom-dots {
+            position: absolute;
+            bottom: 0px;
+            transform: translateX(-10px);
+            list-style: none;
+            display: block;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+
+            li {
+              display: inline-block;
+              width: 12px;
+              height: 12px;
+              font-size: 0;
+              margin: 0 10px;
+
+              button {
+                width: 15px;
+                height: 15px;
+                background: #04325e;
+                border: none;
+                border-radius: 50%;
+              }
+
+              &.slick-active {
+                button {
+                  background: #faab1c;
+                  outline: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .blue-line {
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      bottom: 0;
+      background: #003762;
+    }
+  }
+
+  #about-vm {
+    background: #faab1c;
+    padding: 40px 0 80px;
+    position: relative;
+    overflow: hidden;
+
+    .shape41 {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      width: 100vw;
+      min-width: 1000px;
+      transform: translate(50%, -50%);
+    }
+
+    .wrapper {
+      position: relative;
+
+      h1 {
+        text-align: center;
+        font-size: 50px;
+      }
+
+      .sub-text {
+        text-align: center;
+        color: #04325f;
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+      .vm-wrap {
+        background: white;
+        height: 100%;
+        padding: 40px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        border-radius: 30px;
+
+        img {
+          height: 70px;
+          margin-bottom: 20px;
+        }
+
+        h2 {
+          color: #04325f;
+        }
+
+        p {
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #tg-partners {
+    padding: 40px 0 60px;
+    min-height: 440px;
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 40px;
+    }
+
+    .tg-partners-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+
+      img {
+        max-width: 210px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  #usp {
+    padding: 50px 0 100px;
+    background: #04325f;
+
+    h1 {
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .row {
+      margin-bottom: 120px;
+
+      .usp-comp {
+        h3 {
+          color: white;
+          text-align: center;
+          margin-bottom: 40px;
+          cursor: pointer;
+        }
+
+        .usp-item {
+          position: relative;
+
+          .usp-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 60%;
+              max-width: 241px;
+              cursor: pointer;
+              position: relative;
+              z-index: 2;
+            }
+          }
+        }
+
+        &.usp-active {
+          h3 {
+            color: #04bee6;
+          }
+        }
+
+        &:first-child {
+          .usp-item {
+            &::after {
+              content: "\203A";
+              position: absolute;
+              color: white;
+              top: 50%;
+              right: 0;
+              font-size: 70px;
+              transform: translate(100%, -50%);
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .usp-item {
+            &::after {
+              content: "\203A";
+              position: absolute;
+              color: white;
+              top: 50%;
+              right: 0;
+              font-size: 70px;
+              transform: translate(100%, -50%);
+            }
+          }
+        }
+      }
+    }
+
+    .usp-desc {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      font-size: 20px;
+      color: #04325f;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  #fitur-produk {
+    background: #045aac;
+    color: white;
+    text-align: center;
+    padding: 50px 0 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .shape43 {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      width: 1100px;
+      transform: translate(-55%, -50%);
+    }
+    .shape44 {
+      position: absolute;
+      top: 50%;
+      right: 0%;
+      width: 1100px;
+      transform: translate(55%, -50%);
+    }
+
+    .wrapper {
+      width: 75%;
+
+      h1 {
+        color: white;
+        margin-bottom: 20px;
+        font-size: 50px;
+      }
+
+      .sub-title {
+        // font-weight: bold;
+        margin-bottom: 60px;
+      }
+
+      .product {
+        padding: 0 21px;
+        margin-bottom: 60px;
+
+        img {
+          margin: auto;
+          margin-bottom: 20px;
+          height: 50px;
+        }
+
+        p {
+          // overflow: hidden;
+          // text-overflow: ellipsis;
+          // display: -webkit-box;
+          // -webkit-line-clamp: 5; /* number of lines to show */
+          // -webkit-box-orient: vertical;
+
+          &.bold {
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .products-slider {
+        .custom-dots {
+          position: absolute;
+          bottom: -50px;
+          list-style: none;
+          display: block;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+
+          li {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            font-size: 0;
+            margin: 0 10px;
+
+            button {
+              width: 15px;
+              height: 15px;
+              background: white;
+              border: none;
+              border-radius: 50%;
+            }
+
+            &.slick-active {
+              button {
+                background: #faab1c;
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #trivia-banner {
+    position: relative;
+    background: #eaeaea;
+    overflow: hidden;
+
+    .shape45 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 250px;
+      transform: translate(40%, 0%);
+    }
+
+    .visual {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 35vw;
+      max-width: 100%;
+      height: auto;
+      z-index: 0;
+    }
+
+    .parent {
+      .left {
+        div {
+          min-height: 500px;
+        }
+      }
+
+      .right {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        h2 {
+          color: #002444;
+          margin-bottom: 20px;
+        }
+
+        p {
+          color: #002444;
+          margin-bottom: 40px;
+          font-weight: bold;
+        }
+
+        .cta-trivia {
+          width: 100%;
+          color: #04325f;
+          background: #faab1c;
+          padding: 10px 70px;
+          font-size: 25px;
+          font-weight: 500;
+          border-radius: 30px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

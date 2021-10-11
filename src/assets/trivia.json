@@ -1,0 +1,666 @@
+{
+  "text": "Halo, senang bertemu denganmu, Moxa siap membantu kamu nih, <br /> kira-kira untuk sekarang ini apa sih yang kamu butuhkan?",
+  "subtext": "Bisa beritahu Moxa ya :&#41;",
+  "options": [
+    {
+      "value": "Gadget",
+      "next": {
+        "text": "Kamu mau beli gadget baru, tapi budget terbatas?",
+        "subtext": "Boleh lho, bisikin Moxa Gadget seperti apa yang kamu mau, So pasti Moxa akan kasih solusi buat kamu!",
+        "options": [
+          {
+            "value": "Handphone",
+            "next": {
+              "brand": "Fifada",
+              "img": "http://moxa.id:8011/uploads/fifada_536622209f.jpg",
+              "description": "Beli Gadget dengan budget limited, nggak perlu khawatir karena ada FIFADA yang akan membantu kamu! MOXA bantu, cukup kamu stay #dirumahaja gadget favorit pun akan diantar ke rumah kamu! Semoga gadget impian segera dalam genggaman ya, Kawan!"
+            }
+          },
+          {
+            "value": "Laptop/Komputer",
+            "next": {
+              "brand": "Fifada",
+              "img": "http://moxa.id:8011/uploads/fifada_536622209f.jpg",
+              "description": "Beli Gadget dengan budget limited, nggak perlu khawatir karena ada FIFADA yang akan membantu kamu! MOXA bantu, cukup kamu stay #dirumahaja gadget favorit pun akan diantar ke rumah kamu! Semoga gadget impian segera dalam genggaman ya, Kawan!"
+            }
+          },
+          {
+            "value": "Camera",
+            "next": {
+              "brand": "Fifada",
+              "img": "http://moxa.id:8011/uploads/fifada_536622209f.jpg",
+              "description": "Beli Gadget dengan budget limited, nggak perlu khawatir karena ada FIFADA yang akan membantu kamu! MOXA bantu, cukup kamu stay #dirumahaja gadget favorit pun akan diantar ke rumah kamu! Semoga gadget impian segera dalam genggaman ya, Kawan!"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "value": "Furniture",
+      "next": {
+        "text": "Wah, kamu hendak membeli perabot ya, Bisa nih kasih tau Moxa, perabot seperti apa sih yang akan kamu beli ?",
+        "subtext": "",
+        "options": [
+          {
+            "value": "Perabot Rumah",
+            "next": {
+              "brand": "Fifada",
+              "img": "http://moxa.id:8011/uploads/fifada_536622209f.jpg",
+              "description": "Membeli perabot baru, harus direncanakan dengan matang, jika tidak terencana biasanya akan membuat pengeluaran menjadi membengkak. <br />Setelah kamu memutuskan akan membeli apa, MOXA bantu dengan FIFADA ya, supaya rumah kamu nyaman, kantong juga aman ! "
+            }
+          },
+          {
+            "value": "Perabot Kantor",
+            "next": {
+              "brand": "Fifada",
+              "img": "http://moxa.id:8011/uploads/fifada_536622209f.jpg",
+              "description": "Membeli perabot baru, harus direncanakan dengan matang, jika tidak terencana biasanya akan membuat pengeluaran menjadi membengkak. <br />Setelah kamu memutuskan akan membeli apa, MOXA bantu dengan FIFADA ya, supaya rumah kamu nyaman, kantong juga aman ! "
+            }
+          }
+        ]
+      }
+    },
+    {
+      "value": "Elektronik",
+      "next": {
+        "text": "Wah kamu mau beli perlengkapan elektronik yang seperti apa nih ? Coba cek dari pilihan dibawah ini yaa",
+        "subtext": "",
+        "options": [
+          {
+            "value": "Perlengkapan Rumah tangga (Mesin cuci, setrika, AC, Kipas angin, etc)",
+            "next": {
+              "brand": "Fifada",
+              "img": "http://moxa.id:8011/uploads/fifada_536622209f.jpg",
+              "description": "Kebutuhan elektronik sangatlah penting di dalam memudahkan kehidupan kita sehari-hari. Namun harus direncanakan dengan baik di dalam pembeliannya. Jika tidak, maka pengeluaran akan membengkak.<br /><br />Ayo coba diatur skala prioritas pembeliannya, lalu setelah kamu memutuskan akan membeli apa, MOXA bantu dengan FIFADA ya, supaya rumah kamu nyaman, kantong juga aman !"
+            }
+          },
+          {
+            "value": "Entertainment (TV, Playstation, Laptop, etc)",
+            "next": {
+              "brand": "Fifada",
+              "img": "http://moxa.id:8011/uploads/fifada_536622209f.jpg",
+              "description": "Kebutuhan elektronik sangatlah penting di dalam memudahkan kehidupan kita sehari-hari. Namun harus direncanakan dengan baik di dalam pembeliannya. Jika tidak, maka pengeluaran akan membengkak.<br /><br />Ayo coba diatur skala prioritas pembeliannya, lalu setelah kamu memutuskan akan membeli apa, MOXA bantu dengan FIFADA ya, supaya rumah kamu nyaman, kantong juga aman !"
+            }
+          },
+          {
+            "value": "Perlengkapan Dapur (Rice Cooker, Blender, Kulkas, etc)",
+            "next": {
+              "brand": "Fifada",
+              "img": "http://moxa.id:8011/uploads/fifada_536622209f.jpg",
+              "description": "Kebutuhan elektronik sangatlah penting di dalam memudahkan kehidupan kita sehari-hari. Namun harus direncanakan dengan baik di dalam pembeliannya. Jika tidak, maka pengeluaran akan membengkak.<br /><br />Ayo coba diatur skala prioritas pembeliannya, lalu setelah kamu memutuskan akan membeli apa, MOXA bantu dengan FIFADA ya, supaya rumah kamu nyaman, kantong juga aman !"
+            }
+          },
+          {
+            "value": "Lainnya",
+            "next": {
+              "brand": "Fifada",
+              "img": "http://moxa.id:8011/uploads/fifada_536622209f.jpg",
+              "description": "Kebutuhan elektronik sangatlah penting di dalam memudahkan kehidupan kita sehari-hari. Namun harus direncanakan dengan baik di dalam pembeliannya. Jika tidak, maka pengeluaran akan membengkak.<br /><br />Ayo coba diatur skala prioritas pembeliannya, lalu setelah kamu memutuskan akan membeli apa, MOXA bantu dengan FIFADA ya, supaya rumah kamu nyaman, kantong juga aman !"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "value": "Mobil",
+      "next": {
+        "text": "Halo, kira-kira mobil apa yang mau kamu beli? Yuk MOXA bantu pilih mobil idaman kamu!",
+        "subtext": "",
+        "options": [
+          {
+            "value": "Mobil Baru",
+            "next": {
+              "text": "Kamu tertarik tipe mobil yang seperti apa?",
+              "subtext": "",
+              "options": [
+                {
+                  "value": "Sport",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk mobil dibawah ini kamu lebih suka yang mana ? Supaya MOXA bisa kasi solusi yang tepat untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Ferrari",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Jaguar",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "City Car / Sedan",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk mobil dibawah ini kamu lebih suka yang mana ? Supaya MOXA bisa kasi solusi yang tepat untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Toyota",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Suzuki",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Honda",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "SUV",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk mobil dibawah ini kamu lebih suka yang mana ? Supaya MOXA bisa kasi solusi yang tepat untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Range Rover",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Ford",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "value": "Mobil Bekas",
+            "next": {
+              "text": "Kamu tertarik tipe mobil yang seperti apa?",
+              "subtext": "",
+              "options": [
+                {
+                  "value": "Sport",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk mobil dibawah ini kamu lebih suka yang mana ? Supaya MOXA bisa kasi solusi yang tepat untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Ferrari",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Jaguar",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "City Car / Sedan",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk mobil dibawah ini kamu lebih suka yang mana ? Supaya MOXA bisa kasi solusi yang tepat untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Toyota",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Suzuki",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Honda",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "SUV",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk mobil dibawah ini kamu lebih suka yang mana ? Supaya MOXA bisa kasi solusi yang tepat untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Range Rover",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Ford",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan mobil baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan mobil impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "value": "Motor",
+      "next": {
+        "text": "Halo, kira-kira motor apa yang mau kamu beli? MOXA bantu wujudkan yaa",
+        "subtext": "",
+        "options": [
+          {
+            "value": "Motor Baru",
+            "next": {
+              "text": "Kamu tertarik tipe motor yang seperti apa?",
+              "subtext": "",
+              "options": [
+                {
+                  "value": "Sport",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk motor dibawah ini kamu tertarik dengan tipe yang mana ? MOXA mau kasih solusi yang terbaik untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Honda",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Yamaha",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Matic",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk motor dibawah ini kamu tertarik dengan tipe yang mana ? MOXA mau kasih solusi yang terbaik untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Yamaha",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Vespa",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Honda",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Manual",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk motor dibawah ini kamu tertarik dengan tipe yang mana ? MOXA mau kasih solusi yang terbaik untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Honda",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Suzuki",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Yamaha",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor baru kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "value": "Motor Bekas",
+            "next": {
+              "text": "Kamu tertarik tipe motor yang seperti apa?",
+              "subtext": "",
+              "options": [
+                {
+                  "value": "Sport",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk motor dibawah ini kamu tertarik dengan tipe yang mana ? MOXA mau kasih solusi yang terbaik untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Honda",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Yamaha",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Matic",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk motor dibawah ini kamu tertarik dengan tipe yang mana ? MOXA mau kasih solusi yang terbaik untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Yamaha",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Vespa",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Honda",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": "Manual",
+                  "next": {
+                    "text": "Coba Pilih dari beberapa merk motor dibawah ini kamu tertarik dengan tipe yang mana ? MOXA mau kasih solusi yang terbaik untuk kamu",
+                    "subtext": "",
+                    "options": [
+                      {
+                        "value": "Honda",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Suzuki",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      },
+                      {
+                        "value": "Yamaha",
+                        "next": {
+                          "brand": "TAF & ACC",
+                          "img": "http://moxa.id:8011/uploads/TAF_ACC_1650348b98.png",
+                          "description": "MOXA sarankan TAF & ACC tepat untuk membantu pembiayaan motor kamu ! Semoga lancar, dan kamu bisa segera mengendarai kendaraan idamanmu ya !<br /><br />Segera download apps MOXA untuk kemudahan fitur pembiayaan motor impianmu !"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "value": "Truk & Alat Berat",
+      "next": {
+        "text": "Halo, kira-kira Truk & Alat Berat seperti apa yang kamu cari, Moxa bantu pilihkan yuk !",
+        "subtext": "",
+        "options": [
+          {
+            "value": "Truk & Alat Berat Baru",
+            "next": {
+              "brand": "SANF",
+              "img": "http://moxa.id:8011/uploads/SANF_988e3370ea.png",
+              "description": "MOXA jamin SANF bisa membantu pembiayaan Truk & Alat Berat yang kamu butuhkan !<br /><br />Semoga lancar, dan kamu bisa segera mendapatkan Truk & Alat Berat untuk kebutuhanmu ya ! Cek lengkapnya di apps MOXA, download sekarang !"
+            }
+          },
+          {
+            "value": "Truk & Alat Berat Bekas",
+            "next": {
+              "brand": "SANF",
+              "img": "http://moxa.id:8011/uploads/SANF_988e3370ea.png",
+              "description": "MOXA jamin SANF bisa membantu pembiayaan Truk & Alat Berat yang kamu butuhkan !<br /><br />Semoga lancar, dan kamu bisa segera mendapatkan Truk & Alat Berat untuk kebutuhanmu ya ! Cek lengkapnya di apps MOXA, download sekarang !"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "value": "Perjalanan Religi",
+      "next": {
+        "text": "Semoga berkah ya, Yuk MOXA bantu untuk rencanakan perjalanan ibadah kamu !<br /><br />Yang mana lebih prioritas, untukmu ?",
+        "subtext": "",
+        "options": [
+          {
+            "value": "Pergi Haji",
+            "next": {
+              "brand": "FIF Group",
+              "img": "http://moxa.id:8011/uploads/FIF_fcf5862d70.png",
+              "description": "Selamat ! FIF Group akan membantumu untuk melakukan perjalanan religi Umroh ! Bulatkan niat dan wujudkan impian umrohmu dengan download apps MOXA ya ! Semoga berkah, dan selamat sampai tujuan."
+            }
+          },
+          {
+            "value": "Umroh",
+            "next": {
+              "brand": "FIF Group",
+              "img": "http://moxa.id:8011/uploads/FIF_fcf5862d70.png",
+              "description": "Selamat ! FIF Group akan membantumu untuk melakukan perjalanan religi Umroh ! Bulatkan niat dan wujudkan impian umrohmu dengan download apps MOXA ya ! Semoga berkah, dan selamat sampai tujuan."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "value": "Asuransi",
+      "next": {
+        "text": "Halo, semoga sehat selalu dimana pun kamu berada, kira-kira asuransi seperti apa yang kamu ingin ajukan ?",
+        "subtext": "",
+        "options": [
+          {
+            "value": "Asuransi Jiwa",
+            "next": {
+              "text": "Apakah kamu pernah mengajukan perlindungan asuransi jiwa, kecelakaan atau kesehatan ?",
+              "subtext": "",
+              "options": [
+                {
+                  "value": "Ya",
+                  "next": {
+                    "brand": "Astra Life",
+                    "img": "http://moxa.id:8011/uploads/Astra_Life_e00ea7c2f0.png",
+                    "description": "Jika kamu berminat dengan perlindungan jiwa untuk keluarga kamu, MOXA sarankan ASTRA LIFE dapat membantu melindungi kamu. <br />Segera download apps MOXA, kami akan selalu ada untuk kamu & keluarga."
+                  }
+                },
+                {
+                  "value": "Tidak",
+                  "next": {
+                    "brand": "Astra Life",
+                    "img": "http://moxa.id:8011/uploads/Astra_Life_e00ea7c2f0.png",
+                    "description": "Jika kamu berminat dengan perlindungan jiwa untuk keluarga kamu, MOXA sarankan ASTRA LIFE dapat membantu melindungi kamu. <br />Segera download apps MOXA, kami akan selalu ada untuk kamu & keluarga."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "value": "Asuransi Penyakit Kritis",
+            "next": {
+              "text": "Apakah kamu pernah mengajukan perlindungan asuransi jiwa, kecelakaan atau kesehatan ?",
+              "subtext": "",
+              "options": [
+                {
+                  "value": "Ya",
+                  "next": {
+                    "brand": "Astra Life",
+                    "img": "http://moxa.id:8011/uploads/Astra_Life_e00ea7c2f0.png",
+                    "description": "Jika kamu berminat dengan perlindungan jiwa untuk keluarga kamu, MOXA sarankan ASTRA LIFE dapat membantu melindungi kamu. <br />Segera download apps MOXA, kami akan selalu ada untuk kamu & keluarga."
+                  }
+                },
+                {
+                  "value": "Tidak",
+                  "next": {
+                    "brand": "Astra Life",
+                    "img": "http://moxa.id:8011/uploads/Astra_Life_e00ea7c2f0.png",
+                    "description": "Jika kamu berminat dengan perlindungan jiwa untuk keluarga kamu, MOXA sarankan ASTRA LIFE dapat membantu melindungi kamu. <br />Segera download apps MOXA, kami akan selalu ada untuk kamu & keluarga."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "value": "Asuransi Mobil",
+            "next": {
+              "text": "Apakah kamu pernah mengajukan perlindungan asuransi jiwa, kecelakaan atau kesehatan ?",
+              "subtext": "",
+              "options": [
+                {
+                  "value": "Ya",
+                  "next": {
+                    "brand": "Garda Oto",
+                    "img": "http://moxa.id:8011/uploads/Logo_Garda_Oto_2014_current_ac3354713b.jpeg",
+                    "description": "Untuk melindungi mobil kesayangan kamu dari resiko yang tidak diinginkan, menurut MOXA sebaiknya hubungi GARDA OTO. <br />Mobil aman, keluarga pun nyaman !<br />Segera lakukan proteksi lengkap & download apps MOXA sekarang !"
+                  }
+                },
+                {
+                  "value": "Tidak",
+                  "next": {
+                    "brand": "Garda Oto",
+                    "img": "http://moxa.id:8011/uploads/Logo_Garda_Oto_2014_current_ac3354713b.jpeg",
+                    "description": "Untuk melindungi mobil kesayangan kamu dari resiko yang tidak diinginkan, menurut MOXA sebaiknya hubungi GARDA OTO. <br />Mobil aman, keluarga pun nyaman !<br />Segera lakukan proteksi lengkap & download apps MOXA sekarang !"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "value": "Multiguna",
+      "next": {
+        "text": "Halo, apakah kamu mempunyai jaminan untuk melakukan pinjaman multiguna ?",
+        "subtext": "",
+        "options": [
+          {
+            "value": "Ya",
+            "next": {
+              "brand": "ACC & TAF",
+              "img": "http://moxa.id:8011/uploads/TAF_ACC_5ede92affe.png",
+              "description": "Jika kamu tidak memiliki jaminan untuk pinjaman multiguna, jangan khawatir, MOXA akan membantu kamu dengan Kredit Multiguna ACC & TAF ! Tunggu apalagi, coba deh download apps MOXA sekarang ! Semoga urusanmu dimudahkan dan salam sukses selalu !"
+            }
+          },
+          {
+            "value": "Tidak",
+            "next": {
+              "brand": "ACC & TAF",
+              "img": "http://moxa.id:8011/uploads/TAF_ACC_5ede92affe.png",
+              "description": "Jika kamu tidak memiliki jaminan untuk pinjaman multiguna, jangan khawatir, MOXA akan membantu kamu dengan Kredit Multiguna ACC & TAF ! Tunggu apalagi, coba deh download apps MOXA sekarang ! Semoga urusanmu dimudahkan dan salam sukses selalu !"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
