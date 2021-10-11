@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "npm": "5.7.1",// here put your version
-    "node": "9.5.0" // here put your version
+    "npm": "5.7.1" // here put your version
   },
   "homepage": ".",
   "dependencies": {
