@@ -27,7 +27,7 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "PORT=8012 react-scripts start",
+    "start": "react-scripts start",
     "start-app": "set PORT=8012 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
