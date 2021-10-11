@@ -18,7 +18,7 @@ const Blogs = (props) => {
     tag: "",
     page: 1,
   });
-
+ 
   const [openTgl, setOpenTgl] = useState(false);
   const [openKategori, setOpenKategori] = useState(false);
   const [tanggal, setTanggal] = useState("Tanggal Baru");
@@ -218,7 +218,7 @@ const Blogs = (props) => {
   };
 
   return (
-    <div>
+    <>
       <Layout title="Blog">
         <div id="berita">
           <div className="news-top">
@@ -261,7 +261,7 @@ const Blogs = (props) => {
                 </div>
 
                 {width < 992 ? (
-                  <div>
+                  <>
                     <div className="sort-m">
                       <label>Sort by:</label>
 
@@ -305,9 +305,9 @@ const Blogs = (props) => {
                         </div>
                       ))}
                     </div>
-                  </div>
+                  </>
                 ) : (
-                  <div>
+                  <>
                     <div className="sort">
                       <label>Sort by:</label>
 
@@ -345,7 +345,7 @@ const Blogs = (props) => {
                         ))}
                       </div>
                     </div>
-                  </div>
+                  </>
                 )}
               </div>
             </div>
@@ -355,7 +355,7 @@ const Blogs = (props) => {
             <div className="wrapper">
               <div className="news-list row">
                 {articles.length > 0 ? (
-                  <div>
+                  <>
                     {articles.map((art, i) => (
                       <div className="news-item col-md-6 col-lg-4" key={i}>
                         <a href={`/artikel/${art.id}`} className="cover-wrapper">
@@ -368,17 +368,17 @@ const Blogs = (props) => {
                         </a>
                         <div className="t-cat">
                           {art.tags.length > 1 ? (
-                            <div>
+                            <>
                               {art.tags.map((cat, i) => (
                                 <span key={i}>
                                   {art.tags.length - 1 === i ? `${cat.name}` : `${cat.name}, `}
                                 </span>
                               ))}
-                            </div>
+                            </>
                           ) : (
-                            <div>
+                            <>
                               <span>{art.tags[0].name}</span>
-                            </div>
+                            </>
                           )}
                         </div>
                         <small>{moment(art.created_at).format("LL")}</small>
@@ -387,13 +387,13 @@ const Blogs = (props) => {
                         </a>
                       </div>
                     ))}
-                  </div>
+                  </>
                 ) : (
-                  <div>
+                  <>
                     <div className="col">
                       <center style={{ color: "gray" }}>No blog yet!</center>
                     </div>
-                  </div>
+                  </>
                 )}
               </div>
 
@@ -409,7 +409,7 @@ const Blogs = (props) => {
           </div>
         </div>
       </Layout>
-    </div>
+    </>
   );
 };
 
