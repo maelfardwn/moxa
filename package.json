@@ -2,9 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "npm": "5.7.1" // here put your version
-  },
   "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
