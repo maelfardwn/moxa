@@ -19,6 +19,7 @@
     "react-helmet": "^6.1.0",
     "react-js-pagination": "^3.0.3",
     "react-lineto": "^3.2.0",
+    "react-moment": "^1.1.1",
     "react-router-dom": "^5.2.0",
     "react-router-sitemap": "^1.2.0",
     "react-scripts": "3.4.1",
@@ -32,7 +33,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-     "sitemap": "babel-node ./src/sitemap-generator.js"
+    "sitemap": "babel-node ./src/sitemap-generator.js"
   },
   "eslintConfig": {
     "extends": "react-app"
