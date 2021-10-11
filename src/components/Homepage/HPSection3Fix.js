@@ -55,9 +55,8 @@ const HPSection3Fix = (props) => {
         <div className="wrapper">
           <div className="row">
             <div className="col-lg-12 m-auto" >
-              <h1 style={{textAlign:'center',marginTop:'30px'}}>PARTNER MOXA</h1>
-
-              <p style={{textAlign:'center'}}>Moxa bekerja sama dengan berbagai perusahaan keuangan dan asuransi terbaik 
+              <h1 style={{textAlign:'center',marginTop:'90px',fontWeight:'700',color:'#04325F',fontFamily:'ubuntu',fontSize:'30px'}}>PARTNER MOXA</h1>
+              <p style={{textAlign:'center',fontWeight:'400',fontFamily:'ubuntu',color:'#04325F',fontSize:'25px',marginBottom:'50px'}}>Moxa bekerja sama dengan berbagai perusahaan keuangan dan asuransi terbaik 
 di Indonesia untuk menyediakan layanan sesuai kebutuhanmu yang 
 pasti aman serta terpercaya </p>
             <div className="row" style={{marginBottom:'50px'}}>
