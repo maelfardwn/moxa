@@ -61,15 +61,15 @@ const HomepageFix = (props) => {
   ])
 
   const [products,setProducts] = useState([
-    {image:iconCar, text:'Pembiayaan Mobil'},
-    {image:iconMotor, text:'Pembiayaan Motor'},
-    {image:iconRental, text:'Rental'},
-    {image:iconAsuransi, text:'Asuransi Kesehatan'},
-    {image:iconRp, text:'Pinjaman Tunai'},
-    {image:iconMasjid, text:'Perjalanan Religi'},
-    {image:iconTractor, text:'Truk dan Alat Berat'},
-    {image:iconElectric, text:'Elektronik dan Lainnya'},
-    {image:iconTabungan, text:'Tabungan'}
+    {image:iconCar, text:'Pembiayaan Mobil',link:'/product/car'},
+    {image:iconMotor, text:'Pembiayaan Motor',link:'/product/motor'},
+    {image:iconRental, text:'Rental',link:'/product/rental'},
+    {image:iconAsuransi, text:'Asuransi Kesehatan',link:'/product/asuransi'},
+    {image:iconRp, text:'Pinjaman Tunai',link:'/product/pinjaman'},
+    {image:iconMasjid, text:'Perjalanan Religi',link:'/product/perjalanan'},
+    {image:iconTractor, text:'Truk dan Alat Berat',link:'/product/alatberat'},
+    {image:iconElectric, text:'Elektronik dan Lainnya',link:'/product/elektronik'},
+    {image:iconTabungan, text:'Tabungan',link:'/product/tabungan'}
   ])
 
   const [data,setData] = useState([
@@ -96,7 +96,8 @@ const HomepageFix = (props) => {
         axios.get(process.env.REACT_APP_API_URL + `/home-banners?_sort=order:asc`),
         axios.get(process.env.REACT_APP_API_URL + `/homepage`),
         axios.get(process.env.REACT_APP_API_URL + "/products?_sort=order:asc"),
-        axios.get(process.env.REACT_APP_API_URL + "/partners?_sort=order:asc"),
+        axios.get("https://cms.moxa.zali.pro/products"),
+        
       ])
       .then((res) => {
       

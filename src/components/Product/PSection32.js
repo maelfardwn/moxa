@@ -65,38 +65,24 @@ const PSection32 = (props) => {
 
   return (
     <div>
-      <div className="wrapper">
-
-      <div className="row">
-        <div className="col">
-            <button onClick={TanpaJaminanOnChange} style={{width:'390px',height:'74px',color:tabButtonTanpaJaminan[0].color, background:tabButtonTanpaJaminan[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>Pinjaman Tanpa Jaminan</button>
-        </div>
-        <div className="col">
-            <button onClick={DenganJaminanOnChange} style={{width:'390px',height:'74px',color:tabButtonDenganJaminan[0].color, background:tabButtonDenganJaminan[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>Pinjaman Dengan Jaminan</button>
-        </div>
-      </div>
-      </div>
-      <div style={{position:'relative', height:'500px',marginBottom:'300px'}}>
-      <img src={MockUpHp} className="SliderHp"/>
-      <div style={{position:'relative',paddingTop:'10px'}}>
-        <div style={{width: '1000px',margin:'auto', borderRadius:'10px', height:'550px',marginTop:'100px', background:'rgba(242, 244, 249, 0.5)'}}>
-            <div style={{padding:'180px'}}>
-            <h3 style={{paddingBottom:'50px',color:'#04325F',fontWeight:'700',fontSize:'30px'}}>{data[i].type}</h3>
-            <p style={{color:'#04325F',fontWeight:'400',fontSize:'28px'}}>{data[i].description} </p>
-            <div style={{width:'240px',height:'37px',background:'#005DAA',padding:'0',margin:'0',display:'flex',justifyContent:'center',borderRadius:'15px'}} className="row">
-                <div className="col-md-3"> 
+       <div className="wrappperSection3">
+      <img src={MockUpHp} className="SliderHp"/> 
+      <div className="wrappperSection3-2">
+        <div className="wrappperSection3-3">
+            <h3 className="titleSection3">{data[i].type}</h3>
+            <h4 className="subtitleSection3">{data[i].description} </h4>
+            <div  className="nav-handler row ">
+                <div className="col-md-3 col-sm-3 "> 
                     <button onClick={previousStep} style={{height:'37px', border:'none',background:'none'}}> <img src={arrowLeft} alt="right"/></button> 
                 </div>
-                <div className="col-md-6" >
-                    <p style={{lineHeight:'37px',color:'white',textAlign:'center', fontSize:'20px',fontWeight:'500'}}> {i+1}/5 </p> 
+                <div className="col-md-6 col-sm-6 " style={{display:'flex',justifyContent:'center'}}>
+                    <h5 style={{margin:'auto'}}> {i+1}/5 </h5> 
                 </div>
-                <div className="col" style={{display:'flex',justifyContent:'flex-end'}}>
+                <div className="col-md-3 col-sm-3 " style={{display:'flex',justifyContent:'flex-end'}}>
                     <button onClick={nextStep} style={{height:'37px', border:'none',background:'none'}}><img src={arrowRight} alt="left"/></button><a></a> </div>
                 </div>
-            </div>
+            
         </div>
-       
-
       </div>
       </div>
     </div>

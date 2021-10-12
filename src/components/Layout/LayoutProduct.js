@@ -128,14 +128,9 @@ const LayoutProduct = (props) => {
                 </li>
                 <li>
                   <a href="/#testimonial" onClick={handleMenuClick}>
-                    Promo
-                  </a> 
-                  <img  width="15px" src={vector}/>
-                </li>
-                <li>
-                  <a href="/#testimonial" onClick={handleMenuClick}>
                     Faq
-                  </a> 
+                  </a>  
+                  <img style={{marginLeft:'5px'}} width="15px" src={vector}/>
                  
                 </li>
                 <li className="is-nested">
@@ -155,7 +150,7 @@ const LayoutProduct = (props) => {
                 </li>
                 <li >
                 <div className="downloadNow">
-                  <a className="download-now" href="/artikel">Download Sekarang</a>
+                  <a className="downloadNow download-now" style={{color:"#ffffff"}} href="/artikel">Download Sekarang</a>
                 </div>
                 </li>
               </ul>

@@ -39,7 +39,7 @@ const HPSection1Fix = (props) => {
 
   return (
     <div>
-      <div id="banner" style={{background:'#D3E0FF'}}>
+      <div id="banner" >
       {transitions.map(({ item, props, key }) => (
           <div>
             {width < 576 ? (

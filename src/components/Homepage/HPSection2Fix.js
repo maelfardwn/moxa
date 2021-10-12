@@ -12,6 +12,19 @@ import iconTabungan from '../../assets/img/iconTabungan.png'
 
 
 const HPSection2Fix = (props) => {
+  
+  const [products,setProducts] = useState([
+    {image:iconCar, text:'Pembiayaan Mobil',link:'/product/car'},
+    {image:iconMotor, text:'Pembiayaan Motor',link:'/product/motor'},
+    {image:iconRental, text:'Rental',link:'/product/rental'},
+    {image:iconAsuransi, text:'Asuransi Kesehatan',link:'/product/asuransi'},
+    {image:iconRp, text:'Pinjaman Tunai',link:'/product/pinjaman'},
+    {image:iconMasjid, text:'Perjalanan Religi',link:'/product/perjalanan'},
+    {image:iconTractor, text:'Truk dan Alat Berat',link:'/product/alatberat'},
+    {image:iconElectric, text:'Elektronik dan Lainnya',link:'/product/elektronik'},
+    {image:iconTabungan, text:'Tabungan',link:'/product/tabungan'}
+  ])
+
   // const [loading, setLoading] = useState(true);
   // const [text1, setText1] = useState("");
   // const [text2, setText2] = useState("");
@@ -49,17 +62,67 @@ const HPSection2Fix = (props) => {
         <div className="wrapper">
           <div className="row">
             <div className="col-lg-8 m-auto">
-              <h1 style={{fontWeight:'700'}}>Jelajahi Berbagai Pilihan Produk Moxa </h1>
+              <h1 style={{fontWeight:'700',marginBottom:'50px'}}>Jelajahi Berbagai Pilihan Produk Moxa </h1>
               <p style={{fontWeight:'500'}}>Rasakan kemudahan mengajukan beragam produk keuangan dalam satu sentuhan lewat fitur unggulan Moxa </p>
             </div>
           </div>
           <div className="row" style={{marginTop:'50px',marginBottom:'50px'}}>
-          {props.products.map((product)=>{
-            return  <div className="col-md-3" style={{margin:'auto',marginBottom:'20px'}}>
-                      <img src={product.image}/><br/>
-                      <p style={{fontWeight:'500'}}>{product.text}</p>
-                    </div>
-                })}
+                <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
+                      <a href={products[0].link} style={{cursor:'pointer',textDecoration:'none'}}>
+                      <img src={products[0].image} style={{marginBottom:'15px'}}/><br/>
+                      <p style={{fontWeight:'500'}}>{products[0].text}</p>
+                      </a>
+                </div>
+                <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
+                      <a href={products[1].link} style={{cursor:'pointer',textDecoration:'none'}}>
+                      <img src={products[1].image} style={{marginBottom:'15px'}}/><br/>
+                      <p style={{fontWeight:'500'}}>{products[1].text}</p>
+                      </a>
+                </div>
+                <div className="col" style={{marginBottom:'20px'}}>
+                      <a href={products[2].link} style={{cursor:'pointer',textDecoration:'none'}}>
+                      <img src={products[2].image} style={{marginBottom:'15px'}}/><br/>
+                      <p style={{fontWeight:'500'}}>{products[2].text}</p>
+                      </a>
+                </div>
+                <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
+                      <a href={products[3].link} style={{cursor:'pointer',textDecoration:'none'}}>
+                      <img src={products[3].image} style={{marginBottom:'15px'}}/><br/>
+                      <p style={{fontWeight:'500'}}>{products[3].text}</p>
+                      </a>
+                </div>
+                <div className="col" style={{marginBottom:'20px'}}>
+                      <a href={products[4].link} style={{cursor:'pointer',textDecoration:'none'}}>
+                      <img src={products[4].image} style={{marginBottom:'15px'}}/><br/>
+                      <p style={{fontWeight:'500'}}>{products[4].text}</p>
+                      </a>
+                </div>
+              </div>
+              <div className="row" style={{marginTop:'50px',marginBottom:'50px'}}>
+                <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
+                      <a href={products[5].link} style={{cursor:'pointer',textDecoration:'none'}}>
+                      <img src={products[5].image} style={{marginBottom:'15px'}}/><br/>
+                      <p style={{fontWeight:'500'}}>{products[5].text}</p>
+                      </a>
+                </div>
+                <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
+                      <a href={products[6].link} style={{cursor:'pointer',textDecoration:'none'}}>
+                      <img src={products[6].image} style={{marginBottom:'15px'}}/><br/>
+                      <p style={{fontWeight:'500'}}>{products[6].text}</p>
+                      </a>
+                </div>
+                <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
+                      <a href={products[7].link} style={{cursor:'pointer',textDecoration:'none'}}>
+                      <img src={products[7].image} style={{marginBottom:'15px'}}/><br/>
+                      <p style={{fontWeight:'500'}}>{products[7].text}</p>
+                      </a>
+                </div>
+                <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
+                      <a href={products[8].link} style={{cursor:'pointer',textDecoration:'none'}}>
+                      <img src={products[8].image} style={{marginBottom:'15px'}}/><br/>
+                      <p style={{fontWeight:'500'}}>{products[8].text}</p>
+                      </a>
+                </div>
           </div>
         </div>
       </div>
