@@ -9,7 +9,7 @@
   padding-top: 20px;
   position: absolute;
   background: white;
-  height:108px;
+  height:128px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 100%;
   z-index: 99;
@@ -46,7 +46,7 @@
 }
 
 #layout header .wrapper .main-logo .logo img {
-  width: 170px;
+  width: 230px;
 }
 
 #layout header .wrapper .burger-menu {
@@ -409,7 +409,7 @@
 #homepage #banner {
   position: relative;
   z-index: 3;
-  background: white;
+  background: #D3E0FF;
 }
 
 #homepage #banner .slider {
@@ -489,12 +489,13 @@
           align-items: center;
   position: absolute;
   bottom: 7%;
+  left:50%;
 }
 
 #homepage #banner .wrapper .slide-nav .nav-item {
   width: 15px;
   height: 15px;
-  background: #04325f;
+  background: #D2D9E0B5;
   margin-right: 15px;
   border-radius: 50%;
   cursor: pointer;
@@ -3409,7 +3410,6 @@
     width: 450px;
   }
 }
-
 .downloadNow{
   background: #FAAB1C;
   height: 35px;
@@ -3417,14 +3417,18 @@
   display: flex;
   justify-content: center;
   border-radius: 10px;
+  color:#ffffff;
 }
 .download-now{
- color:white;
+  color:#ffffff;
   padding: 5px;
   font-weight: 700;
   font-size: 22px;
   line-height: 25px;
   font-family: 'Ubuntu';
+}
+a .download-now:hover{
+  color:#ffffff
 }
   .PS4{
     color:white;
@@ -3488,10 +3492,10 @@
 .SliderHp{
   background-repeat: no-repeat;
   position: absolute;
-  left: 100px;
-  bottom: 890px;
-  height: 700px;
-  width: 600px;
+    width: 350px;
+    left: 100px;
+    bottom: 890px;
+    height: 600px;
   z-index: 9;
   will-change: opacity;
 }
@@ -3503,6 +3507,8 @@
   font-size:20px;
   font-weight:500;
 }
+
+
 @media screen and (max-width: 1600px) {
   .SliderHp{
     width: 350px;

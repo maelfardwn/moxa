@@ -112,11 +112,7 @@ const HPSection4Fix = (props) => {
           <div className="row" style={{marginTop:'50px',marginBottom:'50px'}}>
           {items}
           </div>
-<<<<<<< HEAD
           <div className="row" style={{margin:'0',padding:'0'}}>
-=======
-            <div className="row" style={{margin:'0',padding:'0'}}>
->>>>>>> 6b1da4471487594a55f894d5c84bb45efe2762e7
               <div className="col" style={{display:'flex',justifyContent:'end',marginLeft:'40px'}}>
                 <a href="/" style={{fontSize:'28px',textDecoration:'none',fontWeight:'700', color:'#04325F'}}>Lihat semua promo </a> 
                </div>
