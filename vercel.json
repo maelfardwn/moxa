@@ -1,14 +1,14 @@
 {
     "routes": [
-      { "src": "/product/motor", "dest": "/"},
-      { "src": "/product/car", "dest": "/"},
-      { "src": "/product/pinjaman", "dest": "/"},
-      { "src": "/product/perjalanan", "dest": "/"},
-      { "src": "/product/rental", "dest": "/"},
-      { "src": "/product/alatberat", "dest": "/"},
-      { "src": "/product/asuransi", "dest": "/"},
-      { "src": "/product/elektronik", "dest": "/"},
-      { "src": "/product/detail", "dest": "/"}
+      { "src": "/product/motor", "dest": "/product/motor"},
+      { "src": "/product/car", "dest": "/product/car"},
+      { "src": "/product/pinjaman", "dest": "/product/pinjaman"},
+      { "src": "/product/perjalanan", "dest": "/product/perjalanan"},
+      { "src": "/product/rental", "dest": "/product/rental"},
+      { "src": "/product/alatberat", "dest": "/product/alatberat"},
+      { "src": "/product/asuransi", "dest": "/product/asuransi"},
+      { "src": "/product/elektronik", "dest": "/product/elektronik"},
+      { "src": "/product/detail", "dest": "/product/detail"}
     ]
   }
  
