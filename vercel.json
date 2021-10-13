@@ -1,0 +1,21 @@
+{
+    "routes": [
+      { "src": "/product/motor", "dest": "/"},
+      { "src": "/product/car", "dest": "/"},
+      { "src": "/product/pinjaman", "dest": "/"},
+      { "src": "/product/perjalanan", "dest": "/"},
+      { "src": "/product/rental", "dest": "/"},
+      { "src": "/product/alatberat", "dest": "/"},
+      { "src": "/product/asuransi", "dest": "/"},
+      { "src": "/product/elektronik", "dest": "/"},
+      { "src": "/product/detail", "dest": "/"}
+    ]
+  }
+ 
+
+
+
+
+
+
+
