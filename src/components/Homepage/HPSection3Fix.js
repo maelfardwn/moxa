@@ -14,6 +14,22 @@ import imageMobil88 from '../../assets/img/imageMobil88.png'
 import imagePermata from '../../assets/img/imagePermata.png'
 
 const HPSection3Fix = (props) => {
+  const [partnersApi,setPartners] = useState([])
+  useEffect(() => {
+    const fetchParnters = async ()=>{
+      const response =  await fetch('https://cms.moxa.zali.pro/partners')
+      const getPartners = await response.json()
+      setPartners(getPartners)
+      console.log('getPartners',getPartners)
+    }
+    fetchParnters()
+  }, [])
+  const partnerCom = partnersApi.length>0 ? 
+                partnersApi.map((partner=>{
+                  return <div className="col" style={{margin:'auto'}}>
+                         <img src={partner.logo.url} width="100px" height="80px"/>
+                     </div>
+                })): <p>Loading....</p>
   // const [loading, setLoading] = useState(true);
   // const [text1, setText1] = useState("");
   // const [text2, setText2] = useState("");
@@ -56,15 +72,9 @@ const HPSection3Fix = (props) => {
           <div className="row">
             <div className="col-lg-12 m-auto" >
               <h1 style={{textAlign:'center',marginTop:'90px',fontWeight:'700',color:'#04325F',fontFamily:'ubuntu',fontSize:'30px'}}>PARTNER MOXA</h1>
-              <p style={{textAlign:'center',fontWeight:'400',fontFamily:'ubuntu',color:'#04325F',fontSize:'25px',marginBottom:'50px'}}>Moxa bekerja sama dengan berbagai perusahaan keuangan dan asuransi terbaik 
-di Indonesia untuk menyediakan layanan sesuai kebutuhanmu yang 
-pasti aman serta terpercaya </p>
+              <p style={{textAlign:'center',fontWeight:'400',fontFamily:'ubuntu',color:'#04325F',fontSize:'25px',marginBottom:'50px'}}>Moxa bekerja sama dengan berbagai perusahaan keuangan dan asuransi terbaik di Indonesia untuk menyediakan layanan sesuai kebutuhanmu yang pasti aman serta terpercaya </p>
             <div className="row" style={{marginBottom:'100px'}}>
-                {props.partners.map((partner)=>{
-            return <div className="col" style={{margin:'auto'}}>
-                    <img src={partner.image}/>
-                </div>
-                })}
+            {partnerCom}
                 
             </div>
 

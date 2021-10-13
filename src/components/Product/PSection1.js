@@ -43,7 +43,7 @@ const PSection1 = (props) => {
             </div>        
             <div className="col-md-6" style={{backgroundImage: 'url(' + require('../../assets/img/arrowYellow.png') + ')',zIndex:'99',backgroundRepeat:'no-repeat'}}>
                
-                    <img src={props.image} style={{zIndex:'0', widows:'500px',height:'500px'}}/>
+                    <img src={props.image} alt={props.altImage} style={{zIndex:'0', widows:'500px',height:'500px'}}/>
             </div>
     
           </div>

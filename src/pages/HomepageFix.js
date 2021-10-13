@@ -30,9 +30,6 @@ import imageAstrapay from '../assets/img/imageAstrapay.png'
 import imageAstralife from '../assets/img/imageAstralife.png'
 import imageMobil88 from '../assets/img/imageMobil88.png'
 import imagePermata from '../assets/img/imagePermata.png'
-
-
-
 import iconCar from '../assets/img/IconCar.png'
 import iconMotor from '../assets/img/iconMotor.png'
 import iconRental from '../assets/img/iconRental.png'
@@ -85,25 +82,24 @@ const HomepageFix = (props) => {
     }
   ])
   const [loading, setLoading] = useState(true);
+  const [partnersApi, setpartnersApi] = useState([]);
   const [getData, setGetData] = useState([]);
   const [homeData, setHomeData] = useState({});
 
   useEffect(() => {
     setLoading(true);
-
     axios
       .all([
         axios.get(process.env.REACT_APP_API_URL + `/home-banners?_sort=order:asc`),
         axios.get(process.env.REACT_APP_API_URL + `/homepage`),
         axios.get(process.env.REACT_APP_API_URL + "/products?_sort=order:asc"),
-        axios.get("https://cms.moxa.zali.pro/products"),
-        
+        axios.get("https://cms.moxa.zali.pro/products "),
       ])
       .then((res) => {
-      
         setGetData(res[0].data);
         setHomeData(res[1].data);
-        console.log('product',res)
+        setpartnersApi(res[3].data)
+        console.log('product 4',res)
         setLoading(false);
       })
       .catch((err) => {
@@ -113,7 +109,7 @@ const HomepageFix = (props) => {
   }, []);
   return (
     <div>
-      <LayoutProduct title="Moxa"  descriptions={data[0].title}>
+      <LayoutProduct title={`Moxa `+data[0].title.toLocaleLowerCase()}  descriptions={data[0].title}>
         <div id="homepage">
           <HPSection1Fix data={data} />
           <HPSection2Fix products={products} />

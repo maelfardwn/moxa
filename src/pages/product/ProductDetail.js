@@ -18,14 +18,13 @@ import LayoutProduct from "../../components/Layout/LayoutProduct";
 import PSection2 from "../../components/Product/PSection2";
 import PSection3 from "../../components/Product/PSection3";
 import PSection4 from "../../components/Product/PSection4";
-import AlatBeratImage from '../../assets/img/AlatBeratImage.png'
+import CarImage from '../../assets/img/CarImage.png'
 import TestDrive from '../../assets/img/IconCar.png'
 import PSection23 from "../../components/Product/PSection23";
 import PSection33 from "../../components/Product/PSection33";
-import PSection32 from "../../components/Product/PSection32";
 
 
-const AlatBeratPage = (props) => {
+const ProductDetail = (props) => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [homeData, setHomeData] = useState({});
@@ -36,14 +35,10 @@ const AlatBeratPage = (props) => {
 
     axios
       .all([
-        axios.get(process.env.REACT_APP_API_URL + `/home-banners?_sort=order:asc`),
-        axios.get(process.env.REACT_APP_API_URL + `/homepage`),
-        axios.get(process.env.REACT_APP_API_URL + "/products?_sort=order:asc"),
+        axios.get(process.env.REACT_APP_API_TEST + "/products?_sort=order:asc"),
       ])
       .then((res) => {
-        setData(res[0].data);
-        setHomeData(res[1].data);
-        setProducts(res[2].data);
+        console.log(res[0].data[0])
         setLoading(false);
       })
       .catch((err) => {
@@ -54,20 +49,18 @@ const AlatBeratPage = (props) => {
 
   return (
     <div>
-      <LayoutProduct title="Moxa TRUK DAN ALAT BERAT" descriptions="Pembiayaan TRUK, mencari pinjaman, 
-asuransi, dan masih banyak lagi, 
-semuanya dalam satu aplikasi" >
+      <LayoutProduct title="Moxa PEMBIAYAAN MOBIL" descriptions="Temukan berbagai macam mobil impian yang bisa kamu tentukan mulai dari warna, spesifikasi hingga hitung cicilan dalam satu sentuhan.">
         <div id="homepage">
-          <PSection1  titleBanner="TRUK DAN ALAT BERAT" subtitleBanner="Pembiayaan mobil, mencari pinjaman, 
-asuransi, dan masih banyak lagi, 
-semuanya dalam satu aplikasi" image={AlatBeratImage} altImage="TRUK DAN ALAT BERAT"/>
-          <PSection23 />
-          <PSection32 />
+          <PSection1  titleBanner="PEMBIAYAAN MOBIL" subtitleBanner="Temukan berbagai macam mobil impian yang bisa kamu tentukan mulai dari warna, spesifikasi hingga hitung cicilan dalam satu sentuhan." image={CarImage}/>
+          <PSection23 title="JELAJAHI PRODUK MOBIL" subtitle="Beragam pilihan pembiayaan mobil sesuai kebutuhan 
+                      berdasarkan Mobil Baru, Mobil Bekas dan Test Drive" />
+          <PSection33 />
           <PSection4 />
+         
         </div>
       </LayoutProduct>
     </div>
   );
 };
 
-export default AlatBeratPage;
+export default ProductDetail;

@@ -22,6 +22,7 @@ import RentalPage from "./pages/product/RentalPage";
 import AlatBeratPage from "./pages/product/AlatBeratPage";
 import AsuransiPage from "./pages/product/AsuransiPage";
 import ElectronicPage from "./pages/product/ElectronicPage";
+import ProductDetail from "./pages/product/ProductDetail";
 
 const history = createBrowserHistory();
 ReactGA.initialize("UA-175679937-1");
@@ -51,6 +52,7 @@ function App() {
           <Route path="/product/alatberat" component={AlatBeratPage} exact />
           <Route path="/product/asuransi" component={AsuransiPage} exact />
           <Route path="/product/elektronik" component={ElectronicPage} exact />
+          <Route path="/product/detail" component={ProductDetail} exact />
           
           <Route path="/syarat-dan-ketentuan" component={TnC} />
           <Route path="/kebijakan-privasi" component={Pp} />
