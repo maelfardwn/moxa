@@ -99,7 +99,7 @@ const HPSection2Fix = (props) => {
                 </div>
               </div>
               <div className="row" style={{marginBottom:'50px'}}>
-                <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
+                <div className="col" style={{marginBottom:'20px'}}>
                       <a href={products[5].link} style={{cursor:'pointer',textDecoration:'none'}}>
                       <img src={products[5].image} style={{marginBottom:'15px'}}/><br/>
                       <h4 className="productsWording">{products[5].text}</h4>
