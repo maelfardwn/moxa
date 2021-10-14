@@ -167,6 +167,7 @@ const LayoutProduct = (props) => {
 
                
               </div>
+
               <div className="col-lg-4 col-md-6 f-1b">
                 <ul>
                   <li>
@@ -197,7 +198,7 @@ const LayoutProduct = (props) => {
               </div>
 
               {width < 575 ? (
-                <div className="col-md-4 f-1c">
+                <div className="col-md-8 f-1c">
                   <p>&copy;&nbsp;PT Astra Kreasi Digital. All Rights Reserved.</p>
                 </div>
               ) : null}
@@ -207,7 +208,7 @@ const LayoutProduct = (props) => {
           <div className="f-2">
             <div className="wrapper">
               {width < 575 ? null : (
-                <div className="col-md-4 f-1c">
+                <div className="col-md-8 f-1c">
                   <p>&copy;&nbsp;PT Astra Kreasi Digital. All Rights Reserved.</p>
                 </div>
               )}
