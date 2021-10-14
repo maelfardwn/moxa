@@ -167,17 +167,16 @@ const LayoutProduct = (props) => {
 
                
               </div>
-
               <div className="col-lg-4 col-md-6 f-1b">
                 <ul>
                   <li>
-                    <a href="/faq#contact">Tentang Kami</a>
+                    <a className="tentangKami" href="/faq#contact">Tentang Kami</a>
                   </li>
                   <li>
-                    <a href="/#product">Hubungi Kami</a>
+                    <a className="tentangKami" href="/#product">Hubungi Kami</a>
                   </li>
                   <li>
-                    <a href="/faq">FAQ</a>
+                    <a className="tentangKami" href="/faq">FAQ</a>
                   </li>
                 </ul>
 
