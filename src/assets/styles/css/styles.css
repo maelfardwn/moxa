@@ -214,6 +214,9 @@
   color: #faab1c !important;
 }
 
+#layout header.scrolled .wrapper nav ul li .downloadNow a:hover {
+  color: #ffffff !important;
+}
 #layout #content {
   width: 100%;
 }
