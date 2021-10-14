@@ -62,39 +62,39 @@ const HPSection2Fix = (props) => {
         <div className="wrapper">
           <div className="row">
             <div className="col-lg-8 m-auto">
-              <h1 style={{fontWeight:'700',marginBottom:'50px'}}>Jelajahi Berbagai Pilihan Produk Moxa </h1>
-              <p style={{fontWeight:'500'}}>Rasakan kemudahan mengajukan beragam produk keuangan dalam satu sentuhan lewat fitur unggulan Moxa </p>
+              <h1 >Jelajahi Berbagai Pilihan Produk Moxa </h1>
+              <p >Rasakan kemudahan mengajukan beragam produk keuangan dalam satu sentuhan lewat fitur unggulan Moxa </p>
             </div>
           </div>
-          <div className="row" style={{marginTop:'50px',marginBottom:'50px'}}>
+          <div className="row products" style={{marginTop:'50px',marginBottom:'50px'}}>
                 <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
                       <a href={products[0].link} style={{cursor:'pointer',textDecoration:'none'}}>
                       <img src={products[0].image} style={{marginBottom:'15px'}}/><br/>
-                      <p style={{fontWeight:'500'}}>{products[0].text}</p>
+                      <h4 className="productsWording">{products[0].text}</h4>
                       </a>
                 </div>
                 <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
                       <a href={products[1].link} style={{cursor:'pointer',textDecoration:'none'}}>
                       <img src={products[1].image} style={{marginBottom:'15px'}}/><br/>
-                      <p style={{fontWeight:'500'}}>{products[1].text}</p>
+                      <h4 className="productsWording">{products[1].text}</h4>
                       </a>
                 </div>
                 <div className="col" style={{marginBottom:'20px'}}>
                       <a href={products[2].link} style={{cursor:'pointer',textDecoration:'none'}}>
                       <img src={products[2].image} style={{marginBottom:'15px'}}/><br/>
-                      <p style={{fontWeight:'500'}}>{products[2].text}</p>
+                      <h4 className="productsWording">{products[2].text}</h4>
                       </a>
                 </div>
                 <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
                       <a href={products[3].link} style={{cursor:'pointer',textDecoration:'none'}}>
                       <img src={products[3].image} style={{marginBottom:'15px'}}/><br/>
-                      <p style={{fontWeight:'500'}}>{products[3].text}</p>
+                      <h4 className="productsWording">{products[3].text}</h4>
                       </a>
                 </div>
                 <div className="col" style={{marginBottom:'20px'}}>
                       <a href={products[4].link} style={{cursor:'pointer',textDecoration:'none'}}>
                       <img src={products[4].image} style={{marginBottom:'15px'}}/><br/>
-                      <p style={{fontWeight:'500'}}>{products[4].text}</p>
+                      <h4 className="productsWording">{products[4].text}</h4>
                       </a>
                 </div>
               </div>
@@ -102,25 +102,25 @@ const HPSection2Fix = (props) => {
                 <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
                       <a href={products[5].link} style={{cursor:'pointer',textDecoration:'none'}}>
                       <img src={products[5].image} style={{marginBottom:'15px'}}/><br/>
-                      <p style={{fontWeight:'500'}}>{products[5].text}</p>
+                      <h4 className="productsWording">{products[5].text}</h4>
                       </a>
                 </div>
                 <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
                       <a href={products[6].link} style={{cursor:'pointer',textDecoration:'none'}}>
                       <img src={products[6].image} style={{marginBottom:'15px'}}/><br/>
-                      <p style={{fontWeight:'500'}}>{products[6].text}</p>
+                      <h4 className="productsWording">{products[6].text}</h4>
                       </a>
                 </div>
                 <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
                       <a href={products[7].link} style={{cursor:'pointer',textDecoration:'none'}}>
                       <img src={products[7].image} style={{marginBottom:'15px'}}/><br/>
-                      <p style={{fontWeight:'500'}}>{products[7].text}</p>
+                      <h4 className="productsWording">{products[7].text}</h4>
                       </a>
                 </div>
-                <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
+                <div className="col" style={{marginBottom:'20px'}}>
                       <a href={products[8].link} style={{cursor:'pointer',textDecoration:'none'}}>
                       <img src={products[8].image} style={{marginBottom:'15px'}}/><br/>
-                      <p style={{fontWeight:'500'}}>{products[8].text}</p>
+                      <h4 className="productsWording">{products[8].text}</h4>
                       </a>
                 </div>
           </div>

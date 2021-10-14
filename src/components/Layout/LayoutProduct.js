@@ -199,7 +199,7 @@ const LayoutProduct = (props) => {
 
               {width < 575 ? (
                 <div className="col-md-4 f-1c">
-                  <p>&copy;PT Astra Kreasi Digital. All Rights Reserved.</p>
+                  <p>&copy;&nbsp;PT Astra Kreasi Digital. All Rights Reserved.</p>
                 </div>
               ) : null}
             </div>
@@ -209,7 +209,7 @@ const LayoutProduct = (props) => {
             <div className="wrapper">
               {width < 575 ? null : (
                 <div className="col-md-4 f-1c">
-                  <p>&copy;PT Astra Kreasi Digital. All Rights Reserved.</p>
+                  <p>&copy;&nbsp;PT Astra Kreasi Digital. All Rights Reserved.</p>
                 </div>
               )}
 

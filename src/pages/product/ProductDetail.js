@@ -38,7 +38,7 @@ const ProductDetail = (props) => {
         axios.get(process.env.REACT_APP_API_TEST + "/products?_sort=order:asc"),
       ])
       .then((res) => {
-        console.log(res[0].data[0])
+        console.log('detail',res[0].data[0])
         setLoading(false);
       })
       .catch((err) => {

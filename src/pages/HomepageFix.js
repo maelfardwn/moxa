@@ -114,8 +114,7 @@ const HomepageFix = (props) => {
           <HPSection1Fix data={data} />
           <HPSection2Fix products={products} />
           <HPSection3Fix partners={partners} />
-          <HPSection4Fix />
-         
+          <HPSection4Fix />  
         </div>
       </LayoutProduct>
     </div>
