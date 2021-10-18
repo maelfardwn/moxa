@@ -59,7 +59,7 @@ const ProductDetail = (props) => {
 
   return (
     <div>
-      <LayoutProduct title="Moxa PEMBIAYAAN MOBIL" descriptions="Temukan berbagai macam mobil impian yang bisa kamu tentukan mulai dari warna, spesifikasi hingga hitung cicilan dalam satu sentuhan.">
+      <LayoutProduct title={"Moxa"+data.name} descriptions={data.descriptions}>
         <div id="homepage">
           <PSection1  titleBanner={data.name} subtitleBanner={data.descriptions} image={banner}/>
           <PSection2Com title={titleProduct.title} subtitle={titleProduct.description} variant={variants} />
