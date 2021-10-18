@@ -200,14 +200,10 @@
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   position: static;
-  height: 100%;
-  width: auto;
   padding: 10px 0;
 }
 
 #layout header.scrolled .wrapper .main-logo img {
-  height: 100%;
-  width: auto;
 }
 
 #layout header.scrolled .wrapper nav ul li a:hover {
@@ -460,15 +456,27 @@ li .tentangKami{
 }
 
 #homepage #banner .wrapper h1 {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 46px;
+  /* identical to box height */
+  
+  
+  color: #04325F;
   margin-bottom: 10px;
-  font-size: 45px;
 }
 
 #homepage #banner .wrapper h2 {
-  color: #04325f;
-  margin-bottom: 40px;
-  font-size: 28px;
-  letter-spacing: -1px;
+
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 40px;
+  
+  color: #04325F;
 }
 
 #homepage #banner .wrapper .download-btn {
@@ -3513,7 +3521,7 @@ li .tentangKami{
 }
 .download-now{
   color:#ffffff;
-  padding: 8px;
+  padding: 7px;
   font-weight: 700;
   font-size: 22px;
   line-height: 25px;
@@ -3553,7 +3561,8 @@ a .download-now:hover{
   padding-top:'10px';
 }
 .wrappperSection3-3{
-  position: relative;
+  position: absolute;
+  left: 400px;
   width: 75%;
   padding: 150px;
   margin:auto;
@@ -3588,7 +3597,7 @@ a .download-now:hover{
   position: absolute;
     width: 350px;
     left: 100px;
-    bottom: 890px;
+    bottom: 810px;
     height: 600px;
   z-index: 9;
   will-change: opacity;
@@ -3607,7 +3616,7 @@ a .download-now:hover{
   .SliderHp{
     width: 350px;
     left: 100px;
-    bottom: 890px;
+    bottom: 820px;
     height: 600px;
   }
   
@@ -3620,8 +3629,9 @@ a .download-now:hover{
   }
   
   .wrappperSection3-3{
-    position: relative;
+    position: absolute;
     width: 75%;
+    left: 400px;
     margin: auto;
     border-radius:'10px';
     margin-top:100px;
@@ -3635,10 +3645,12 @@ a .download-now:hover{
   .SliderHp{
     width: 300px;
     height: 500px;
-    left: 100px;
-    bottom: 940px;
+    left: 150px;
+    bottom: 870px;
   }
   .wrappperSection3-3{
+    position: absolute;
+    left: 380px;
     margin:auto;  margin-top:100px;
 
     width: 75%;
@@ -3668,10 +3680,12 @@ a .download-now:hover{
     width: 230px;
     height: 400px;
     left: 140px;
-    bottom: 940px;
+    bottom: 980px;
   }
   .wrappperSection3-3{    
     margin:auto;
+    position: absolute;
+    left:300px;
     width: 75%;
     height:290px;  margin-top:100px;
 
@@ -3701,12 +3715,13 @@ a .download-now:hover{
     width: 230px;
     height: 400px;
     left: 110px;
-    bottom: 940px;
+    bottom: 980px;
   }
   .wrappperSection3-3{  
     margin:auto;  
     width: 75%;  margin-top:100px;
-
+    position: absolute;
+    left:200px;
     height:290px;
     padding:80px;
   }
@@ -3733,10 +3748,11 @@ a .download-now:hover{
     width: 230px;
     height: 400px;
     left: 70px;
-    bottom: 940px;
+    bottom: 980px;
   }
   .wrappperSection3-3{    width: 75%;
-
+    position: absolute;
+    left: 160px;
     margin:auto;  margin-top:100px;
 
     height:290px;
@@ -3765,10 +3781,11 @@ a .download-now:hover{
     width: 230px;
     height: 400px;
     left: 50px;
-    bottom: 940px;
+    bottom: 1000px;
   }
   .wrappperSection3-3{    width: 75%;
-
+    position: absolute;
+    left:150px;
     margin:auto;  margin-top:100px;
 
     height:250px;
@@ -3803,7 +3820,7 @@ a .download-now:hover{
     margin-top:100px;
   }
   .wrappperSection3-3{    width: 75%;
-
+    position: absolute;
     margin:auto;  margin-top:100px;
 
     height:350px;
@@ -4035,7 +4052,7 @@ button{
 
 }
 .WrapperSection4{
-  margin-top:300px;
+  margin-top:700px;
 }
 .WrapperBackground4{
   background:#005DAA;

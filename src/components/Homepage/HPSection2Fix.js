@@ -58,7 +58,7 @@ const HPSection2Fix = (props) => {
         const productsData = props.products.length>0? props.products.map((product,i)=>
         
       
-            <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
+            <div className="col" >
               <a href={`/product/detail/${product.id}`} style={{cursor:'pointer',textDecoration:'none'}}>
               <img src={product.icon.url} style={{marginBottom:'15px'}}/><br/>
               <h4 className="productsWording">{product.name}</h4>
@@ -77,7 +77,7 @@ const HPSection2Fix = (props) => {
               <p >Rasakan kemudahan mengajukan beragam produk keuangan dalam satu sentuhan lewat fitur unggulan Moxa </p>
             </div>
           </div>
-          <div className="row products" style={{marginTop:'50px',marginBottom:'50px'}}>
+          <div className="row " >
           {productsData}
           </div> 
         </div>

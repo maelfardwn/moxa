@@ -91,7 +91,7 @@ const HomepageFix = (props) => {
         setHomeData(res[1].data);
         setProducts(res[2].data)
         setpartnersApi(res[3].data)
-        console.log('banner',res[0].data[0])
+        console.log('banner',res[2].data)
         setLoading(false);
       })
       .catch((err) => {

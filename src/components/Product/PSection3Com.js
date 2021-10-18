@@ -94,14 +94,14 @@ const PSection3Com = (props) => {
               }
             }
       const nextStep=()=>{
-        if(indexGuide<=props.variant.length){
+        if(indexGuide<props.variant[tabsIndex].guides.length){
+          setIndexGuide(indexGuide+=1)
+          console.log(indexGuide)
+          setNextButton(false)
+        }
+         if((indexGuide+1)==props.variant[tabsIndex].guides.length ){
           setNextButton(true)
         }
-          if(indexGuide<props.variant.length){
-            image = props.variant[tabsIndex].guides[indexGuide].image.url
-            setIndexGuide(indexGuide+=1)
-            
-          }
       }
       const [tabsIndex,setTabsIndex]= useState(0)
     const tabs = props.variant.length>0 && props.variant.length>1 ? props.variant.map((variant,i)=>
@@ -129,7 +129,7 @@ const PSection3Com = (props) => {
             <button onClick={previousStep} style={{height:'37px', border:'none',background:'none'}}> <img src={arrowLeft} alt="right"/></button> 
         </div>
         <div className="col-md-6 col-sm-6 " style={{display:'flex',justifyContent:'center'}}>
-            <h5 style={{margin:'auto'}}> {indexGuide+1}/5 </h5> 
+            <h5 style={{margin:'auto'}}> {indexGuide+1}/{props.variant[tabsIndex].guides.length} </h5> 
         </div>
         <div className="col-md-3 col-sm-3 " style={{display:'flex',justifyContent:'flex-end'}}>
             <button onClick={nextStep} disabled={nextButton} style={{height:'37px', border:'none',background:'none'}}><img src={arrowRight} alt="left"/></button><a></a> </div>

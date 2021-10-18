@@ -29,7 +29,7 @@ import PSection3Com from "../../components/Product/PSection3Com";
 const ProductDetail = (props) => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
-  const [homeData, setHomeData] = useState({});
+  const [banner, setBanner] = useState({});
   const [titleProduct, setTitle] = useState([]);
   const [variants, setVariants] = useState([]);
   const [products, setProducts] = useState([]);
@@ -42,11 +42,12 @@ const ProductDetail = (props) => {
         axios.get(process.env.REACT_APP_API_TEST + `/products/${props.match.params.id}`),
       ])
       .then((res) => {
+        setData(res[0].data)
         console.log('detail',res[0].data)
         setTitle(res[0].data.variant_introduction)
         setVariants(res[0].data.variant)
-        console.log('params',props.match.params.id)
-        console.log(res)
+        setBanner(res[0].data.banner.url)
+        console.log('banner',res[0].data.banner.url)
         setProducts()
         setLoading(false);
       })
@@ -56,28 +57,11 @@ const ProductDetail = (props) => {
       });
   }, []);
 
-  let [i,setI] = useState(0)
-      
-  const [nextButton,setNextButton]= useState(false)
-  const previousStep=()=>{
-
-    if(i=>0){
-        setI(i-=1)
-    }
-  }
-  const nextStep=()=>{
-    if(i<=data.length){
-      setNextButton(true)
-    }
-      if(i<data.length){
-        setI(i+=1)
-      }
-  }
   return (
     <div>
       <LayoutProduct title="Moxa PEMBIAYAAN MOBIL" descriptions="Temukan berbagai macam mobil impian yang bisa kamu tentukan mulai dari warna, spesifikasi hingga hitung cicilan dalam satu sentuhan.">
         <div id="homepage">
-          <PSection1  titleBanner="PEMBIAYAAN MOBIL" subtitleBanner="Temukan berbagai macam mobil impian yang bisa kamu tentukan mulai dari warna, spesifikasi hingga hitung cicilan dalam satu sentuhan." image={CarImage}/>
+          <PSection1  titleBanner={data.name} subtitleBanner={data.descriptions} image={banner}/>
           <PSection2Com title={titleProduct.title} subtitle={titleProduct.description} variant={variants} />
           <PSection3Com variant={variants} 
                        variantData={variants}
