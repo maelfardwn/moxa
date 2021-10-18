@@ -3563,7 +3563,7 @@ a .download-now:hover{
 .wrappperSection3-3{
   position: absolute;
   left: 400px;
-  width: 75%;
+  width: 60%;
   padding: 150px;
   margin:auto;
   border-radius:'10px';
@@ -3630,7 +3630,7 @@ a .download-now:hover{
   
   .wrappperSection3-3{
     position: absolute;
-    width: 75%;
+    width: 60%;
     left: 400px;
     margin: auto;
     border-radius:'10px';
@@ -3652,8 +3652,7 @@ a .download-now:hover{
     position: absolute;
     left: 380px;
     margin:auto;  margin-top:100px;
-
-    width: 75%;
+    width: 60%;
     height:400px;
     padding:150px;
   }
@@ -3686,9 +3685,9 @@ a .download-now:hover{
     margin:auto;
     position: absolute;
     left:300px;
-    width: 75%;
-    height:290px;  margin-top:100px;
-
+    width: 60%;
+    height:290px;  
+    margin-top:100px;
     padding:80px;
   }
   .titleSection3{
@@ -3719,7 +3718,8 @@ a .download-now:hover{
   }
   .wrappperSection3-3{  
     margin:auto;  
-    width: 75%;  margin-top:100px;
+    width: 60%;
+    margin-top:100px;
     position: absolute;
     left:200px;
     height:290px;
@@ -3750,7 +3750,8 @@ a .download-now:hover{
     left: 70px;
     bottom: 980px;
   }
-  .wrappperSection3-3{    width: 75%;
+  .wrappperSection3-3{    
+    width: 60%;
     position: absolute;
     left: 160px;
     margin:auto;  margin-top:100px;
@@ -3783,7 +3784,8 @@ a .download-now:hover{
     left: 50px;
     bottom: 1000px;
   }
-  .wrappperSection3-3{    width: 75%;
+  .wrappperSection3-3{    
+    width: 60%;
     position: absolute;
     left:150px;
     margin:auto;  margin-top:100px;
@@ -3819,7 +3821,8 @@ a .download-now:hover{
   .wrappperSection3{
     margin-top:100px;
   }
-  .wrappperSection3-3{    width: 75%;
+  .wrappperSection3-3{    
+    width: 60%;
     position: absolute;
     margin:auto;  margin-top:100px;
 
