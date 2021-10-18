@@ -2596,7 +2596,7 @@ li .tentangKami{
 
 .downloadNow{
   background: #FAAB1C;
-  height: 35px;
+  height: 40px;
   width: 281px;
   display: flex;
   justify-content: center;
@@ -3513,7 +3513,7 @@ li .tentangKami{
 }
 .download-now{
   color:#ffffff;
-  padding: 5px;
+  padding: 8px;
   font-weight: 700;
   font-size: 22px;
   line-height: 25px;
