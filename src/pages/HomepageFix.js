@@ -58,15 +58,6 @@ const HomepageFix = (props) => {
   ])
 
   const [products,setProducts] = useState([
-    {image:iconCar, text:'Pembiayaan Mobil',link:'/product/car'},
-    {image:iconMotor, text:'Pembiayaan Motor',link:'/product/motor'},
-    {image:iconRental, text:'Rental',link:'/product/rental'},
-    {image:iconAsuransi, text:'Asuransi Kesehatan',link:'/product/asuransi'},
-    {image:iconRp, text:'Pinjaman Tunai',link:'/product/pinjaman'},
-    {image:iconMasjid, text:'Perjalanan Religi',link:'/product/perjalanan'},
-    {image:iconTractor, text:'Truk dan Alat Berat',link:'/product/alatberat'},
-    {image:iconElectric, text:'Elektronik dan Lainnya',link:'/product/elektronik'},
-    {image:iconTabungan, text:'Tabungan',link:'/product/tabungan'}
   ])
 
   const [data,setData] = useState([
@@ -90,16 +81,17 @@ const HomepageFix = (props) => {
     setLoading(true);
     axios
       .all([
-        axios.get(process.env.REACT_APP_API_URL + `/home-banners?_sort=order:asc`),
+        axios.get(process.env.REACT_APP_API_TEST + `/home-banners?_sort=order:asc`),
         axios.get(process.env.REACT_APP_API_URL + `/homepage`),
-        axios.get(process.env.REACT_APP_API_URL + "/products?_sort=order:asc"),
+        axios.get(process.env.REACT_APP_API_TEST + "/products?_sort=order:asc"),
         axios.get("https://cms.moxa.zali.pro/products "),
       ])
       .then((res) => {
-        setGetData(res[0].data);
+        setData(res[0].data);
         setHomeData(res[1].data);
+        setProducts(res[2].data)
         setpartnersApi(res[3].data)
-        console.log('product 4',res)
+        console.log('banner',res[0].data[0])
         setLoading(false);
       })
       .catch((err) => {
@@ -109,7 +101,7 @@ const HomepageFix = (props) => {
   }, []);
   return (
     <div>
-      <LayoutProduct title={`Moxa `+data[0].title.toLocaleLowerCase()}  descriptions={data[0].title}>
+      <LayoutProduct title={`Moxa `}  descriptions={`Aplikasi`}>
         <div id="homepage">
           <HPSection1Fix data={data} />
           <HPSection2Fix products={products} />

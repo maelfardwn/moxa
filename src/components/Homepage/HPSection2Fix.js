@@ -55,6 +55,17 @@ const HPSection2Fix = (props) => {
   //     </div>
   //   );
   // } else {
+        const productsData = props.products.length>0? props.products.map((product,i)=>
+        
+      
+            <div className="col" style={{margin:'auto',marginBottom:'20px'}}>
+              <a href={`/product/detail/${product.id}`} style={{cursor:'pointer',textDecoration:'none'}}>
+              <img src={product.icon.url} style={{marginBottom:'15px'}}/><br/>
+              <h4 className="productsWording">{product.name}</h4>
+              </a>
+            </div>
+       ): <h2>loading..</h2>
+  
   return (
     <div>
       <div id="sub">
@@ -67,63 +78,8 @@ const HPSection2Fix = (props) => {
             </div>
           </div>
           <div className="row products" style={{marginTop:'50px',marginBottom:'50px'}}>
-                <div className="col" style={{marginBottom:'20px'}}>
-                      <a href={products[0].link} style={{cursor:'pointer',textDecoration:'none'}}>
-                      <img src={products[0].image} style={{marginBottom:'15px'}}/><br/>
-                      <h4 className="productsWording">{products[0].text}</h4>
-                      </a>
-                </div>
-                <div className="col" style={{marginBottom:'20px'}}>
-                      <a href={products[1].link} style={{cursor:'pointer',textDecoration:'none'}}>
-                      <img src={products[1].image} style={{marginBottom:'15px'}}/><br/>
-                      <h4 className="productsWording">{products[1].text}</h4>
-                      </a>
-                </div>
-                <div className="col" style={{marginBottom:'20px'}}>
-                      <a href={products[2].link} style={{cursor:'pointer',textDecoration:'none'}}>
-                      <img src={products[2].image} style={{marginBottom:'15px'}}/><br/>
-                      <h4 className="productsWording">{products[2].text}</h4>
-                      </a>
-                </div>
-                <div className="col" style={{marginBottom:'20px'}}>
-                      <a href={products[3].link} style={{cursor:'pointer',textDecoration:'none'}}>
-                      <img src={products[3].image} style={{marginBottom:'15px'}}/><br/>
-                      <h4 className="productsWording">{products[3].text}</h4>
-                      </a>
-                </div>
-                <div className="col" style={{marginBottom:'20px'}}>
-                      <a href={products[4].link} style={{cursor:'pointer',textDecoration:'none'}}>
-                      <img src={products[4].image} style={{marginBottom:'15px'}}/><br/>
-                      <h4 className="productsWording">{products[4].text}</h4>
-                      </a>
-                </div>
-              </div>
-              <div className="row" style={{marginBottom:'50px'}}>
-                <div className="col" style={{marginBottom:'20px'}}>
-                      <a href={products[5].link} style={{cursor:'pointer',textDecoration:'none'}}>
-                      <img src={products[5].image} style={{marginBottom:'15px'}}/><br/>
-                      <h4 className="productsWording">{products[5].text}</h4>
-                      </a>
-                </div>
-                <div className="col" style={{marginBottom:'20px'}}>
-                      <a href={products[6].link} style={{cursor:'pointer',textDecoration:'none'}}>
-                      <img src={products[6].image} style={{marginBottom:'15px'}}/><br/>
-                      <h4 className="productsWording">{products[6].text}</h4>
-                      </a>
-                </div>
-                <div className="col" style={{marginBottom:'20px'}}>
-                      <a href={products[7].link} style={{cursor:'pointer',textDecoration:'none'}}>
-                      <img src={products[7].image} style={{marginBottom:'15px'}}/><br/>
-                      <h4 className="productsWording">{products[7].text}</h4>
-                      </a>
-                </div>
-                <div className="col" style={{marginBottom:'20px'}}>
-                      <a href={products[8].link} style={{cursor:'pointer',textDecoration:'none'}}>
-                      <img src={products[8].image} style={{marginBottom:'15px'}}/><br/>
-                      <h4 className="productsWording">{products[8].text}</h4>
-                      </a>
-                </div>
-          </div>
+          {productsData}
+          </div> 
         </div>
       </div>
     </div>

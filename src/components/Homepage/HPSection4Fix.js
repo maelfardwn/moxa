@@ -54,7 +54,7 @@ const HPSection4Fix = (props) => {
       fetchData()
   }, []);
   const items = data? data.slice(0, 2).map((data)=>
-              <div className="col-md-6">
+              <div className="news-item col-md-6">
                 <div className="zoom-wrapper" >
                 <a href={`/artikel/${data.id}`}  style={{textDecoration:'none'}}>
                     <img  src={data.cover.url } className="cover-zoom" />

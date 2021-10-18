@@ -22,12 +22,16 @@ import CarImage from '../../assets/img/CarImage.png'
 import TestDrive from '../../assets/img/IconCar.png'
 import PSection23 from "../../components/Product/PSection23";
 import PSection33 from "../../components/Product/PSection33";
+import PSection2Com from "../../components/Product/PSection2Com";
+import PSection3Com from "../../components/Product/PSection3Com";
 
 
 const ProductDetail = (props) => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [homeData, setHomeData] = useState({});
+  const [titleProduct, setTitle] = useState([]);
+  const [variants, setVariants] = useState([]);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -35,10 +39,15 @@ const ProductDetail = (props) => {
 
     axios
       .all([
-        axios.get(process.env.REACT_APP_API_TEST + "/products?_sort=order:asc"),
+        axios.get(process.env.REACT_APP_API_TEST + `/products/${props.match.params.id}`),
       ])
       .then((res) => {
-        console.log('detail',res[0].data[0])
+        console.log('detail',res[0].data)
+        setTitle(res[0].data.variant_introduction)
+        setVariants(res[0].data.variant)
+        console.log('params',props.match.params.id)
+        console.log(res)
+        setProducts()
         setLoading(false);
       })
       .catch((err) => {
@@ -47,14 +56,32 @@ const ProductDetail = (props) => {
       });
   }, []);
 
+  let [i,setI] = useState(0)
+      
+  const [nextButton,setNextButton]= useState(false)
+  const previousStep=()=>{
+
+    if(i=>0){
+        setI(i-=1)
+    }
+  }
+  const nextStep=()=>{
+    if(i<=data.length){
+      setNextButton(true)
+    }
+      if(i<data.length){
+        setI(i+=1)
+      }
+  }
   return (
     <div>
       <LayoutProduct title="Moxa PEMBIAYAAN MOBIL" descriptions="Temukan berbagai macam mobil impian yang bisa kamu tentukan mulai dari warna, spesifikasi hingga hitung cicilan dalam satu sentuhan.">
         <div id="homepage">
           <PSection1  titleBanner="PEMBIAYAAN MOBIL" subtitleBanner="Temukan berbagai macam mobil impian yang bisa kamu tentukan mulai dari warna, spesifikasi hingga hitung cicilan dalam satu sentuhan." image={CarImage}/>
-          <PSection23 title="JELAJAHI PRODUK MOBIL" subtitle="Beragam pilihan pembiayaan mobil sesuai kebutuhan 
-                      berdasarkan Mobil Baru, Mobil Bekas dan Test Drive" />
-          <PSection33 />
+          <PSection2Com title={titleProduct.title} subtitle={titleProduct.description} variant={variants} />
+          <PSection3Com variant={variants} 
+                       variantData={variants}
+          />
           <PSection4 />
          
         </div>

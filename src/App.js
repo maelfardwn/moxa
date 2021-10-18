@@ -52,7 +52,7 @@ function App() {
           <Route path="/product/alatberat" component={AlatBeratPage} exact />
           <Route path="/product/asuransi" component={AsuransiPage} exact />
           <Route path="/product/elektronik" component={ElectronicPage} exact />
-          <Route path="/product/detail" component={ProductDetail} exact />
+          <Route path="/product/detail/:id" component={ProductDetail} exact />
           
           <Route path="/syarat-dan-ketentuan" component={TnC} />
           <Route path="/kebijakan-privasi" component={Pp} />

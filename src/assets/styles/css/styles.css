@@ -381,7 +381,7 @@ li .tentangKami{
 }
 
 #layout footer .f-2 .wrapper {
-  height: 79px;
+  height: 85px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,7 +428,6 @@ li .tentangKami{
 #homepage #banner {
   position: relative;
   z-index: 3;
-  background: #D3E0FF;
 }
 
 #homepage #banner .slider {
@@ -3214,7 +3213,7 @@ li .tentangKami{
             justify-content: space-evenly;
   }
   #layout footer .f-2 .wrapper {
-    height: 70px;
+    height: 85px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -3543,22 +3542,24 @@ a .download-now:hover{
 .wrappperSection3{
   position:'relative';
   height:'500px';display: flex;
+  margin-top: 3000px;
   justify-content: center;
   margin-bottom:'300px';
   margin-top: 100px;
 }
 .wrappperSection3-2{
   position:'relative';
+  margin: auto;
   padding-top:'10px';
 }
 .wrappperSection3-3{
   position: relative;
-  width: 100%;
+  width: 75%;
   padding: 150px;
-  margin:'auto';
+  margin:auto;
   border-radius:'10px';
   height:'550px';
-  margin-top:'100px';
+  margin-top:100px;
   border-radius: 50px;
   background:rgba(242, 244, 249, 0.5)
 }
@@ -3620,9 +3621,10 @@ a .download-now:hover{
   
   .wrappperSection3-3{
     position: relative;
-    width: 100%;
-    margin:'auto';
+    width: 75%;
+    margin: auto;
     border-radius:'10px';
+    margin-top:100px;
     height:400px;
     background:rgba(242, 244, 249, 0.5)
   }
@@ -3637,6 +3639,9 @@ a .download-now:hover{
     bottom: 940px;
   }
   .wrappperSection3-3{
+    margin:auto;  margin-top:100px;
+
+    width: 75%;
     height:400px;
     padding:150px;
   }
@@ -3665,8 +3670,11 @@ a .download-now:hover{
     left: 140px;
     bottom: 940px;
   }
-  .wrappperSection3-3{
-    height:290px;
+  .wrappperSection3-3{    
+    margin:auto;
+    width: 75%;
+    height:290px;  margin-top:100px;
+
     padding:80px;
   }
   .titleSection3{
@@ -3695,7 +3703,10 @@ a .download-now:hover{
     left: 110px;
     bottom: 940px;
   }
-  .wrappperSection3-3{
+  .wrappperSection3-3{  
+    margin:auto;  
+    width: 75%;  margin-top:100px;
+
     height:290px;
     padding:80px;
   }
@@ -3724,7 +3735,10 @@ a .download-now:hover{
     left: 70px;
     bottom: 940px;
   }
-  .wrappperSection3-3{
+  .wrappperSection3-3{    width: 75%;
+
+    margin:auto;  margin-top:100px;
+
     height:290px;
     padding:80px;
   }
@@ -3753,7 +3767,10 @@ a .download-now:hover{
     left: 50px;
     bottom: 940px;
   }
-  .wrappperSection3-3{
+  .wrappperSection3-3{    width: 75%;
+
+    margin:auto;  margin-top:100px;
+
     height:250px;
     padding:80px;
   }
@@ -3780,12 +3797,15 @@ a .download-now:hover{
     width: 190px;
     height: 300px;
     left: auto;
-    bottom: 1190px;
+    bottom: 1230px;
   }
   .wrappperSection3{
     margin-top:100px;
   }
-  .wrappperSection3-3{
+  .wrappperSection3-3{    width: 75%;
+
+    margin:auto;  margin-top:100px;
+
     height:350px;
     padding:80px;
   }
