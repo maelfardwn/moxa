@@ -37,6 +37,7 @@ const PSection3Com = (props) => {
       }])
       let [data,setData] =useState(MobilBaru)
       const [nextButton,setNextButton]= useState(false)
+      const [prevButton,setPrevButton]= useState(true)
       const [tabButtonColorMobilBaru,setTabButtonColorMobilBaru]=useState([
           {background:"#005DAA",
           color:'white'
@@ -88,14 +89,18 @@ const PSection3Com = (props) => {
       
           const previousStep=()=>{
             
-              if(i=>0 || i<data.length){
-                  setNextButton(false)
+              if(indexGuide>0){
+                setPrevButton(false)
                   setIndexGuide(indexGuide-=1)
+              }
+              if(indexGuide<=0){
+                setPrevButton(true)
               }
             }
       const nextStep=()=>{
         if(indexGuide<props.variant[tabsIndex].guides.length){
           setIndexGuide(indexGuide+=1)
+          setPrevButton(false)
           console.log(indexGuide)
           setNextButton(false)
         }
@@ -126,7 +131,7 @@ const PSection3Com = (props) => {
     <h4 className="subtitleSection3">{props.variant[tabsIndex].guides[indexGuide].description} </h4>
     <div  className="nav-handler row ">
         <div className="col-md-3 col-sm-3 "> 
-            <button onClick={previousStep} style={{height:'37px', border:'none',background:'none'}}> <img src={arrowLeft} alt="right"/></button> 
+            <button onClick={previousStep} disabled={prevButton} style={{height:'37px', border:'none',background:'none'}}> <img src={arrowLeft} alt="right"/></button> 
         </div>
         <div className="col-md-6 col-sm-6 " style={{display:'flex',justifyContent:'center'}}>
             <h5 style={{margin:'auto'}}> {indexGuide+1}/{props.variant[tabsIndex].guides.length} </h5> 
