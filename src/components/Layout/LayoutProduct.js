@@ -97,8 +97,10 @@ const LayoutProduct = (props) => {
       <Helmet>
         <html lang="en" />
         <title>{props.title}</title>
+        <link rel="canonical" href={"http://mysite.com/"+ props.title} />
+        <meta charSet="utf-8" />
+        <meta name="keywords" cpntent={props.title + props.descriptions} />
         <meta name="description" content={props.descriptions} />
-        <meta name="keywords" content={props.keywords} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={props.url} />
         <meta property="og:title" content={props.title} />

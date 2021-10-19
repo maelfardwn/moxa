@@ -28,9 +28,8 @@ const PSection1 = (props) => {
       
         <div className="wrapper" style={{marginTop:'100px'}}>
           <div className="row">
-            <div className="col-md-8" >
-              <h1 style={{marginBottom:'10px'}}>{props.titleBanner}</h1>
-              <h2>{props.subtitleBanner}</h2> 
+            <div className="col-md-8 PSection1" >
+           
             </div>        
             
     
