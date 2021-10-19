@@ -47,7 +47,7 @@ const ProductDetail = (props) => {
         setTitle(res[0].data.variant_introduction)
         setVariants(res[0].data.variant)
         setBanner(res[0].data.banner.url)
-        console.log('banner',res[0].data.banner.url)
+        console.log('banner',res[0].data)
         setProducts()
         setLoading(false);
       })
@@ -62,7 +62,7 @@ const ProductDetail = (props) => {
       <LayoutProduct title={"Moxa"+data.name} descriptions={data.descriptions}>
         <div id="homepage">
           <PSection1  titleBanner={data.name} subtitleBanner={data.descriptions} image={banner}/>
-          <PSection2Com title={titleProduct.title} subtitle={titleProduct.description} variant={variants} />
+          <PSection2Com title={titleProduct.title} titleSection2={data.name} subtitle={titleProduct.description} variant={variants} />
           <PSection3Com variant={variants} 
                        variantData={variants}
           />

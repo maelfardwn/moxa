@@ -37,7 +37,6 @@ const HPSection4Fix = (props) => {
         setText1(res[0].data.text_partner_1);
         setText2(res[0].data.text_partner_2);
         setPartners(res[1].data);
-        console.log(res)
       })
       .catch((err) => {
         console.log(err);
@@ -46,7 +45,6 @@ const HPSection4Fix = (props) => {
         setLoading(true);
         const dataBlog = await getData()
         const sliceData = dataBlog.slice(0,2)
-        console.log(sliceData)
         await setData(sliceData)
         console.log('ini data',data)
         setLoading(false);

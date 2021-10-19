@@ -3564,6 +3564,7 @@ a .download-now:hover{
   position: absolute;
   left: 400px;
   width: 65%;
+  height: 424px;
   padding: 150px;
   margin:auto;
   border-radius:'10px';
@@ -3573,18 +3574,35 @@ a .download-now:hover{
   background:rgba(242, 244, 249, 0.5)
 }
 .titleSection3{
-  padding-bottom:'50px';
-  color:#04325F;
-  font-weight:700;
-  font-size:30px
+  position: absolute;
+  bottom: 320px;
+  left: 210px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  
+  color: #04325F;
 }
 .subtitleSection3{
-  color:#04325F;
-  font-weight:400;
-  font: size 24px;
+  
+  position: absolute;
+  bottom: 250px;
+  left: 210px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  
+  color: #04325F;
 }
 .nav-handler{
-  width: 200px;
+  position: absolute;
+  bottom: 60px;
+  left: 210px;
+  width: 152px;
   height:37px;
   background:#005DAA;
   padding:'0';
@@ -3596,7 +3614,7 @@ a .download-now:hover{
   background-repeat: no-repeat;
   position: absolute;
     width: 350px;
-    left: 100px;
+    left: 210px;
     bottom: 810px;
     height: 600px;
   z-index: 9;
@@ -3611,11 +3629,72 @@ a .download-now:hover{
   font-weight:500;
 }
 
-
+.PSection1 h1{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  color: #04325F;
+}
+.PSection1 p{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #04325F;
+}
+.PSection2 h3{
+  margin-top: 30px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 17px;
+  /* or 68% */
+  
+  text-align: center;
+  letter-spacing: 0.4px;
+  
+  color: #04325F;
+}
+.PSection2 p{
+  margin-top: 25px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 17px;
+  /* or 85% */
+  
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #04325F;
+}
+.PSection3 h1{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #04325F;
+}
+.PSection3 p{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  
+  color: #04325F;}
 @media screen and (max-width: 1600px) {
   .SliderHp{
     width: 350px;
-    left: 100px;
+    left: 210px;
     bottom: 820px;
     height: 600px;
   }
@@ -3650,13 +3729,16 @@ a .download-now:hover{
   }
   .wrappperSection3-3{
     position: absolute;
-    left: 380px;
+    left: 200px;
     margin:auto;  margin-top:100px;
     width: 65%;
     height:400px;
     padding:150px;
   }
   .titleSection3{
+    position: absolute;
+    bottom: 310px;
+    left: 240px;
     padding-bottom:'50px';
     color:#04325F;
     font-weight:700;
@@ -3664,13 +3746,17 @@ a .download-now:hover{
     margin-left: 50px;
   }
   .subtitleSection3{
+    position: absolute;
+    bottom: 250px;
+    left: 240px;
     margin-left: 50px;
     color:#04325F;
     font-weight:400;
     font-size: 23px;
   }
   .nav-handler{
-    margin-left: 50px;
+    position: absolute;
+    left: 290px;
   }
 }
 
@@ -3691,19 +3777,27 @@ a .download-now:hover{
     padding:80px;
   }
   .titleSection3{
-    padding-bottom:'50px';
+    position: absolute;
+    bottom: 210px;
+    left: 20px;
     color:#04325F;
     font-weight:700;
     font-size:25px;
     margin-left: 80px;
   }
   .subtitleSection3{
+    position: absolute;
+    bottom: 160px;
+    left: 20px;
     margin-left: 80px;
     color:#04325F;
     font-weight:400;
     font-size: 23px;
   }
   .nav-handler{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
     margin-left: 80px;
   }
 }
@@ -3816,7 +3910,7 @@ a .download-now:hover{
     width: 190px;
     height: 300px;
     left: auto;
-    bottom: 1230px;
+    bottom: 1170px;
   }
   .wrappperSection3{
     margin-top:100px;
@@ -3825,7 +3919,7 @@ a .download-now:hover{
     width: 65%;
     position: absolute;
     margin:auto;  margin-top:100px;
-
+    bottom:902px;
     height:350px;
     padding:80px;
   }
@@ -3854,60 +3948,111 @@ a .download-now:hover{
     width: 160px;
     height: 270px;
     left: auto;
-    bottom: 1390px;
+    bottom: 1340px;
+  }
+  .wrappperSection3-3{
+    
+    position: absolute;
+    margin:auto;  margin-top:100px;
+    bottom:1042px;
   }
   .titleSection3{
+    position: absolute;
+    left:50;
     margin-top: 50px;
     margin-left: 15px;
   }
   .subtitleSection3{
+    position: absolute;
+    left:50;
     margin-left: 15px;
     margin-bottom: 20px;
   }
   .nav-handler{
+    position: absolute;
+    left:50;
     margin-left:15px;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .wrappperSection3-3{
+    position: absolute;
+    width: 80%;
+    left: 70px;
+  }
   .titleSection3{
-    margin-left: 5px;
+    position: absolute;
+    left:50;
+    margin-top: 50px;
+    margin-left: 15px;
   }
   .subtitleSection3{
-    margin-left: 5px;
+    position: absolute;
+    left:50;
+    margin-left: 15px;
     margin-bottom: 20px;
   }
   .nav-handler{
-    margin-left:5px;
+    position: absolute;
+    left:50;
+    margin-left:15px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .col-sm-6, .col-sm-3{
     width: 33%;
+  }.wrappperSection3-3{
+    position: absolute;
+    width: 80%;
+    left: 70px;
+  }
+  .titleSection3{
+    position: absolute;
+    left:50;
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  .subtitleSection3{
+    position: absolute;
+    left:50;
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+  .nav-handler{
+    position: absolute;
+    left:50;
+    margin-left:15px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  
-.titleSection3{
-  padding-bottom:'50px';
-  color:#04325F;
-  font-weight:700;
-  font-size:23px
-}
-.subtitleSection3{
-  color:#04325F;
-  font-weight:400;
-  font-size: 18px;
-}
-.nav-handler h5{
-  line-height:'37px';
-  color:white;
-  text-align:center;
-  font-size:16px;
-  font-weight:500;
-}
+  .wrappperSection3-3{
+    position: absolute;
+    width: 80%;
+    left: 40px;
+  }
+
+  .titleSection3{
+    position: absolute;
+    left:50;
+    
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  .subtitleSection3{
+    position: absolute;
+    bottom: 120px;
+    left:50;
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+  .nav-handler{
+    position: absolute;
+    left:50;
+    margin-left:15px;
+  }
   .col-sm-6, .col-sm-3{
     width: 33%;
   }
@@ -3915,6 +4060,12 @@ a .download-now:hover{
 
 
 @media screen and (max-width: 339px) {
+  .wrappperSection3-3{
+    position: absolute;
+    width: 80%;
+    bottom: 1100px;
+    left: 40px;
+  }
   .SliderHp{
     width: 150px;
     height: 250px;
@@ -3922,17 +4073,23 @@ a .download-now:hover{
     bottom: 1390px;
   }
   .titleSection3{
-    padding-bottom:'50px';
-    color:#04325F;
-    font-weight:700;
-    font-size:21px;
-    margin-left: 0px;
+    position: absolute;
+    left:50;
+    
+    margin-top: 50px;
+    margin-left: 15px;
   }
   .subtitleSection3{
-    color:#04325F;
-    font-weight:400;
-    font-size: 16px;
-    margin-left: 0px;
+    position: absolute;
+    bottom: 90px;
+    left:50;
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+  .nav-handler{
+    position: absolute;
+    left:50;
+    margin-left:15px;
   }
 }
 @media screen and (max-width: 290px) {

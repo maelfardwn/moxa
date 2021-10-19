@@ -19,8 +19,32 @@ const LayoutProduct = (props) => {
 
   const { width } = useWindowDimensions();
   const location = useLocation();
-
+  const [nav,setNav] = useState('')
   useEffect(() => {
+    function getOS() {
+      var userAgent = window.navigator.userAgent,
+          platform = window.navigator.platform,
+          macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+          windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+          iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+          os = null;
+    
+      if (macosPlatforms.indexOf(platform) !== -1) {
+        os = 'Mac OS';
+      } else if (iosPlatforms.indexOf(platform) !== -1) {
+        os = 'iOS';
+      } else if (windowsPlatforms.indexOf(platform) !== -1) {
+        os = 'Windows';
+      } else if (/Android/.test(userAgent)) {
+        os = 'Android';
+      } else if (!os && /Linux/.test(platform)) {
+        os = 'Linux';
+      }
+    
+      return os;
+    }
+    
+    console.log('navigator',navigator);
     function handleScroll() {
       const distanceFromTop = window.scrollY;
 
@@ -150,7 +174,7 @@ const LayoutProduct = (props) => {
                 </li>
                 <li >
                 <div className="downloadNow">
-                  <a className="downloadNow download-now" style={{color:"#ffffff"}} href="/artikel">Download Sekarang</a>
+                  <a className="downloadNow download-now" style={{color:"#ffffff"}} href={props.downloadLink}>Download Sekarang</a>
                 </div>
                 </li>
               </ul>
@@ -164,10 +188,7 @@ const LayoutProduct = (props) => {
             <div className="row">
               <div className="col-lg-8 col-md-6 f-1a">
                 <img src={logo2} alt="logo-moxaid" className="logo2" />
-
-               
               </div>
-
               <div className="col-lg-4 col-md-6 f-1b">
                 <ul>
                   <li>

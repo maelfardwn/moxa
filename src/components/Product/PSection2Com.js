@@ -35,10 +35,10 @@ const PSection2Com = (props) => {
   //   );
   // } else {
       const variants = props.variant? props.variant.map((variant)=>
-        <div className="col" >
+        <div className="col PSection2" >
         <img src={variant.icon.url}/><br/>
-        <h3 style={{color:'#04325F',fontWeight:'700',fontSize:'25px',marginTop:'10px'}}>{variant.title}</h3>
-        <p style={{fontWeight:'500',fontSize:'20px'}}>{variant.description} </p>
+        <h3 >{variant.title}</h3>
+        <p >{variant.description} </p>
     </div>
       ) :<h2>Loading</h2>
   return (
@@ -47,18 +47,18 @@ const PSection2Com = (props) => {
        
         <div className="wrapper">
           <div className="row">
-            <div className="col-lg-8 m-auto">
-              <h1 style={{fontWeight:'700'}}>{props.title} </h1>
-              <p style={{fontWeight:'500'}}>{props.subtitle}  </p>
+            <div className="col-lg-8 m-auto PSection1">
+              <h1 >{props.title}</h1>
+              <p >{props.subtitle}  </p>
             </div>
           </div>
           <div className="row" style={{marginTop:'50px',marginBottom:'50px'}}>
              {variants}
           </div>
           <div className="row">
-            <div className="col-lg-8 m-auto">
-              <h1 style={{fontWeight:'700'}}>Cara Mengajukan Produk Mobil </h1>
-              <p style={{fontWeight:'500'}}>Cari tahu langkah mudah mengajukan produk mobil hanya dalam hitungan menit  </p>
+            <div className="col-lg-8 m-auto PSection3">
+              <h1 >Cara Mengajukan {props.titleSection2} </h1>
+              <p >Cari tahu langkah mudah mengajukan {props.titleSection2} hanya dalam hitungan menit  </p>
             </div>
           </div>
         </div>

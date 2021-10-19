@@ -20,7 +20,6 @@ const HPSection3Fix = (props) => {
       const response =  await fetch('https://cms.moxa.zali.pro/partners')
       const getPartners = await response.json()
       setPartners(getPartners)
-      console.log('getPartners',getPartners)
     }
     fetchParnters()
   }, [])

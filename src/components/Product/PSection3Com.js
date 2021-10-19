@@ -74,7 +74,7 @@ const PSection3Com = (props) => {
       }
       let [isActtive,setisActtive]=useState([
         {background:"#005DAA",
-        color:'white'
+        color:'#FFFFFF'
       }
       ])
       let [notActive,setNotActive]=useState([{background:"##D2D9E0",color:'#005DAA'}])
@@ -109,7 +109,7 @@ const PSection3Com = (props) => {
         }
       }
       const [tabsIndex,setTabsIndex]= useState(0)
-    const tabs = props.variant.length>0  ? props.variant.map((variant,i)=>
+    const tabs = props.variant.length>0 && props.variant.length>1 ? props.variant.map((variant,i)=>
                 i==tabsIndex?
                 <div className="col">
                     <button  style={{width:'308px',height:'74px',marginTop:'30px',color:isActtive[0].color, background:isActtive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
@@ -124,11 +124,13 @@ const PSection3Com = (props) => {
     <div className="wrappperSection3-2">
 
     <div className="wrappperSection3-3">
-    <div style={{margin:'auto'}}>
     
-
-    <h3 className="titleSection3">{props.variant[tabsIndex].guides[indexGuide].title}</h3>
-    <h4 className="subtitleSection3">{props.variant[tabsIndex].guides[indexGuide].description} </h4>
+    <div className="row">
+      <h3 className="titleSection3">{props.variant[tabsIndex].guides[indexGuide].title}</h3>
+    </div>
+    <div className="row">
+      <h4 className="subtitleSection3">{props.variant[tabsIndex].guides[indexGuide].description} </h4>
+    </div>
     <div  className="nav-handler row ">
         <div className="col-md-3 col-sm-3 "> 
             <button onClick={previousStep} disabled={prevButton} style={{height:'37px', border:'none',background:'none'}}> <img src={arrowLeft} alt="right"/></button> 
@@ -138,8 +140,7 @@ const PSection3Com = (props) => {
         </div>
         <div className="col-md-3 col-sm-3 " style={{display:'flex',justifyContent:'flex-end'}}>
             <button onClick={nextStep} disabled={nextButton} style={{height:'37px', border:'none',background:'none'}}><img src={arrowRight} alt="left"/></button><a></a> </div>
-    </div>
-        </div></div>
+    </div></div>
     </div>
     </div>
        : <h2>loading</h2>

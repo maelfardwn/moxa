@@ -69,7 +69,6 @@ const HPSection2Fix = (props) => {
   return (
     <div>
       <div id="sub">
-   
         <div className="wrapper">
           <div className="row" style={{marginBottom:'100px'}}>
             <div className="col-lg-8 m-auto">
