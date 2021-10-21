@@ -91,16 +91,16 @@ const LayoutProduct = (props) => {
       action: "Cliked Footer IOS App Store",
     });
   };
-  let structuredJSON = {
+  let structuredJSON =  {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": "Example product",
     "image": [
       "https://moxa.vercel.app/assets/images/Moxa-logo.png",
-      "https://moxa.vercel.app/assets/images/Moxa-logo.png",
       "https://moxa.vercel.app/assets/images/Moxa-logo.png"
+      
      ],
-    "description": "Moxa test product.",
+    "description": "Example product is the best example product out there. Make sure to get the one and only -- the original.",
     "sku": "0374984678",
     "mpn": "738930",
     "brand": {
@@ -116,7 +116,7 @@ const LayoutProduct = (props) => {
       },
       "author": {
         "@type": "Person",
-        "name": "Ridwan Maelfa"
+        "name": "Ridwan "
       }
     },
     "aggregateRating": {
@@ -126,7 +126,7 @@ const LayoutProduct = (props) => {
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://example.com/product/detaiil/1",
+      "url": "https://moxa.vercel.app/product/detail/1",
       "priceCurrency": "USD",
       "price": "49.99",
       "priceValidUntil": "2021-11-20",
@@ -154,10 +154,13 @@ const LayoutProduct = (props) => {
         <meta property="twitter:title" content={props.title} />
         <meta property="twitter:description" content={props.descriptions} />
         <meta property="twitter:image" content={props.image} />
-        <script type='application/ld+json' dangerouslySetInnerHTML={ { __html:structuredJSON }} />
+       
+        <script type="application/ld+json">
+          {JSON.stringify(structuredJSON)}
+        </script>
       </Helmet>
 
-      
+
       <div id="layout">
         <header className={`${scrolled ? "scrolled shadow-sm" : ""}`}>
           <div className="wrapper">
