@@ -91,7 +91,23 @@ const LayoutProduct = (props) => {
       action: "Cliked Footer IOS App Store",
     });
   };
-
+  let structuredJSON = {
+    "@context": "http://schema.org/",
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": "Thing",
+      "name": "Name"
+      },
+  "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "3",
+      "bestRating": "5"
+     },
+   "publisher": {
+     "@type": "Organization",
+     "name": "RIdwan TEst"
+    }
+  }
   return (
     <div>
       <Helmet>
@@ -112,7 +128,7 @@ const LayoutProduct = (props) => {
         <meta property="twitter:title" content={props.title} />
         <meta property="twitter:description" content={props.descriptions} />
         <meta property="twitter:image" content={props.image} />
-        
+        <script type='application/ld+json' dangerouslySetInnerHTML={ { __html:structuredJSON }} />
       </Helmet>
 
       <div id="layout">
