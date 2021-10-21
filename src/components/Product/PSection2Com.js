@@ -34,13 +34,19 @@ const PSection2Com = (props) => {
   //     </div>
   //   );
   // } else {
-      const variants = props.variant? props.variant.map((variant)=>
+      const variants = props.variant && props.variant.length==1 ? props.variant.map((variant)=>
+        <div className="col-lg-12 PSection2"  style={{marginTop:'30px'}}>
+        <img src={variant.icon.url}/><br/>
+        <h3>{variant.title}</h3>
+        <div style={{display:'flex',justifyContent:'center'}}>
+          <p>{variant.description} </p>
+        </div>
+    </div>) : props.variant ? props.variant.map((variant)=>
         <div className="col-lg-4 PSection2"  style={{marginTop:'30px'}}>
         <img src={variant.icon.url}/><br/>
         <h3>{variant.title}</h3>
         <p >{variant.description} </p>
-    </div>
-      ) :<h2>Loading</h2>
+    </div>) :<h2>Loading</h2>
   return (
     <div>
       <div id="sub">
