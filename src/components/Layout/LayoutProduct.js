@@ -92,20 +92,46 @@ const LayoutProduct = (props) => {
     });
   };
   let structuredJSON = {
-    "@context": "",
-    "@type": "Review",
-    "itemReviewed": {
-      "@type": "Thing",
-      "name": "MOXA TEST RIDWAN"
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Example product",
+    "image": [
+      "https://moxa.vercel.app/assets/images/Moxa-logo.png",
+      "https://moxa.vercel.app/assets/images/Moxa-logo.png",
+      "https://moxa.vercel.app/assets/images/Moxa-logo.png"
+     ],
+    "description": "Moxa test product.",
+    "sku": "0374984678",
+    "mpn": "738930",
+    "brand": {
+      "@type": "Brand",
+      "name": "Example"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
       },
-  "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "3",
-      "bestRating": "5"
-     },
-   "publisher": {
-     "@type": "Organization",
-     "name": "MOXA TEST RIDWAN"
+      "author": {
+        "@type": "Person",
+        "name": "Ridwan Maelfa"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "1455"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://example.com/product/detaiil/1",
+      "priceCurrency": "USD",
+      "price": "49.99",
+      "priceValidUntil": "2021-11-20",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock"
     }
   }
   return (
