@@ -126,7 +126,9 @@ const LayoutProduct = (props) => {
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://moxa.vercel.app/",
+      "url": "https://moxa.vercel.app/product/detail/1",
+      "priceCurrency": "USD",
+      "price": "49.99",
       "priceValidUntil": "2021-11-20",
       "itemCondition": "https://schema.org/NewCondition",
       "availability": "https://schema.org/InStock"
@@ -155,7 +157,7 @@ const LayoutProduct = (props) => {
        
         <script type="application/ld+json">
           {JSON.stringify(structuredJSON)}
-        </script>
+      </script>
       </Helmet>
 
 
