@@ -96,7 +96,7 @@ const LayoutProduct = (props) => {
     "@type": "Review",
     "itemReviewed": {
       "@type": "Thing",
-      "name": "Name"
+      "name": "MOXA TEST"
       },
   "reviewRating": {
       "@type": "Rating",
@@ -105,7 +105,7 @@ const LayoutProduct = (props) => {
      },
    "publisher": {
      "@type": "Organization",
-     "name": "RIdwan TEst"
+     "name": "MOXA TEST"
     }
   }
   return (
