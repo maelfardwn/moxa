@@ -109,7 +109,7 @@ const LayoutProduct = (props) => {
     }
   }
   return (
-    <div>
+    <div itemScope itemtype="http://schema.org/Product">
       <Helmet>
         <html lang="en" />
         <title>{props.title}</title>
