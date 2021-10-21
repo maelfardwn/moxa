@@ -126,7 +126,7 @@ const LayoutProduct = (props) => {
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://moxa.vercel.app/assets/images/Moxa-logo.png",
+      "url": "https://moxa.vercel.app/",
       "priceValidUntil": "2021-11-20",
       "itemCondition": "https://schema.org/NewCondition",
       "availability": "https://schema.org/InStock"
