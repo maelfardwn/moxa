@@ -58,7 +58,7 @@ const HPSection2Fix = (props) => {
         const productsData = props.products.length>0? props.products.map((product,i)=>
         
       
-            <div className="col" >
+            <div className="col-md-3" style={{marginBottom:'30px'}}>
               <a href={`/product/detail/${product.id}`} style={{cursor:'pointer',textDecoration:'none'}}>
               <img src={product.icon.url} style={{marginBottom:'15px'}}/><br/>
               <h4 className="productsWording">{product.name}</h4>

@@ -35,9 +35,9 @@ const PSection2Com = (props) => {
   //   );
   // } else {
       const variants = props.variant? props.variant.map((variant)=>
-        <div className="col PSection2" >
+        <div className="col-lg-4 PSection2"  style={{marginTop:'30px'}}>
         <img src={variant.icon.url}/><br/>
-        <h3 >{variant.title}</h3>
+        <h3>{variant.title}</h3>
         <p >{variant.description} </p>
     </div>
       ) :<h2>Loading</h2>

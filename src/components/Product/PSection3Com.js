@@ -112,10 +112,10 @@ const PSection3Com = (props) => {
     const tabs = props.variant.length>0 && props.variant.length>1 ? props.variant.map((variant,i)=>
                 i==tabsIndex?
                 <div className="col">
-                    <button  style={{width:'308px',height:'74px',marginTop:'30px',color:isActtive[0].color, background:isActtive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
+                    <button  style={{width:'327px',height:'74px',marginTop:'30px',color:isActtive[0].color, background:isActtive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
                 </div>:
                 <div className="col">
-                    <button onClick={()=>Tmp(i)} style={{width:'308px',height:'74px',marginTop:'30px', color:notActive[0].color, background:notActive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
+                    <button onClick={()=>Tmp(i)} style={{width:'327px',height:'74px',marginTop:'30px', color:notActive[0].color, background:notActive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
                 </div>) : null
     const variantData = props.variant.length>0?
     

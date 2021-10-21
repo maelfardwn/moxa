@@ -3652,7 +3652,7 @@ a .download-now:hover{
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
-  line-height: 17px;
+  line-height:27px;
   /* or 68% */
   
   text-align: center;
@@ -3661,7 +3661,9 @@ a .download-now:hover{
   color: #04325F;
 }
 .PSection2 p{
+  top: 250px;
   margin-top: 25px;
+  position: absolute;
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: normal;
@@ -3674,6 +3676,7 @@ a .download-now:hover{
   color: #04325F;
 }
 .PSection3 h1{
+  margin-top: 250px;
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: bold;
@@ -3903,6 +3906,10 @@ a .download-now:hover{
   .nav-handler{
     margin-left: 150px;
   }
+  .PSection3 h1{
+    
+  margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -3939,6 +3946,10 @@ a .download-now:hover{
   }
   .nav-handler{
     margin-left: 70px;
+  }
+  .PSection2 p{
+    
+    position: static;
   }
 }
 
