@@ -157,6 +157,7 @@ const LayoutProduct = (props) => {
         <script type='application/ld+json' dangerouslySetInnerHTML={ { __html:structuredJSON }} />
       </Helmet>
 
+      
       <div id="layout">
         <header className={`${scrolled ? "scrolled shadow-sm" : ""}`}>
           <div className="wrapper">
