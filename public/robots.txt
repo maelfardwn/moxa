@@ -1,5 +1,7 @@
 
 Sitemap: https://moxa.vercel.app/sitemap.xml
 User-agent: *
+Disallow:
 
+User-agent: Googlebot
 Disallow:
