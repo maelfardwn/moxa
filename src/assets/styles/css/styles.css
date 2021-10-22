@@ -3608,15 +3608,25 @@ a .download-now:hover{
   padding:'0';
   margin-left: 1px;
   justify-content:'center';
-  border-radius:15px
+  border-radius:15px;
+  z-index: 999;
+}
+.FrameHP{
+  width: 1000px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -70px;
+  bottom: 280px;
+  height: 1600px;
 }
 .SliderHp{
   background-repeat: no-repeat;
   position: absolute;
-    width: 350px;
-    left: 210px;
-    bottom: 810px;
-    height: 600px;
+    width: 205px;
+    left: 331px;
+    bottom: 1000px;
+    height: 295px;
   z-index: 9;
   will-change: opacity;
 }
@@ -3695,11 +3705,25 @@ a .download-now:hover{
   
   color: #04325F;}
 @media screen and (max-width: 1600px) {
+  
+  .FrameHP{
+    width: 1000px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -70px;
+    bottom: 280px;
+    height: 1600px;
+  }
   .SliderHp{
-    width: 350px;
-    left: 210px;
-    bottom: 820px;
-    height: 600px;
+    background-repeat: no-repeat;
+    position: absolute;
+      width: 205px;
+      left: 331px;
+      bottom: 1000px;
+      height: 295px;
+    z-index: 9;
+    will-change: opacity;
   }
   
   .wrappperSection3{
@@ -3724,11 +3748,24 @@ a .download-now:hover{
 
 
 @media screen and (max-width: 1470px) {
+  .FrameHP{
+    width: 1000px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -190px;
+    bottom: 280px;
+    height: 1600px;
+  }
   .SliderHp{
-    width: 300px;
-    height: 500px;
-    left: 150px;
-    bottom: 870px;
+    background-repeat: no-repeat;
+    position: absolute;
+      width: 205px;
+      left: 211px;
+      bottom: 1000px;
+      height: 295px;
+    z-index: 9;
+    will-change: opacity;
   }
   .wrappperSection3-3{
     position: absolute;
@@ -3764,11 +3801,24 @@ a .download-now:hover{
 }
 
 @media screen and (max-width: 1350px) {
+  .FrameHP{
+    width: 1000px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -280px;
+    bottom: 330px;
+    height: 1600px;
+  }
   .SliderHp{
-    width: 230px;
-    height: 400px;
-    left: 140px;
-    bottom: 980px;
+    background-repeat: no-repeat;
+    position: absolute;
+      width: 205px;
+      left: 121px;
+      bottom: 1040px;
+      height: 295px;
+    z-index: 9;
+    will-change: opacity;
   }
   .wrappperSection3-3{    
     margin:auto;
@@ -3807,11 +3857,24 @@ a .download-now:hover{
 
 
 @media screen and (max-width: 1250px) {
+  .FrameHP{
+    width: 1000px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -310px;
+    bottom: 330px;
+    height: 1600px;
+  }
   .SliderHp{
-    width: 230px;
-    height: 400px;
-    left: 110px;
-    bottom: 980px;
+    background-repeat: no-repeat;
+    position: absolute;
+      width: 205px;
+      left: 91px;
+      bottom: 1040px;
+      height: 295px;
+    z-index: 9;
+    will-change: opacity;
   }
   .wrappperSection3-3{  
     margin:auto;  
@@ -3841,14 +3904,27 @@ a .download-now:hover{
 }
 
 @media screen and (max-width: 1150px) {
+  .FrameHP{
+    width: 1000px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -300px;
+    bottom: 330px;
+    height: 1600px;
+  }
   .SliderHp{
-    width: 230px;
-    height: 400px;
-    left: 70px;
-    bottom: 980px;
+    background-repeat: no-repeat;
+    position: absolute;
+      width: 205px;
+      left: 101px;
+      bottom: 1040px;
+      height: 295px;
+    z-index: 9;
+    will-change: opacity;
   }
   .wrappperSection3-3{    
-    width: 65%;
+    width: 75%;
     position: absolute;
     left: 160px;
     margin:auto;  margin-top:100px;
@@ -3861,28 +3937,41 @@ a .download-now:hover{
     color:#04325F;
     font-weight:700;
     font-size:25px;
-    margin-left: 150px;
+    margin-left: 210px;
   }
   .subtitleSection3{
-    margin-left: 150px;
+    margin-left: 210px;
     color:#04325F;
     font-weight:400;
     font-size: 23px;
   }
   .nav-handler{
-    margin-left: 150px;
+    margin-left: 210px;
   }
 }
 
 @media screen and (max-width: 1050px) {
+  .FrameHP{
+    width: 1000px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -300px;
+    bottom: 330px;
+    height: 1600px;
+  }
   .SliderHp{
-    width: 230px;
-    height: 400px;
-    left: 50px;
-    bottom: 1000px;
+    background-repeat: no-repeat;
+    position: absolute;
+      width: 205px;
+      left: 101px;
+      bottom: 1040px;
+      height: 295px;
+    z-index: 9;
+    will-change: opacity;
   }
   .wrappperSection3-3{    
-    width: 65%;
+    width: 75%;
     position: absolute;
     left:150px;
     margin:auto;  margin-top:100px;
@@ -3892,19 +3981,21 @@ a .download-now:hover{
   }
   .titleSection3{
     padding-bottom:'50px';
+    top:30px;
     color:#04325F;
     font-weight:700;
     font-size:25px;
-    margin-left: 150px;
+    margin-left: 210px;
   }
   .subtitleSection3{
-    margin-left: 150px;
+    top:70px;
+    margin-left: 210px;
     color:#04325F;
     font-weight:400;
     font-size: 23px;
   }
   .nav-handler{
-    margin-left: 150px;
+    margin-left: 210px;
   }
   .PSection3 h1{
     
@@ -3913,17 +4004,26 @@ a .download-now:hover{
 }
 
 @media screen and (max-width: 1000px) {
+  .FrameHP{
+    width: 700px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 140px;
+    bottom: 710px;
+    height: 1200px;
+  }
   .SliderHp{
-    width: 190px;
-    height: 300px;
-    left: auto;
-    bottom: 1170px;
+    width: 145px;
+    height: 200px;
+    left: 420px;
+    bottom: 1269px;
   }
   .wrappperSection3{
     margin-top:100px;
   }
   .wrappperSection3-3{    
-    width: 65%;
+    width: 75%;
     position: absolute;
     margin:auto;  margin-top:100px;
     bottom:902px;
@@ -3936,9 +4036,11 @@ a .download-now:hover{
     color:#04325F;
     font-weight:700;
     font-size:25px;
+    top: 10px;
     margin-left: 70px;
   }
   .subtitleSection3{
+    top: 130px;
     margin-left: 70px;
     color:#04325F;
     font-weight:400;
@@ -3955,16 +4057,24 @@ a .download-now:hover{
 
 
 @media screen and (max-width: 767px) {
+  .FrameHP{
+    width: 800px;
+    z-index: 9;
+   
+    left: -30px;
+    bottom: 850px;
+    height: 1200px;
+  }
   .SliderHp{
-    width: 160px;
-    height: 270px;
-    left: auto;
-    bottom: 1340px;
+    width: 165px;
+    height: 230px;
+    left: 290px;
+    bottom: 1390px;
   }
   .wrappperSection3-3{
     
     position: absolute;
-    margin:auto;  margin-top:100px;
+    margin:auto;  margin-top:200px;
     bottom:1042px;
   }
   .titleSection3{
@@ -3987,6 +4097,9 @@ a .download-now:hover{
 }
 
 @media screen and (max-width: 767px) {
+  .wrappperSection3{
+    margin-top: 150px;
+  }
   .wrappperSection3-3{
     position: absolute;
     width: 80%;
@@ -4039,6 +4152,19 @@ a .download-now:hover{
 }
 
 @media screen and (max-width: 576px) {
+  .FrameHP{
+    width: 600px;
+    z-index: 9;
+    left: -50px;
+    bottom: 950px;
+    height: 1000px;
+  }
+  .SliderHp{
+    width: 125px;
+    height: 190px;
+    left: 190px;
+    bottom: 1394px;
+  }
   .wrappperSection3-3{
     position: absolute;
     width: 80%;
@@ -4077,11 +4203,18 @@ a .download-now:hover{
     bottom: 1100px;
     left: 40px;
   }
+  .FrameHP{
+    width: 600px;
+    z-index: 9;
+    left: -120px;
+    bottom: 1010px;
+    height: 1000px;
+  }
   .SliderHp{
-    width: 150px;
-    height: 250px;
-    left: auto;
-    bottom: 1390px;
+    width: 125px;
+    height: 190px;
+    left: 120px;
+    bottom: 1454px;
   }
   .titleSection3{
     position: absolute;
@@ -4104,11 +4237,19 @@ a .download-now:hover{
   }
 }
 @media screen and (max-width: 290px) {
+  
+  .FrameHP{
+    width: 600px;
+    z-index: 9;
+    left: -120px;
+    bottom: 1010px;
+    height: 1000px;
+  }
   .SliderHp{
-    width: 140px;
-    height: 250px;
-    left: auto;
-    bottom: 1380px;
+    width: 125px;
+    height: 190px;
+    left: 120px;
+    bottom: 1454px;
   }
   .titleSection3{
     padding-bottom:'50px';
@@ -4136,21 +4277,21 @@ a .download-now:hover{
   }
 }
 
-@media screen and (max-width: 289px) {
-  .SliderHp{
-    width: 140px;
-    height: 250px;
-    left: auto;
-    bottom: 1405px;
-  }
-}
 
 @media screen and (max-width: 280px) {
+  
+  .FrameHP{
+    width: 600px;
+    z-index: 9;
+    left: -140px;
+    bottom: 1010px;
+    height: 1000px;
+  }
   .SliderHp{
-    width: 140px;
-    height: 250px;
-    left: auto;
-    bottom: 1405px;
+    width: 125px;
+    height: 190px;
+    left: 100px;
+    bottom: 1454px;
   }
 }
 

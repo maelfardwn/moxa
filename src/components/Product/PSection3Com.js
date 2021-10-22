@@ -3,7 +3,7 @@ import axios from "axios";
 import MockUpHp from '../../assets/img/MockupMoxaHp.png'
 import arrowRight from '../../assets/img/arrowRightWhite.png'
 import arrowLeft from '../../assets/img/arrowLeftWhite.png'
-
+import frameHP from '../../assets/img/gadget.svg'
 
 const PSection3Com = (props) => {
 
@@ -111,15 +111,16 @@ const PSection3Com = (props) => {
       const [tabsIndex,setTabsIndex]= useState(0)
     const tabs = props.variant.length>0 && props.variant.length>1 ? props.variant.map((variant,i)=>
                 i==tabsIndex?
-                <div className="col">
-                    <button  style={{width:'327px',height:'74px',marginTop:'30px',color:isActtive[0].color, background:isActtive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
+                <div className="col" style={{zIndex:'999'}}>
+                    <button  style={{width:'327px',zIndex:'999',height:'74px',marginTop:'30px',color:isActtive[0].color, background:isActtive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
                 </div>:
-                <div className="col">
-                    <button onClick={()=>Tmp(i)} style={{width:'327px',height:'74px',marginTop:'30px', color:notActive[0].color, background:notActive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
+                <div className="col" style={{zIndex:'999'}}>
+                    <button onClick={()=>Tmp(i)} style={{width:'327px',zIndex:'999',height:'74px',marginTop:'30px', color:notActive[0].color, background:notActive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
                 </div>) : null
     const variantData = props.variant.length>0?
     
     <div className="wrappperSection3">
+    <img src={frameHP} className="FrameHP"/>
 <img src={props.variant[tabsIndex].guides[indexGuide].image.url} className="SliderHp"/>
     <div className="wrappperSection3-2">
 
@@ -152,7 +153,7 @@ const PSection3Com = (props) => {
     <div> 
     <div className="wrapper">
 
-     <div className="row">
+     <div className="row" style={{zIndex:'999'}}>
        {tabs}
       </div>
       </div>
