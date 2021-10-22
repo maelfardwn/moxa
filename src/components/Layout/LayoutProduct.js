@@ -10,6 +10,7 @@ import mainLogo from "../../assets/img/main-logo.png";
 import logo from "../../assets/img/logo-moxaid.png";
 import logo2 from "../../assets/img/logo-footer.png";
 import vector from '../../assets/img/Vector.png'
+import MetaTags from 'react-meta-tags';
 import ReactGA from "react-ga";
 ReactGA.initialize("UA-175679937-1");
 
@@ -136,13 +137,15 @@ const LayoutProduct = (props) => {
   }
   return (
     <div>
-      <Helmet>
+      <MetaTags>
         <html lang="en" />
         <title>{props.title}</title>
         <link rel="canonical" href={"http://mysite.com/"+ props.title} />
         <meta charSet="utf-8" />
-        <meta name="keywords" cpntent={props.title + props.descriptions} />
+        <meta name="keywords" content={props.title + props.descriptions} />
         <meta name="description" content={props.descriptions} />
+        <meta name="image" content='https://moxa.vercel.app/assets/images/Moxa-logo.png' data-react-helmet="true"/>
+
         <meta property="og:type" content="website" />
         <meta property="og:url" content={props.url} />
         <meta property="og:title" content={props.title} />
@@ -158,7 +161,7 @@ const LayoutProduct = (props) => {
         <script type="application/ld+json">
           {JSON.stringify(structuredJSON)}
       </script>
-      </Helmet>
+      </MetaTags>
 
 
       <div id="layout">
