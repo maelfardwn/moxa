@@ -3612,21 +3612,22 @@ a .download-now:hover{
   z-index: 999;
 }
 .FrameHP{
-  width: 1000px;
-  z-index: 9;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: -70px;
-  bottom: 280px;
-  height: 1600px;
+  width: 300px;
+      z-index: 9;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 283px;
+      bottom: 938px;
+      height: 424px;
 }
 .SliderHp{
   background-repeat: no-repeat;
   position: absolute;
     width: 205px;
     left: 331px;
-    bottom: 1000px;
-    height: 295px;
+    bottom: 977px;
+    height: 353px;
+    border-radius: 20px;
   z-index: 9;
   will-change: opacity;
 }
@@ -3706,22 +3707,23 @@ a .download-now:hover{
   color: #04325F;}
 @media screen and (max-width: 1600px) {
   
-  .FrameHP{
-    width: 1000px;
+  .FrameHP{ 
+    width: 300px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
-    left: -70px;
-    bottom: 280px;
-    height: 1600px;
+    left: 283px;
+    bottom: 938px;
+    height: 424px;
   }
   .SliderHp{
     background-repeat: no-repeat;
     position: absolute;
       width: 205px;
       left: 331px;
-      bottom: 1000px;
-      height: 295px;
+      bottom: 977px;
+      height: 353px;
+      border-radius: 20px;
     z-index: 9;
     will-change: opacity;
   }
@@ -3748,25 +3750,28 @@ a .download-now:hover{
 
 
 @media screen and (max-width: 1470px) {
-  .FrameHP{
-    width: 1000px;
+  .FrameHP{ 
+    
+    width: 294px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
-    left: -190px;
-    bottom: 280px;
-    height: 1600px;
+    left: 179px;
+    bottom: 938px;
+    height: 424px;
   }
-  .SliderHp{
-    background-repeat: no-repeat;
+  .SliderHp{background-repeat: no-repeat;
     position: absolute;
-      width: 205px;
-      left: 211px;
-      bottom: 1000px;
-      height: 295px;
+    width: 203px;
+    left: 223px;
+    bottom: 977px;
+    height: 353px;
+    border-radius: 20px;
     z-index: 9;
     will-change: opacity;
+
   }
+  
   .wrappperSection3-3{
     position: absolute;
     left: 200px;
@@ -3801,24 +3806,25 @@ a .download-now:hover{
 }
 
 @media screen and (max-width: 1350px) {
-  .FrameHP{
-    width: 1000px;
+  .FrameHP{ 
+    width: 294px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
-    left: -280px;
-    bottom: 330px;
-    height: 1600px;
+    left: 112px;
+    bottom: 938px;
+    height: 424px;
   }
-  .SliderHp{
-    background-repeat: no-repeat;
+  .SliderHp{background-repeat: no-repeat;
     position: absolute;
-      width: 205px;
-      left: 121px;
-      bottom: 1040px;
-      height: 295px;
+    width: 203px;
+    left: 158px;
+    bottom: 977px;
+    height: 353px;
+    border-radius: 20px;
     z-index: 9;
     will-change: opacity;
+
   }
   .wrappperSection3-3{    
     margin:auto;
@@ -3857,25 +3863,26 @@ a .download-now:hover{
 
 
 @media screen and (max-width: 1250px) {
-  .FrameHP{
-    width: 1000px;
-    z-index: 9;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: -310px;
-    bottom: 330px;
-    height: 1600px;
-  }
-  .SliderHp{
-    background-repeat: no-repeat;
-    position: absolute;
-      width: 205px;
-      left: 91px;
-      bottom: 1040px;
-      height: 295px;
-    z-index: 9;
-    will-change: opacity;
-  }
+  .FrameHP{ 
+  width: 294px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 88px;
+  bottom: 938px;
+  height: 424px;
+}
+.SliderHp{background-repeat: no-repeat;
+  position: absolute;
+  width: 203px;
+  left: 133px;
+  bottom: 977px;
+  height: 353px;
+  border-radius: 20px;
+  z-index: 9;
+  will-change: opacity;
+
+}
   .wrappperSection3-3{  
     margin:auto;  
     width: 65%;
@@ -3893,6 +3900,7 @@ a .download-now:hover{
     margin-left: 150px;
   }
   .subtitleSection3{
+    bottom: 130px;
     margin-left: 150px;
     color:#04325F;
     font-weight:400;
@@ -3904,24 +3912,25 @@ a .download-now:hover{
 }
 
 @media screen and (max-width: 1150px) {
-  .FrameHP{
-    width: 1000px;
+  .FrameHP{ 
+    width: 294px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
-    left: -300px;
-    bottom: 330px;
-    height: 1600px;
+    left: 88px;
+    bottom: 938px;
+    height: 424px;
   }
-  .SliderHp{
-    background-repeat: no-repeat;
+  .SliderHp{background-repeat: no-repeat;
     position: absolute;
-      width: 205px;
-      left: 101px;
-      bottom: 1040px;
-      height: 295px;
+    width: 203px;
+    left: 133px;
+    bottom: 977px;
+    height: 353px;
+    border-radius: 20px;
     z-index: 9;
     will-change: opacity;
+  
   }
   .wrappperSection3-3{    
     width: 75%;
@@ -3951,24 +3960,25 @@ a .download-now:hover{
 }
 
 @media screen and (max-width: 1050px) {
-  .FrameHP{
-    width: 1000px;
+  .FrameHP{ 
+    width: 294px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
-    left: -300px;
-    bottom: 330px;
-    height: 1600px;
+    left: 88px;
+    bottom: 938px;
+    height: 424px;
   }
-  .SliderHp{
-    background-repeat: no-repeat;
+  .SliderHp{background-repeat: no-repeat;
     position: absolute;
-      width: 205px;
-      left: 101px;
-      bottom: 1040px;
-      height: 295px;
+    width: 203px;
+    left: 133px;
+    bottom: 977px;
+    height: 353px;
+    border-radius: 20px;
     z-index: 9;
     will-change: opacity;
+  
   }
   .wrappperSection3-3{    
     width: 75%;
@@ -4005,19 +4015,19 @@ a .download-now:hover{
 
 @media screen and (max-width: 1000px) {
   .FrameHP{
-    width: 700px;
+    width: 227px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
-    left: 140px;
-    bottom: 710px;
-    height: 1200px;
+    left: 375px;
+    bottom: 1184px;
+    height: 314px;
   }
   .SliderHp{
-    width: 145px;
-    height: 200px;
-    left: 420px;
-    bottom: 1269px;
+    width: 155px;
+    height: 263px;
+    left: 413px;
+    bottom: 1209px;
   }
   .wrappperSection3{
     margin-top:100px;
@@ -4058,12 +4068,13 @@ a .download-now:hover{
 
 @media screen and (max-width: 767px) {
   .FrameHP{
-    width: 800px;
+    width: 245px;
     z-index: 9;
-   
-    left: -30px;
-    bottom: 850px;
-    height: 1200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 251px;
+    bottom: 1358px;
+    height: 290px;
   }
   .SliderHp{
     width: 165px;
@@ -4153,15 +4164,17 @@ a .download-now:hover{
 
 @media screen and (max-width: 576px) {
   .FrameHP{
-    width: 600px;
+    width: 182px;
     z-index: 9;
-    left: -50px;
-    bottom: 950px;
-    height: 1000px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 163px;
+    bottom: 1369px;
+    height: 244px;
   }
   .SliderHp{
-    width: 125px;
-    height: 190px;
+    width: 126px;
+    height: 195px;
     left: 190px;
     bottom: 1394px;
   }
@@ -4204,11 +4217,14 @@ a .download-now:hover{
     left: 40px;
   }
   .FrameHP{
-    width: 600px;
+   
+    width: 182px;
     z-index: 9;
-    left: -120px;
-    bottom: 1010px;
-    height: 1000px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 92px;
+    bottom: 1429px;
+    height: 236px;
   }
   .SliderHp{
     width: 125px;
