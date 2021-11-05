@@ -4,48 +4,19 @@ import iconMotor from '../../assets/img/motorIcon.png'
 
 
 const PSection2Com = (props) => {
-  // const [loading, setLoading] = useState(true);
-  // const [text1, setText1] = useState("");
-  // const [text2, setText2] = useState("");
-
-  // useEffect(() => {
-  //   setLoading(true);
-
-  //   axios
-  //     .get(process.env.REACT_APP_API_URL + "/homepage")
-  //     .then((res) => res.data)
-  //     .then((data) => {
-  //       setText1(data.section_2_text_1);
-  //       setText2(data.section_2_text_2);
-  //       setLoading(false);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }, []);
-
-  // if (loading) {
-  //   return (
-  //     <div>
-  //       <center id="sub">
-  //         <i className="fa fa-spinner fa-pulse fa-3x fa-fw my-3"></i>
-  //         <span className="sr-only">Loading...</span>
-  //       </center>
-  //     </div>
-  //   );
-  // } else {
+  
       const variants = props.variant && props.variant.length==1 ? props.variant.map((variant)=>
         <div className="col-lg-12 PSection2"  style={{marginTop:'30px'}}>
         <img src={variant.icon.url}/><br/>
-        <h3>{variant.title}</h3>
+        <h6 className="product-title">{variant.title}</h6>
         <div style={{display:'flex',justifyContent:'center'}}>
-          <p>{variant.description} </p>
+          <h6 className="product-description">{variant.description} </h6>
         </div>
     </div>) : props.variant ? props.variant.map((variant)=>
-        <div className="col-lg-4 PSection2"  style={{marginTop:'30px'}}>
+        <div className="col-lg-4 PSection2"  >
         <img src={variant.icon.url}/><br/>
-        <h3>{variant.title}</h3>
-        <p >{variant.description} </p>
+        <h6 className="product-title">{variant.title}</h6>
+        <h6 className="product-description">{variant.description} </h6>
     </div>) :<h2>Loading</h2>
   return (
     <div>

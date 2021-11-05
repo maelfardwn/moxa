@@ -82,11 +82,11 @@ const HomepageFix = (props) => {
     setLoading(true);
     axios
       .all([
-        axios.get(process.env.REACT_APP_API_TEST + `/home-banners?_sort=order:asc`),
-        axios.get(process.env.REACT_APP_API_URL + `/homepage`),
-        axios.get(process.env.REACT_APP_API_TEST + "/products?_sort=order:asc"),
-        axios.get("https://cms.moxa.zali.pro/products "),
-        axios.get(process.env.REACT_APP_API_TEST + `/home-banners?_sort=order:asc`)
+        axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`),
+        axios.get(`https://moxa-cms.shared.zali.pro/homepage`),
+        axios.get("https://moxa-cms.shared.zali.pro/products?_sort=order:asc"),
+        axios.get("https://moxa-cms.shared.zali.pro"),
+        axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
       ])
       .then((res) => {
         setData(res[0].data);
@@ -94,7 +94,7 @@ const HomepageFix = (props) => {
         setProducts(res[2].data)
         setpartnersApi(res[3].data)
         setDownloadLink(res[4].data[0].button_link)
-        console.log('res data',res[4].data[0].button_link)
+        console.log('res product',res[2].data)
         setLoading(false);
       })
       .catch((err) => {
@@ -108,7 +108,7 @@ const HomepageFix = (props) => {
         <div id="homepage">
           <HPSection1Fix data={data} />
           <HPSection2Fix products={products} />
-          <HPSection3Fix partners={partners} />
+          <HPSection3Fix />
           <HPSection4Fix />  
         </div>
       </LayoutProduct>

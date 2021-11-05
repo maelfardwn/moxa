@@ -24,46 +24,15 @@ const HPSection2Fix = (props) => {
     {image:iconElectric, text:'Elektronik dan Lainnya',link:'/product/elektronik'},
     {image:iconTabungan, text:'Tabungan',link:'/product/tabungan'}
   ])
-
-  // const [loading, setLoading] = useState(true);
-  // const [text1, setText1] = useState("");
-  // const [text2, setText2] = useState("");
-
-  // useEffect(() => {
-  //   setLoading(true);
-
-  //   axios
-  //     .get(process.env.REACT_APP_API_URL + "/homepage")
-  //     .then((res) => res.data)
-  //     .then((data) => {
-  //       setText1(data.section_2_text_1);
-  //       setText2(data.section_2_text_2);
-  //       setLoading(false);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }, []);
-
-  // if (loading) {
-  //   return (
-  //     <div>
-  //       <center id="sub">
-  //         <i className="fa fa-spinner fa-pulse fa-3x fa-fw my-3"></i>
-  //         <span className="sr-only">Loading...</span>
-  //       </center>
-  //     </div>
-  //   );
-  // } else {
         const productsData = props.products.length>0? props.products.map((product,i)=>
-        
-      
-            <div className="col-md-3" style={{marginBottom:'30px'}}>
+         
+            <div className="col HPSection2" style={{marginBottom:'30px'}}>
               <a href={`/product/detail/${product.id}`} style={{cursor:'pointer',textDecoration:'none'}}>
-              <img src={product.icon.url} style={{marginBottom:'15px'}}/><br/>
+              <img height="128px" width="128px" src={product.icon.url} style={{marginBottom:'15px'}}/><br/>
               <h4 className="productsWording">{product.name}</h4>
               </a>
             </div>
+           
        ): <h2>loading..</h2>
   
   return (
@@ -71,14 +40,15 @@ const HPSection2Fix = (props) => {
       <div id="sub">
         <div className="wrapper">
           <div className="row" style={{marginBottom:'100px'}}>
-            <div className="col-lg-8 m-auto">
+            <div className="col-lg-10 m-auto">
               <h1 >Jelajahi Berbagai Pilihan Produk Moxa </h1>
               <p >Rasakan kemudahan mengajukan beragam produk keuangan dalam satu sentuhan lewat fitur unggulan Moxa </p>
             </div>
           </div>
           <div className="row " >
           {productsData}
-          </div> 
+          </div>
+         
         </div>
       </div>
     </div>

@@ -3,75 +3,25 @@ import axios from "axios";
 import MockUpHp from '../../assets/img/MockupMoxaHp.png'
 import arrowRight from '../../assets/img/arrowRightWhite.png'
 import arrowLeft from '../../assets/img/arrowLeftWhite.png'
-import frameHP from '../../assets/img/gadget.svg'
+import frameHP from '../../assets/img/Galaxy.png'
 
 const PSection3Com = (props) => {
 
-      const [MobilBaru,setMobilBaru] =useState([{
-        "type": "Mobil Baru matic",
-        "description": "Mobil baru matic adalah motor yang tidak memakai transmisi",
-      },
-      {
-        "type": "Mobil Baru manual",
-        "description": "Mobil baru manual adalah motor dengan transmisi gigi",
-        
-      }])
-      const [MobilBekas,setMobilBekas] =useState([{
-        "type": "Mobil Bekas matic",
-        "description": "Mobil Bekas matic adalah motor yang tidak memakai transmisi",
-      },
-      {
-        "type": "Mobil Bekas manual",
-        "description": "Mobil Bekas manual adalah motor dengan transmisi gigi",
-        
-      }])
       
-      const [TestDrive,setTestDrive] =useState([{
-        "type": "TestDrive Mobil matic",
-        "description": "TestDrive matic adalah motor yang tidak memakai transmisi",
-      },
-      {
-        "type": "TestDrive manual",
-        "description": "TestDrive Bekas manual adalah motor dengan transmisi gigi",
-        
-      }])
-      let [data,setData] =useState(MobilBaru)
+     
       const [nextButton,setNextButton]= useState(false)
       const [prevButton,setPrevButton]= useState(true)
-      const [tabButtonColorMobilBaru,setTabButtonColorMobilBaru]=useState([
-          {background:"#005DAA",
-          color:'white'
-        }
-        ])
+     
         const [tabButtonColorMobilTest,setTabButtonColorMobilTest]=useState([{background:"##D2D9E0",color:'#005DAA'}])
         const [tabButtonColorMobilBekas,setTabButtonColorMobilBekas]=useState([{background:"##D2D9E0",color:'#005DAA'}])
         
     
       
     useEffect(() => {
-      setData(MobilBaru)
+      
       
     }, []);
 
-    const MobilBaruOnChange=()=>{
-        setTabButtonColorMobilBaru([{background:"#005DAA",color:'white'}]);
-        setTabButtonColorMobilBekas([{background:"#D2D9E0",color:'#005DAA'}])
-        setTabButtonColorMobilTest([{background:"#D2D9E0",color:'#005DAA'}])
-        setData(MobilBaru)
-    }
-    const MobilBekasOnChange=()=>{
-        setTabButtonColorMobilBaru([{background:"#D2D9E0",color:'#005DAA'}]);
-        setTabButtonColorMobilBekas([{background:"#005DAA",color:'white'}])
-        setTabButtonColorMobilTest([{background:"#D2D9E0",color:'#005DAA'}])
-        setData(MobilBekas)
-    }
-    const TestDriveOnChange=()=>{
-        
-        setTabButtonColorMobilBaru([{background:"#D2D9E0",color:'#005DAA'}]);
-        setTabButtonColorMobilBekas([{background:"#D2D9E0",color:'#005DAA'}])
-        setTabButtonColorMobilTest([{background:"#005DAA",color:'white'}])
-        setData(TestDrive)
-      }
       let [isActtive,setisActtive]=useState([
         {background:"#005DAA",
         color:'#FFFFFF'
@@ -91,7 +41,7 @@ const PSection3Com = (props) => {
             
               if(indexGuide>0){
                 setPrevButton(false)
-                  setIndexGuide(indexGuide-=1)
+                  setIndexGuide(indexGuide-=1,() =>{console.log(indexGuide)})
               }
               if(indexGuide<=0){
                 setPrevButton(true)
@@ -99,7 +49,7 @@ const PSection3Com = (props) => {
             }
       const nextStep=()=>{
         if(indexGuide<props.variant[tabsIndex].guides.length){
-          setIndexGuide(indexGuide+=1)
+          setIndexGuide(indexGuide+=1,() =>{console.log(indexGuide)})
           setPrevButton(false)
           console.log(indexGuide)
           setNextButton(false)
@@ -111,11 +61,11 @@ const PSection3Com = (props) => {
       const [tabsIndex,setTabsIndex]= useState(0)
     const tabs = props.variant.length>0 && props.variant.length>1 ? props.variant.map((variant,i)=>
                 i==tabsIndex?
-                <div className="col" style={{zIndex:'90'}}>
-                    <button  style={{width:'327px',zIndex:'90',height:'74px',marginTop:'30px',color:isActtive[0].color, background:isActtive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
+                <div className="col-md-4" style={{zIndex:'90'}}>
+                    <button  style={{paddingLeft:'4rem',paddingRight:'4rem',zIndex:'90',height:'74px',marginTop:'30px',color:isActtive[0].color, background:isActtive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
                 </div>:
-                <div className="col" style={{zIndex:'90'}}>
-                    <button onClick={()=>Tmp(i)} style={{width:'327px',zIndex:'90',height:'74px',marginTop:'30px', color:notActive[0].color, background:notActive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
+                <div className="col-md-4" style={{zIndex:'90'}}>
+                    <button onClick={()=>Tmp(i)} style={{paddingLeft:'4rem',paddingRight:'4rem',zIndex:'90',height:'74px',marginTop:'30px', color:notActive[0].color, background:notActive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
                 </div>) : null
     const variantData = props.variant.length>0?
     

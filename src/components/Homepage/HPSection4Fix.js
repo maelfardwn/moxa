@@ -15,7 +15,7 @@ const HPSection4Fix = (props) => {
 
   const  getData= async()=> {
     let getData
-    await axios.get(process.env.REACT_APP_API_URL + "/articles") 
+    await axios.get("https://moxa-cms.shared.zali.pro/articles") 
     .then((res) => {
        getData = res.data 
       setLoading(false);
@@ -29,9 +29,9 @@ const HPSection4Fix = (props) => {
     setLoading(true);
     axios
       .all([
-        axios.get(process.env.REACT_APP_API_URL + "/homepage"),
-        axios.get(process.env.REACT_APP_API_URL + "/partners?_sort=order:asc"),
-        axios.get(process.env.REACT_APP_API_URL + "/articles"),
+        axios.get("https://moxa-cms.shared.zali.pro/homepage"),
+        axios.get("https://moxa-cms.shared.zali.pro/partners?_sort=order:asc"),
+        axios.get("https://moxa-cms.shared.zali.pro/articles"),
       ])
       .then((res) => {
         setText1(res[0].data.text_partner_1);
@@ -112,7 +112,7 @@ const HPSection4Fix = (props) => {
           </div>
           <div  style={{margin:'auto',textAlign:'center',padding:'0'}}>
               
-                <a href="/" style={{fontSize:'28px',textDecoration:'none',fontWeight:'700', color:'#04325F'}}>Lihat Semua Promo </a> 
+                <a href="/artikel/blog" style={{fontSize:'28px',textDecoration:'none',fontWeight:'700', color:'#04325F'}}>Lihat Semua Blog </a> 
               
                <img className='promoLink' height="20px" style={{verticalAlign:'auto'}}  src={arrowRight}/> 
           

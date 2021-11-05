@@ -8,7 +8,7 @@ import LinkedinImg from '../../assets/img/LinkedinImg.png'
 import YoutubeImg from '../../assets/img/YoutubeImg.png'
 import mainLogo from "../../assets/img/main-logo.png";
 import logo from "../../assets/img/logo-moxaid.png";
-import logo2 from "../../assets/img/logo-footer.png";
+import logo2 from "../../assets/img/LogoMoxaFooter.png";
 import vector from '../../assets/img/Vector.png'
 import MetaTags from 'react-meta-tags';
 import ReactGA from "react-ga";
