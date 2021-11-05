@@ -10,13 +10,13 @@ const PSection4 = (props) => {
     <div className="WrapperSection4">
       <div className="WrapperBackground4">
         <h2>INFORMASI LEBIH LANJUT</h2>
-        <p>Raih kebebasan finansial kamu lewat fitur-fitur unggulan Moxa. Kunjungi halaman FAQ untuk info lebih lanjut.</p>
+        <p>Raih kebebasan finansial kamu lewat fitur-fitur unggulan Moxa.<br/> Kunjungi halaman FAQ untuk info lebih lanjut.</p>
         <div className="row buttonWrapper" >
-          <div className="col-md-6">
-              <button>Lihat FAQ</button>
+          <div className="col-md-6" style={{display:'flex',justifyContent:'flex-end'}}>
+              <button style={{marginRight:'40px'}}>Lihat FAQ</button>
           </div>
-          <div className="col-md-6">
-              <button className="btnDownload">Download Sekarang</button>
+          <div className="col-md-6" style={{display:'flex',justifyContent:'flex-start'}}>
+              <button className="btnDownload" style={{marginLeft:'20px'}}>Download Sekarang</button>
           </div>
       </div>
       </div>

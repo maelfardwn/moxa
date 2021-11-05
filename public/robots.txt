@@ -1,15 +1,8 @@
-# https://www.robotstxt.org/robotstxt.html
+
+Sitemap: https://moxa.vercel.app/sitemap.xml
 User-agent: *
-User-agent: Mediapartners-Google
+Disallow:
 
-Allow: /
 
-User-agent: Adsbot-Google
-
-Allow: /
-
-User-agent: Googlebot-Mobile
-
-Allow: /
-Sitemap: https://www.moxa.id/sitemap.xml
+User-agent: Googlebot
 Disallow:

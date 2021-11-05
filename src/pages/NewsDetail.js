@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout";
 import axios from "axios";
 import moment from "moment";
-
 import "../assets/styles/scss/ck-content.css";
 
 const NewsDetail = (props) => {
@@ -15,7 +14,7 @@ const NewsDetail = (props) => {
     let keyword = "";
 
     axios
-      .get(process.env.REACT_APP_API_URL + `/articles/${props.match.params.id}`)
+      .get(`https://moxa-cms.shared.zali.pro/articles/${props.match.params.id}`)
       .then((res) => res.data)
       .then((data) => {
         setData(data);
@@ -23,9 +22,7 @@ const NewsDetail = (props) => {
         keyword = data.categories[0].category || "berita";
 
         axios
-          .get(
-            process.env.REACT_APP_API_URL +
-              `/articles?_limit=10&categories.category_contains=${keyword}`
+          .get(`https://moxa-cms.shared.zali.pro/articles?_limit=10&categories.category_contains=${keyword}`
           )
           .then((res) => res.data)
           .then((data) => {
@@ -50,9 +47,7 @@ const NewsDetail = (props) => {
         setLoading(false);
 
         axios
-          .get(
-            process.env.REACT_APP_API_URL +
-              `/articles?_limit=10&categories.category_contains=${keyword}`
+          .get(`https://moxa-cms.shared.zali.pro/articles?_limit=10&categories.category_contains=${keyword}`
           )
           .then((res) => res.data)
           .then((data) => {
@@ -88,7 +83,7 @@ const NewsDetail = (props) => {
           descriptions={data.meta_descriptions}
           keywords={data.meta_keywords}
           image={data.cover.url}
-          url={process.env.REACT_APP_API_URL + props.location.pathname}
+          url={'https://moxa-cms.shared.zali.pro' + props.location.pathname}
         >
           <div id="berita-detail">
             <div className="wrapper">

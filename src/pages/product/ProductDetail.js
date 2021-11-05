@@ -18,17 +18,20 @@ import LayoutProduct from "../../components/Layout/LayoutProduct";
 import PSection2 from "../../components/Product/PSection2";
 import PSection3 from "../../components/Product/PSection3";
 import PSection4 from "../../components/Product/PSection4";
-import AlatBeratImage from '../../assets/img/AlatBeratImage.png'
+import CarImage from '../../assets/img/CarImage.png'
 import TestDrive from '../../assets/img/IconCar.png'
 import PSection23 from "../../components/Product/PSection23";
 import PSection33 from "../../components/Product/PSection33";
-import PSection32 from "../../components/Product/PSection32";
+import PSection2Com from "../../components/Product/PSection2Com";
+import PSection3Com from "../../components/Product/PSection3Com";
 
 
-const AlatBeratPage = (props) => {
+const ProductDetail = (props) => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
-  const [homeData, setHomeData] = useState({});
+  const [banner, setBanner] = useState({});
+  const [titleProduct, setTitle] = useState([]);
+  const [variants, setVariants] = useState([]);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -36,14 +39,16 @@ const AlatBeratPage = (props) => {
 
     axios
       .all([
-        axios.get(process.env.REACT_APP_API_URL + `/home-banners?_sort=order:asc`),
-        axios.get(process.env.REACT_APP_API_URL + `/homepage`),
-        axios.get(process.env.REACT_APP_API_URL + "/products?_sort=order:asc"),
+        axios.get(process.env.REACT_APP_API_TEST + `/products/${props.match.params.id}`),
       ])
       .then((res) => {
-        setData(res[0].data);
-        setHomeData(res[1].data);
-        setProducts(res[2].data);
+        setData(res[0].data)
+        console.log('detail',res[0].data)
+        setTitle(res[0].data.variant_introduction)
+        setVariants(res[0].data.variant)
+        setBanner(res[0].data.banner.url)
+        console.log('banner',res[0].data)
+        setProducts()
         setLoading(false);
       })
       .catch((err) => {
@@ -54,20 +59,19 @@ const AlatBeratPage = (props) => {
 
   return (
     <div>
-      <LayoutProduct title="Moxa TRUK DAN ALAT BERAT" descriptions="Pembiayaan TRUK, mencari pinjaman, 
-asuransi, dan masih banyak lagi, 
-semuanya dalam satu aplikasi" >
+      <LayoutProduct title={"Moxa "+data.name} descriptions={data.descriptions}>
         <div id="homepage">
-          <PSection1  titleBanner="TRUK DAN ALAT BERAT" subtitleBanner="Pembiayaan mobil, mencari pinjaman, 
-asuransi, dan masih banyak lagi, 
-semuanya dalam satu aplikasi" image={AlatBeratImage} altImage="TRUK DAN ALAT BERAT"/>
-          <PSection23 />
-          <PSection32 />
+          <PSection1  titleBanner={data.name} subtitleBanner={data.descriptions} image={banner}/>
+          <PSection2Com title={titleProduct.title} titleSection2={data.name} subtitle={titleProduct.description} variant={variants} />
+          <PSection3Com variant={variants} 
+                       variantData={variants}
+          />
           <PSection4 />
+         
         </div>
       </LayoutProduct>
     </div>
   );
 };
 
-export default AlatBeratPage;
+export default ProductDetail;

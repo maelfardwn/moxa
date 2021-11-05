@@ -8,8 +8,9 @@ import LinkedinImg from '../../assets/img/LinkedinImg.png'
 import YoutubeImg from '../../assets/img/YoutubeImg.png'
 import mainLogo from "../../assets/img/main-logo.png";
 import logo from "../../assets/img/logo-moxaid.png";
-import logo2 from "../../assets/img/logo-footer.png";
+import logo2 from "../../assets/img/LogoMoxaFooter.png";
 import vector from '../../assets/img/Vector.png'
+import MetaTags from 'react-meta-tags';
 import ReactGA from "react-ga";
 ReactGA.initialize("UA-175679937-1");
 
@@ -19,8 +20,32 @@ const LayoutProduct = (props) => {
 
   const { width } = useWindowDimensions();
   const location = useLocation();
-
+  const [nav,setNav] = useState('')
   useEffect(() => {
+    function getOS() {
+      var userAgent = window.navigator.userAgent,
+          platform = window.navigator.platform,
+          macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+          windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+          iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+          os = null;
+    
+      if (macosPlatforms.indexOf(platform) !== -1) {
+        os = 'Mac OS';
+      } else if (iosPlatforms.indexOf(platform) !== -1) {
+        os = 'iOS';
+      } else if (windowsPlatforms.indexOf(platform) !== -1) {
+        os = 'Windows';
+      } else if (/Android/.test(userAgent)) {
+        os = 'Android';
+      } else if (!os && /Linux/.test(platform)) {
+        os = 'Linux';
+      }
+    
+      return os;
+    }
+    
+    console.log('navigator',navigator);
     function handleScroll() {
       const distanceFromTop = window.scrollY;
 
@@ -67,14 +92,60 @@ const LayoutProduct = (props) => {
       action: "Cliked Footer IOS App Store",
     });
   };
-
+  let structuredJSON =  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Example product",
+    "image": [
+      "https://moxa.vercel.app/assets/images/Moxa-logo.png",
+      "https://moxa.vercel.app/assets/images/Moxa-logo.png"
+      
+     ],
+    "description": "Example product is the best example product out there. Make sure to get the one and only -- the original.",
+    "sku": "0374984678",
+    "mpn": "738930",
+    "brand": {
+      "@type": "Brand",
+      "name": "Example"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Ridwan "
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "1455"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://moxa.vercel.app/product/detail/1",
+      "priceCurrency": "USD",
+      "price": "49.99",
+      "priceValidUntil": "2021-11-20",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  }
   return (
     <div>
-      <Helmet>
+      <MetaTags>
         <html lang="en" />
         <title>{props.title}</title>
+        <link rel="canonical" href={"http://mysite.com/"+ props.title} />
+        <meta charSet="utf-8" />
+        <meta name="keywords" content={props.title + props.descriptions} />
         <meta name="description" content={props.descriptions} />
-        <meta name="keywords" content={props.keywords} />
+        <meta name="image" content='https://moxa.vercel.app/assets/images/Moxa-logo.png' data-react-helmet="true"/>
+
         <meta property="og:type" content="website" />
         <meta property="og:url" content={props.url} />
         <meta property="og:title" content={props.title} />
@@ -86,7 +157,12 @@ const LayoutProduct = (props) => {
         <meta property="twitter:title" content={props.title} />
         <meta property="twitter:description" content={props.descriptions} />
         <meta property="twitter:image" content={props.image} />
-      </Helmet>
+       
+        <script type="application/ld+json">
+          {JSON.stringify(structuredJSON)}
+      </script>
+      </MetaTags>
+
 
       <div id="layout">
         <header className={`${scrolled ? "scrolled shadow-sm" : ""}`}>
@@ -150,7 +226,7 @@ const LayoutProduct = (props) => {
                 </li>
                 <li >
                 <div className="downloadNow">
-                  <a className="downloadNow download-now" style={{color:"#ffffff"}} href="/artikel">Download Sekarang</a>
+                  <a className="downloadNow download-now" style={{color:"#ffffff"}} href={props.downloadLink}>Download Sekarang</a>
                 </div>
                 </li>
               </ul>
@@ -164,20 +240,17 @@ const LayoutProduct = (props) => {
             <div className="row">
               <div className="col-lg-8 col-md-6 f-1a">
                 <img src={logo2} alt="logo-moxaid" className="logo2" />
-
-               
               </div>
-
               <div className="col-lg-4 col-md-6 f-1b">
                 <ul>
                   <li>
-                    <a href="/faq#contact">Tentang Kami</a>
+                    <a className="tentangKami" href="/faq#contact">Tentang Kami</a>
                   </li>
                   <li>
-                    <a href="/#product">Hubungi Kami</a>
+                    <a className="tentangKami" href="/#product">Hubungi Kami</a>
                   </li>
                   <li>
-                    <a href="/faq">FAQ</a>
+                    <a className="tentangKami" href="/faq">FAQ</a>
                   </li>
                 </ul>
 
@@ -198,8 +271,8 @@ const LayoutProduct = (props) => {
               </div>
 
               {width < 575 ? (
-                <div className="col-md-4 f-1c">
-                  <p>&copy;PT Astra Kreasi Digital. All Rights Reserved.</p>
+                <div className="col-md-8 f-1c">
+                  <p>&copy;&nbsp;PT Astra Kreasi Digital. All Rights Reserved.</p>
                 </div>
               ) : null}
             </div>
@@ -208,8 +281,8 @@ const LayoutProduct = (props) => {
           <div className="f-2">
             <div className="wrapper">
               {width < 575 ? null : (
-                <div className="col-md-4 f-1c">
-                  <p>&copy;PT Astra Kreasi Digital. All Rights Reserved.</p>
+                <div className="col-md-8 f-1c">
+                  <p>&copy;&nbsp;PT Astra Kreasi Digital. All Rights Reserved.</p>
                 </div>
               )}
 

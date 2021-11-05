@@ -15,7 +15,7 @@ const HPSection4Fix = (props) => {
 
   const  getData= async()=> {
     let getData
-    await axios.get(process.env.REACT_APP_API_URL + "/articles") 
+    await axios.get("https://moxa-cms.shared.zali.pro/articles") 
     .then((res) => {
        getData = res.data 
       setLoading(false);
@@ -29,15 +29,14 @@ const HPSection4Fix = (props) => {
     setLoading(true);
     axios
       .all([
-        axios.get(process.env.REACT_APP_API_URL + "/homepage"),
-        axios.get(process.env.REACT_APP_API_URL + "/partners?_sort=order:asc"),
-        axios.get(process.env.REACT_APP_API_URL + "/articles"),
+        axios.get("https://moxa-cms.shared.zali.pro/homepage"),
+        axios.get("https://moxa-cms.shared.zali.pro/partners?_sort=order:asc"),
+        axios.get("https://moxa-cms.shared.zali.pro/articles"),
       ])
       .then((res) => {
         setText1(res[0].data.text_partner_1);
         setText2(res[0].data.text_partner_2);
         setPartners(res[1].data);
-        console.log(res)
       })
       .catch((err) => {
         console.log(err);
@@ -46,7 +45,6 @@ const HPSection4Fix = (props) => {
         setLoading(true);
         const dataBlog = await getData()
         const sliceData = dataBlog.slice(0,2)
-        console.log(sliceData)
         await setData(sliceData)
         console.log('ini data',data)
         setLoading(false);
@@ -54,14 +52,14 @@ const HPSection4Fix = (props) => {
       fetchData()
   }, []);
   const items = data? data.slice(0, 2).map((data)=>
-              <div className="col-md-6">
-                <div style={{width:'400px',marginBottom:'20px'}} >
-                <a href={`/artikel/${data.id}`} className="zoom-wrapper" style={{textDecoration:'none'}}>
+              <div className="news-item col-md-6">
+                <div className="zoom-wrapper" >
+                <a href={`/artikel/${data.id}`}  style={{textDecoration:'none'}}>
                     <img  src={data.cover.url } className="cover-zoom" />
                 </a>
                 <a href={`/artikel/${data.id}`} style={{textDecoration:'none'}}>
-                    <h4 style={{textAlign:'start', marginTop:'30px'}}>{data.title}</h4>
-                    <p style={{textAlign:'start', marginTop:'50px',fontWeight:'800', fontSize:'20px',color:"#04325F"}}>Moxa {data.tags[0].name}/{<Moment format="DD MMMM YYYY">{data.created_at}</Moment>}</p>
+                    <h4 className='titleBlog'>{data.title}</h4>
+                    <h6 className='date'>Moxa {data.tags[0].name}/{<Moment format="DD MMMM YYYY">{data.created_at}</Moment>}</h6>
                 </a>
                 </div>
             </div>
@@ -105,21 +103,19 @@ const HPSection4Fix = (props) => {
         <div className="wrapper">
           <div className="row">
             <div className="col-lg-8 m-auto">
-              <h1 style={{fontWeight:'700'}}>Blog </h1>
-              <p style={{fontWeight:'500'}}>Cari tahu berita terkini lewat artikel Moxa sebagai inspirasi untuk setiap pilihanmu  </p>
+              <h3 >BLOG </h3>
+              <h5 >Cari tahu berita terkini lewat artikel Moxa sebagai inspirasi untuk setiap pilihanmu  </h5>
             </div>
           </div>
           <div className="row" style={{marginTop:'50px',marginBottom:'50px'}}>
           {items}
           </div>
-          <div className="row" style={{margin:'0',padding:'0'}}>
-              <div className="col" style={{display:'flex',justifyContent:'end',marginLeft:'40px'}}>
-                <a href="/" style={{fontSize:'28px',textDecoration:'none',fontWeight:'700', color:'#04325F'}}>Lihat semua promo </a> 
-               </div>
-               
-              <div className="col" style={{display:'flex',justifyContent:'start',margin:'auto'}}>
-               <img height="20px"  src={arrowRight}/> 
-              </div>
+          <div  style={{margin:'auto',textAlign:'center',padding:'0'}}>
+              
+                <a href="/artikel/blog" style={{fontSize:'28px',textDecoration:'none',fontWeight:'700', color:'#04325F'}}>Lihat Semua Blog </a> 
+              
+               <img className='promoLink' height="20px" style={{verticalAlign:'auto'}}  src={arrowRight}/> 
+          
           </div>
         </div>
       </div>

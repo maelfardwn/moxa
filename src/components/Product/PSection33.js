@@ -36,6 +36,7 @@ const PSection33 = (props) => {
         
       }])
       const [data,setData] =useState(MobilBaru)
+      const [nextButton,setNextButton]= useState(false)
       const [tabButtonColorMobilBaru,setTabButtonColorMobilBaru]=useState([
           {background:"#005DAA",
           color:'white'
@@ -47,6 +48,7 @@ const PSection33 = (props) => {
       
     useEffect(() => {
       setData(MobilBaru)
+      
     }, []);
 
     const MobilBaruOnChange=()=>{
@@ -78,9 +80,12 @@ const PSection33 = (props) => {
         }
       }
       const nextStep=()=>{
+        if(i<=data.length){
+          setNextButton(true)
+        }
           if(i<data.length){
-        setI(i+=1)
-    }
+            setI(i+=1)
+          }
       }
 
   return (
@@ -99,7 +104,7 @@ const PSection33 = (props) => {
                     <h5 style={{margin:'auto'}}> {i+1}/5 </h5> 
                 </div>
                 <div className="col-md-3 col-sm-3 " style={{display:'flex',justifyContent:'flex-end'}}>
-                    <button onClick={nextStep} style={{height:'37px', border:'none',background:'none'}}><img src={arrowRight} alt="left"/></button><a></a> </div>
+                    <button onClick={nextStep} disabled={nextButton} style={{height:'37px', border:'none',background:'none'}}><img src={arrowRight} alt="left"/></button><a></a> </div>
                 </div>
             
         </div>

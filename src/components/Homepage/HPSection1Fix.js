@@ -39,16 +39,30 @@ const HPSection1Fix = (props) => {
 
   return (
     <div>
-      <div id="banner" >
+      <div id="banner" style={{background:`${props.data[index].image.url}`}} >
       {transitions.map(({ item, props, key }) => (
           <div>
             {width < 576 ? (
               <div>
-               
+                <animated.div
+                  className="slider"
+                  key={key}
+                  style={{
+                    ...props,
+                    backgroundImage: `url(${item.image.url})`,
+                  }}
+                ></animated.div>
               </div>
             ) : (
               <div>
-               
+                <animated.div
+                  className="slider"
+                  key={key}
+                  style={{
+                    ...props,
+                    backgroundImage: `url(${item.image.url})`,
+                  }}
+                ></animated.div>
               </div>
             )}
           </div>
@@ -56,9 +70,9 @@ const HPSection1Fix = (props) => {
 
         <div className="wrapper" style={{marginTop:'100px'}}>
           <div className="row">
-            <div className="col-md-6">
-              <h1>{props.data[index].title}</h1>
-              <h2>{props.data[index].subtitle}</h2>
+            <div className="col-md-8">
+              <h1>{props.data[index].text}</h1>
+              <h2>{props.data[index].subtext}</h2>
               
                 <div>
                   <div className="download-btn">
@@ -80,11 +94,6 @@ const HPSection1Fix = (props) => {
                 </div>
             </div>  
                
-            <div className="col-md-6" style={{backgroundImage: 'url(' + require('../../assets/img/Group-2.png') + ')',zIndex:'99',backgroundRepeat:'no-repeat'}}>
-               
-                    <img src={props.data[index].image} style={{zIndex:'0'}}/>
-            </div>
-    
           </div>
           <div className="slide-nav">
             {props.data.map((item, i) => (
