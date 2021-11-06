@@ -152,7 +152,7 @@ const LayoutProduct = (props) => {
   const fitur = products.length>0? products.map(product => 
     
     
-    <li className="nested-menu">
+    <li className="nested-menu menu-api">
       <a href={"/product/detail/"+product.id}>
         {product.name}
       </a>
@@ -205,7 +205,7 @@ const LayoutProduct = (props) => {
               <ul className={`${location.pathname === "/faq" ? "on-orange" : null}`}>
                 <li className="is-nested">
                   <a href="/tentang">Fitur</a> <img width="15px" src={vector}/>
-                  <ul className="nested-ul shadow">
+                  <ul className=" menu-api nested-ul shadow ">
                   {fitur}
                   </ul>
                 </li>
@@ -231,7 +231,7 @@ const LayoutProduct = (props) => {
                 </li>
                 <li >
                 <div className="downloadNow">
-                  <a className="downloadNow download-now" style={{color:"#ffffff"}} href={props.downloadLink}>Download Sekarang</a>
+                  <a className="downloadNow download-now" style={{color:"#ffffff"}} href={props.downloadLink} target="_blank">Download Sekarang</a>
                 </div>
                 </li>
               </ul>

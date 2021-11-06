@@ -9,17 +9,17 @@ const TnC = (props) => {
   const [loading, setLoading] = useState(true);
   const [tnc, setTnc] = useState({});
   const [downloadLink, setDownloadLink] = useState('');
-
   useEffect(() => {
     setLoading(true);
-   
-         axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
-      .then((res) => {
-        setDownloadLink(res[0].data[0].button_link)
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    
+    axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+    .then((res) => {
+      setDownloadLink(res.data[0].button_link)
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
     axios
       .get(process.env.REACT_APP_API_URL + "/term-and-conditions")
       .then((res) => res.data)

@@ -30,7 +30,7 @@ const PSection4 = (props) => {
           <div className="col-md-6" style={{display:'flex',justifyContent:'flex-end'}}>
               <a className="btnFaq" href="/faq" style={{marginRight:'40px'}}>Lihat FAQ</a>
           </div>
-          <div className="col-md-6" style={{display:'flex',justifyContent:'flex-start'}}>
+          <div className="col-md-6 productButtonDownloadFooter" >
           
               <a  className="btnDownload" href={props.downloadLink} style={{marginLeft:'20px'}}>Download Sekarang</a>
            

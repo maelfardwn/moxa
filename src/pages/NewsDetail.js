@@ -3,15 +3,25 @@ import Layout from "../components/Layout/Layout";
 import axios from "axios";
 import moment from "moment";
 import "../assets/styles/scss/ck-content.css";
+import LayoutProduct from "../components/Layout/LayoutProduct";
 
 const NewsDetail = (props) => {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
   const [related, setRelated] = useState([]);
-
+  const [downloadLink, setDownloadLink] = useState('');
+  
   useEffect(() => {
     setLoading(true);
     let keyword = "";
+
+    axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+    .then((res) => {
+      setDownloadLink(res.data[0].button_link)
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 
     axios
       .get(`https://moxa-cms.shared.zali.pro/articles/${props.match.params.id}`)
@@ -78,7 +88,7 @@ const NewsDetail = (props) => {
   } else {
     return (
       <div>
-        <Layout
+        <LayoutProduct downloadLink={downloadLink}
           title={data.title}
           descriptions={data.meta_descriptions}
           keywords={data.meta_keywords}
@@ -186,7 +196,7 @@ const NewsDetail = (props) => {
               </div>
             </div>
           </div>
-        </Layout>
+        </LayoutProduct>
       </div>
     );
   }

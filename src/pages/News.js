@@ -6,6 +6,7 @@ import queryString from "query-string";
 import Pagination from "react-js-pagination";
 
 import Layout from "../components/Layout/Layout";
+import LayoutProduct from "../components/Layout/LayoutProduct";
 
 const News = (props) => {
   const [articles, setArticles] = useState([]);
@@ -27,10 +28,18 @@ const News = (props) => {
   const [page, setPage] = useState(1);
   const [totalData, setTotalData] = useState(1);
   const [perPage, setPerPage] = useState(9);
-
+  const [downloadLink, setDownloadLink] = useState('');
   const { width } = useWindowDimensions();
 
   useEffect(() => {
+    axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+  
+    .then((res) => {
+      setDownloadLink(res.data[0].button_link)
+    })
+    .catch((err) => {
+      console.log(err);
+    });
     axios
       .all([
         axios.get(
@@ -220,7 +229,7 @@ const News = (props) => {
 
   return (
     <div>
-      <Layout title="Berita">
+      <LayoutProduct downloadLink={downloadLink} title="Berita">
         <div id="berita">
           <div className="news-top">
             <img src={require("../assets/img/shape46.png")} alt="shape46" className="shape46" />
@@ -409,7 +418,7 @@ const News = (props) => {
             </div>
           </div>
         </div>
-      </Layout>
+      </LayoutProduct>
     </div>
   );
 };

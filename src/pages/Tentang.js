@@ -8,14 +8,24 @@ import TGSection3 from "../components/Tentang/TGSection3";
 import HPSectionUsp from "../components/Homepage/HPSectionUsp";
 import TGSectionVM from "../components/Tentang/TGSectionVM";
 import TGSectionPartners from "../components/Tentang/TGSectionPartners";
+import LayoutProduct from "../components/Layout/LayoutProduct";
 
 const Tentang = (props) => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState({});
   const [partners, setPartners] = useState([]);
+  const [downloadLink, setDownloadLink] = useState('');
 
   useEffect(() => {
     setLoading(true);
+
+    axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+    .then((res) => {
+      setDownloadLink(res.data[0].button_link)
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 
     axios
       .get(process.env.REACT_APP_API_URL + "/about-page")
@@ -46,7 +56,7 @@ const Tentang = (props) => {
 
   return (
     <div>
-      <Layout title="Tentang Moxa">
+      <LayoutProduct downloadLink={downloadLink} title="Tentang Moxa">
         <div id="tentang">
           <TGSection1 data={data} />
           <TGSectionVM />
@@ -55,7 +65,7 @@ const Tentang = (props) => {
           <TGSection2 data={data} />
           <TGSection3 data={data} />
         </div>
-      </Layout>
+      </LayoutProduct>
     </div>
   );
 };

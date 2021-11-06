@@ -21,8 +21,17 @@ const Faq = (props) => {
     akun: [],
     aplikasi: [],
   });
+  const [downloadLink, setDownloadLink] = useState('');
 
   useEffect(() => {
+    axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+  
+  .then((res) => {
+    setDownloadLink(res.data[0].button_link)
+  })
+  .catch((err) => {
+    console.log(err);
+  });
     axios
       .get(process.env.REACT_APP_API_URL + "/faqs")
       .then((res) => res.data)
@@ -49,7 +58,7 @@ const Faq = (props) => {
 
   return (
     <div>
-      <LayoutProduct title="FAQ">
+      <LayoutProduct downloadLink={downloadLink} title="FAQ">
         <div id="faq">
           <div className="wrapper">
             <h1 className="title">Punya Pertanyaan Lebih Banyak?</h1>

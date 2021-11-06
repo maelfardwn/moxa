@@ -170,7 +170,7 @@
   -webkit-transform: translate(50%, 100%);
   transform: translate(50%, 100%);
   border-radius: 20px;
-  padding: 20px 30px;
+  padding: 0px 20px 20px;
 }
 
 #layout header .wrapper nav ul li.is-nested .nested-ul.w-200 {
@@ -181,6 +181,17 @@
   margin: 0;
   margin-bottom: 5px;
   padding-bottom: 0px;
+}
+
+
+
+#layout header .wrapper nav ul li.is-nested .nested-ul.menu-api {
+  width: 380px;
+}
+
+
+#layout header .wrapper nav ul li.is-nested .nested-ul .nested-menu .menu-api {
+  width: 300px;
 }
 
 #layout header .wrapper nav ul li.is-nested .nested-ul .nested-menu:last-child {
@@ -462,7 +473,7 @@ li .tentangKami {
 
 @media screen and (max-width: 767px) {
   .wrapper {
-    width: 90%;
+    width: 85%;
   }
 }
 
@@ -2679,6 +2690,7 @@ li .tentangKami {
   height: 60px;
 }
 
+
 #trivia-page
   .wrapper
   .trivia-quiz
@@ -3086,7 +3098,10 @@ li .tentangKami {
     height: 65px;
   }
 }
-
+.productButtonDownloadFooter{
+  display: flex;
+  justify-content: start;
+}
 @media screen and (max-width: 767px) {
   #layout #homepage #usp .row.usp-mobile {
     margin-bottom: 0;
@@ -3843,6 +3858,20 @@ li .tentangKami {
   }
 }
 
+.buttonWrapper .btnFaq {
+  background: #faab1c;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 30px;
+  width: 230px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 28px;
+}
 @media screen and (min-width: 1440px) {
   #tentang #trivia-banner .visual {
     width: 450px;
@@ -4071,28 +4100,50 @@ a .download-now:hover {
 
   color: #04325f;
 }
-@media screen and (max-width: 1600px) {
+
+@media screen and (max-width: 3000px) {
   .FrameHP {
     width: 300px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
-    left: 283px;
+    left: 110px;
     bottom: 938px;
-    height: 424px;
+    height: 520px;
   }
   .SliderHp {
     background-repeat: no-repeat;
     position: absolute;
     width: 205px;
-    left: 331px;
+    left: 159px;
     bottom: 977px;
-    height: 353px;
+    height: 441px;
     border-radius: 20px;
     z-index: 9;
     will-change: opacity;
   }
-
+  .titleSection3 {
+    position: absolute;
+    bottom: 295px;
+    left: 210px;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    color: #04325f;
+}
+  .subtitleSection3 {
+    position: absolute;
+    bottom: 146px;
+    left: 210px;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    color: #04325f;
+}
   .wrappperSection3 {
     position: "relative";
     height: "400px";
@@ -4104,12 +4155,77 @@ a .download-now:hover {
 
   .wrappperSection3-3 {
     position: absolute;
-    width: 65%;
-    left: 400px;
+    width: 75%;
+    left: 226px;
     margin: auto;
+    bottom: 1002px;
     border-radius: "10px";
     margin-top: 100px;
-    height: 400px;
+    height: 373px;
+    background: rgba(242, 244, 249, 0.5);
+  }
+}
+@media screen and (max-width: 2000px) {
+  .FrameHP {
+    width: 300px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 110px;
+    bottom: 938px;
+    height: 520px;
+  }
+  .SliderHp {
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 205px;
+    left: 159px;
+    bottom: 977px;
+    height: 441px;
+    border-radius: 20px;
+    z-index: 9;
+    will-change: opacity;
+  }
+  .titleSection3 {
+    position: absolute;
+    bottom: 295px;
+    left: 210px;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    color: #04325f;
+}
+  .subtitleSection3 {
+    position: absolute;
+    bottom: 146px;
+    left: 210px;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    color: #04325f;
+}
+  .wrappperSection3 {
+    position: "relative";
+    height: "400px";
+    display: flex;
+    justify-content: center;
+    margin-bottom: "300px";
+    margin-top: 100px;
+  }
+
+  .wrappperSection3-3 {
+    position: absolute;
+    width: 75%;
+    left: 226px;
+    margin: auto;
+    bottom: 1002px;
+    border-radius: "10px";
+    margin-top: 100px;
+    height: 373px;
     background: rgba(242, 244, 249, 0.5);
   }
 }
@@ -4121,16 +4237,16 @@ a .download-now:hover {
     background-repeat: no-repeat;
     position: absolute;
     left: 61px;
-    bottom: 800px;
-    height: 680px;
+    bottom: 719px;
+    height: 780px;
   }
   .SliderHp {
     background-repeat: no-repeat;
     position: absolute;
     width: 303px;
-    left: 134px;
-    bottom: 855px;
-    height: 570px;
+    left: 137px;
+    bottom: 790px;
+    height: 652px;
     border-radius: 20px;
     z-index: 9;
     will-change: opacity;
@@ -4142,6 +4258,7 @@ a .download-now:hover {
     margin: auto;
     margin-top: 100px;
     width: 75%;
+    bottom: 900px;
     height: 400px;
     padding: 150px;
   }
@@ -4172,21 +4289,21 @@ a .download-now:hover {
 
 @media screen and (max-width: 1350px) {
   .FrameHP {
-    width: 294px;
+    width: 300px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
-    left: 112px;
-    bottom: 938px;
-    height: 424px;
+    left: 95px;
+    bottom: 873px;
+    height: 520px;
   }
   .SliderHp {
     background-repeat: no-repeat;
     position: absolute;
-    width: 203px;
-    left: 158px;
-    bottom: 977px;
-    height: 353px;
+    width: 205px;
+    left: 143px;
+    bottom: 916px;
+    height: 435px;
     border-radius: 20px;
     z-index: 9;
     will-change: opacity;
@@ -4194,7 +4311,7 @@ a .download-now:hover {
   .wrappperSection3-3 {
     margin: auto;
     position: absolute;
-    left: 300px;
+    left: 319px;
     width: 65%;
     height: 290px;
     margin-top: 100px;
@@ -4211,7 +4328,7 @@ a .download-now:hover {
   }
   .subtitleSection3 {
     position: absolute;
-    bottom: 160px;
+    top:79px;
     left: 20px;
     margin-left: 80px;
     color: #04325f;
@@ -4220,7 +4337,7 @@ a .download-now:hover {
   }
   .nav-handler {
     position: absolute;
-    bottom: 50px;
+    bottom: 27px;
     left: 20px;
     margin-left: 80px;
   }
@@ -4228,40 +4345,42 @@ a .download-now:hover {
 
 @media screen and (max-width: 1250px) {
   .FrameHP {
-    width: 294px;
+    width: 300px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
     left: 88px;
     bottom: 938px;
-    height: 424px;
+    height: 520px;
   }
   .SliderHp {
     background-repeat: no-repeat;
     position: absolute;
     width: 203px;
-    left: 133px;
-    bottom: 977px;
-    height: 353px;
+    left: 138px;
+    bottom: 982px;
+    height: 436px;
     border-radius: 20px;
     z-index: 9;
     will-change: opacity;
   }
   .wrappperSection3-3 {
     margin: auto;
-    width: 65%;
-    margin-top: 100px;
+    width: 75%;
+    margin-top: 33px;
     position: absolute;
     left: 200px;
-    height: 290px;
+    height: 340px;
     padding: 80px;
   }
   .titleSection3 {
-    padding-bottom: "50px";
+    position: absolute;
+    bottom: 269px;
+    left: 91px;
     color: #04325f;
     font-weight: 700;
     font-size: 25px;
-    margin-left: 150px;
+    margin-left: 80px;
   }
   .subtitleSection3 {
     bottom: 130px;
@@ -4277,21 +4396,21 @@ a .download-now:hover {
 
 @media screen and (max-width: 1150px) {
   .FrameHP {
-    width: 294px;
+    width: 300px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
     left: 88px;
     bottom: 938px;
-    height: 424px;
+    height: 520px;
   }
   .SliderHp {
     background-repeat: no-repeat;
     position: absolute;
-    width: 203px;
-    left: 133px;
+    width: 205px;
+    left: 136px;
     bottom: 977px;
-    height: 353px;
+    height: 442px;
     border-radius: 20px;
     z-index: 9;
     will-change: opacity;
@@ -4301,17 +4420,18 @@ a .download-now:hover {
     position: absolute;
     left: 160px;
     margin: auto;
-    margin-top: 100px;
-
-    height: 290px;
+    margin-top: 41px;
+    height: 322px;
     padding: 80px;
   }
   .titleSection3 {
-    padding-bottom: "50px";
+    position: absolute;
+    bottom: 250px;
+    left: 149px;
     color: #04325f;
     font-weight: 700;
     font-size: 25px;
-    margin-left: 210px;
+    margin-left: 80px;
   }
   .subtitleSection3 {
     margin-left: 210px;
@@ -4320,154 +4440,122 @@ a .download-now:hover {
     font-size: 23px;
   }
   .nav-handler {
-    margin-left: 210px;
+    position: absolute;
+    bottom: 43px;
+    left: 151px;
+    margin-left: 80px;
   }
 }
 
 @media screen and (max-width: 1050px) {
   .FrameHP {
-    width: 294px;
-    z-index: 9;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 88px;
-    bottom: 938px;
-    height: 424px;
-  }
-  .SliderHp {
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 203px;
-    left: 133px;
-    bottom: 977px;
-    height: 353px;
-    border-radius: 20px;
-    z-index: 9;
-    will-change: opacity;
-  }
-  .wrappperSection3-3 {
-    width: 75%;
-    position: absolute;
-    left: 150px;
-    margin: auto;
-    margin-top: 100px;
-
-    height: 250px;
-    padding: 80px;
-  }
-  .titleSection3 {
-    padding-bottom: "50px";
-    top: 30px;
-    color: #04325f;
-    font-weight: 700;
-    font-size: 25px;
-    margin-left: 210px;
-  }
-  .subtitleSection3 {
-    top: 70px;
-    margin-left: 210px;
-    color: #04325f;
-    font-weight: 400;
-    font-size: 23px;
-  }
-  .nav-handler {
-    margin-left: 210px;
-  }
+  width: 300px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 88px;
+  bottom: 938px;
+  height: 520px;
+}
+.SliderHp {
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 205px;
+  left: 136px;
+  bottom: 977px;
+  height: 442px;
+  border-radius: 20px;
+  z-index: 9;
+  will-change: opacity;
+}
+.wrappperSection3-3 {
+  width: 75%;
+  position: absolute;
+  left: 160px;
+  margin: auto;
+  margin-top: 41px;
+  height: 322px;
+  padding: 80px;
+}
+.titleSection3 {
+  position: absolute;
+  bottom: 250px;
+  left: 149px;
+  color: #04325f;
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: 80px;
+}
+.subtitleSection3 {
+  margin-left: 210px;
+  color: #04325f;
+  font-weight: 400;
+  font-size: 23px;
+}
+.nav-handler {
+  position: absolute;
+  bottom: 26px;
+  left: 151px;
+  margin-left: 80px;
+}
   .PSection3 h1 {
     margin-top: 100px;
   }
 }
 
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 769px) {
   .FrameHP {
-    width: 227px;
+    width: 300px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
-    left: 375px;
-    bottom: 1184px;
-    height: 314px;
+    left: 30px;
+    bottom: 978px;
+    height: 520px;
   }
   .SliderHp {
-    width: 155px;
-    height: 263px;
-    left: 413px;
-    bottom: 1209px;
-  }
-  .wrappperSection3 {
-    margin-top: 100px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 205px;
+    left: 79px;
+    bottom: 1014px;
+    height: 442px;
+    border-radius: 20px;
+    z-index: 9;
+    will-change: opacity;
   }
   .wrappperSection3-3 {
-    width: 75%;
+    width: 70%;
     position: absolute;
+    left: 160px;
     margin: auto;
-    margin-top: 100px;
-    bottom: 902px;
-    height: 350px;
+    margin-top: 21px;
+    height: 397px;
     padding: 80px;
   }
   .titleSection3 {
-    margin-top: 80px;
-    padding-bottom: "50px";
+    position: absolute;
+    bottom: 334px;
+    left: 92px;
     color: #04325f;
     font-weight: 700;
     font-size: 25px;
-    top: 10px;
-    margin-left: 70px;
+    margin-left: 80px;
   }
   .subtitleSection3 {
-    top: 130px;
-    margin-left: 70px;
+    margin-left: 151px;
+    margin-top: -20px;
+    padding-right: 20px;
     color: #04325f;
     font-weight: 400;
     font-size: 23px;
   }
   .nav-handler {
-    margin-left: 70px;
-  }
-  .PSection2 p {
-    position: static;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .FrameHP {
-    width: 245px;
-    z-index: 9;
-    background-repeat: no-repeat;
     position: absolute;
-    left: 251px;
-    bottom: 1358px;
-    height: 290px;
-  }
-  .SliderHp {
-    width: 165px;
-    height: 230px;
-    left: 290px;
-    bottom: 1390px;
-  }
-  .wrappperSection3-3 {
-    position: absolute;
-    margin: auto;
-    margin-top: 200px;
-    bottom: 1042px;
-  }
-  .titleSection3 {
-    position: absolute;
-    left: 50;
-    margin-top: 50px;
-    margin-left: 15px;
-  }
-  .subtitleSection3 {
-    position: absolute;
-    left: 50;
-    margin-left: 15px;
-    margin-bottom: 20px;
-  }
-  .nav-handler {
-    position: absolute;
-    left: 50;
-    margin-left: 15px;
+    bottom: 25px;
+    left: 151px;
+    margin-left: 17px;
   }
 }
 
@@ -4499,7 +4587,7 @@ a .download-now:hover {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 577px) {
   .col-sm-6,
   .col-sm-3 {
     width: 33%;
@@ -4550,32 +4638,35 @@ a .download-now:hover {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 577px) {
   .FrameHP {
-    width: 182px;
+    width: 150px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
-    left: 163px;
-    bottom: 1369px;
-    height: 244px;
+    left: 128px;
+    bottom: 1269px;
+    height: 260px;
   }
   .SliderHp {
-    width: 126px;
-    height: 195px;
-    left: 190px;
-    bottom: 1394px;
+    width: 102px;
+    height: 216px;
+    left: 153px;
+    border-radius: 10px;
+    bottom: 1292px;
   }
   .wrappperSection3-3 {
     position: absolute;
     width: 80%;
+    bottom: 764px;
+    height: 550px;
     left: 40px;
   }
 
   .titleSection3 {
     position: absolute;
     left: 50;
-
+    bottom: 447px;
     margin-top: 50px;
     margin-left: 15px;
   }
@@ -4583,14 +4674,39 @@ a .download-now:hover {
     position: absolute;
     bottom: 120px;
     left: 50;
+    top: 140px;
     margin-left: 15px;
     margin-bottom: 20px;
   }
   .nav-handler {
     position: absolute;
-    left: 50;
+    left: 69px;
     margin-left: 15px;
   }
+  .buttonWrapper .btnFaq {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 215px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.productButtonDownloadFooter{
+  display: flex;
+  justify-content: center;
+}
+.buttonWrapper .btnDownload {
+  height: 35px;
+  width: 220px;
+  font-size: 15px;
+}
   .col-sm-6,
   .col-sm-3 {
     width: 33%;
@@ -4811,20 +4927,6 @@ button {
   font-size: 28px;
 }
 
-.buttonWrapper .btnFaq {
-  background: #faab1c;
-  height: 62px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  border-radius: 30px;
-  width: 230px;
-  border: none;
-  color: white;
-  font-weight: 700;
-  font-size: 28px;
-}
 
 @media screen and (max-width: 1133px) {
   .WrapperBackground4 {
@@ -4919,9 +5021,26 @@ button {
     width: 210px;
     font-size: 25px;
   }
+  .buttonWrapper .btnFaq {
+    background: #faab1c;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 230px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    margin-right: 20px;
+}
   .buttonWrapper .btnDownload {
     height: 58px;
     width: 280px;
+    margin: 0;
+    margin-right: 25px;
     font-size: 25px;
   }
 }
@@ -5002,7 +5121,7 @@ button {
     margin-bottom: 20px;
   }
   .buttonWrapper .btnDownload {
-    height: 42px;
+    height: 35px;
     width: 220px;
     font-size: 18px;
   }
@@ -5030,11 +5149,7 @@ button {
     font-size: 15px;
     margin-bottom: 20px;
   }
-  .buttonWrapper .btnDownload {
-    height: 35px;
-    width: 220px;
-    font-size: 15px;
-  }
+  
 }
 
 @media screen and (max-width: 383px) {

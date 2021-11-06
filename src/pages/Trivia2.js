@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout";
 import axios from "axios";
 import ReactGA from "react-ga";
+import LayoutProduct from "../components/Layout/LayoutProduct";
 
 const Trivia = (props) => {
   const [loading, setLoading] = useState(true);
@@ -25,10 +26,19 @@ const Trivia = (props) => {
   const [next, setNext] = useState("trivia");
   const [currentQuestion, setCurrentQuestion] = useState({});
   const [nextQuestion, setNextQuestion] = useState({});
+  const [downloadLink, setDownloadLink] = useState('');
+
 
   useEffect(() => {
     setLoading(true);
 
+    axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+    .then((res) => {
+      setDownloadLink(res.data[0].button_link)
+    })
+    .catch((err) => {
+      console.log(err);
+    });
     axios
       .all([
         axios.get(process.env.REACT_APP_API_URL + `/trivia-1st-questions`),
@@ -167,7 +177,7 @@ const Trivia = (props) => {
 
   return (
     <div>
-      <Layout title="Trivia">
+      <LayoutProduct downloadLink={downloadLink} title="Trivia">
         <div id="trivia-page">
           <img src={require("../assets/img/shape34.png")} alt="shape34" className="shape34" />
           <img src={require("../assets/img/shape48.png")} alt="shape48" className="shape48" />
@@ -513,7 +523,7 @@ const Trivia = (props) => {
             ) : null}
           </div>
         </div>
-      </Layout>
+      </LayoutProduct>
     </div>
   );
 };
