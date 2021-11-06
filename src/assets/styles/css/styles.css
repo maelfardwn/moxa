@@ -4023,12 +4023,12 @@ a .download-now:hover {
 }
 .product-description {
   margin-top: 10px;
-  position: absolute;
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 35px;
   /* or 85% */
 
   text-align: center;

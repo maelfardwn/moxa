@@ -61,11 +61,11 @@ const PSection3Com = (props) => {
       const [tabsIndex,setTabsIndex]= useState(0)
     const tabs = props.variant.length>0 && props.variant.length>1 ? props.variant.map((variant,i)=>
                 i==tabsIndex?
-                <div className="col-md-4" style={{zIndex:'90'}}>
-                    <button  style={{paddingLeft:'4rem',paddingRight:'4rem',zIndex:'90',height:'74px',marginTop:'30px',color:isActtive[0].color, background:isActtive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
+                <div className="col-md-4" style={{zIndex:'90',display:'flex',justifyContent:'center'}}>
+                    <button  style={{paddingLeft:'2rem',paddingRight:'2rem',zIndex:'90',height:'74px',marginTop:'30px',color:isActtive[0].color, background:isActtive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
                 </div>:
-                <div className="col-md-4" style={{zIndex:'90'}}>
-                    <button onClick={()=>Tmp(i)} style={{paddingLeft:'4rem',paddingRight:'4rem',zIndex:'90',height:'74px',marginTop:'30px', color:notActive[0].color, background:notActive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
+                <div className="col-md-4" style={{zIndex:'90',display:'flex',justifyContent:'center'}}>
+                    <button onClick={()=>Tmp(i)} style={{paddingLeft:'2rem',paddingRight:'2rem',zIndex:'90',height:'74px',marginTop:'30px', color:notActive[0].color, background:notActive[0].background,borderRadius:'43px',fontSize:'28px',fontWeight:'700',border:'none'}}>{variant.title}</button>
                 </div>) : null
     const variantData = props.variant.length>0?
     
