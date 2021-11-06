@@ -153,7 +153,7 @@ const LayoutProduct = (props) => {
     
     
     <li className="nested-menu">
-      <a href="/product/detail/id">
+      <a href={"/product/detail/"+product.id}>
         {product.name}
       </a>
     </li>): <h2>loading..</h2>
