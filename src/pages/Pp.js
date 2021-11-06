@@ -1,16 +1,24 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import Layout from "../components/Layout/Layout";
+import LayoutProduct from "../components/Layout/LayoutProduct";
 import Contact from "../components/Contact";
 
 const Pp = (props) => {
   const [loading, setLoading] = useState(true);
   const [pp, setPp] = useState({});
+  const [downloadLink, setDownloadLink] = useState('');
 
   useEffect(() => {
     setLoading(true);
-
+    axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+    .then((res) => {
+      console.log('link',res)
+      setDownloadLink(res.data[0].button_link)
+    })
+    .catch((err) => {
+      console.log(err);
+    });
     axios
       .get(process.env.REACT_APP_API_URL + "/privacy-policy")
       .then((res) => res.data)
@@ -26,7 +34,7 @@ const Pp = (props) => {
 
   return (
     <div>
-      <Layout title="Kebijakan Privasi Aplikasi Moxa">
+      <LayoutProduct downloadLink={downloadLink} title="Kebijakan Privasi Aplikasi Moxa">
         <div id="pp">
           <div className="wrapper">
             <h1 className="title">Kebijakan Privasi Aplikasi Moxa</h1>
@@ -320,7 +328,7 @@ const Pp = (props) => {
         </div>
 
         <Contact />
-      </Layout>
+      </LayoutProduct>
     </div>
   );
 };

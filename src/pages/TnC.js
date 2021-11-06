@@ -3,13 +3,23 @@ import axios from "axios";
 
 import Layout from "../components/Layout/Layout";
 import Contact from "../components/Contact";
+import LayoutProduct from "../components/Layout/LayoutProduct";
 
 const TnC = (props) => {
   const [loading, setLoading] = useState(true);
   const [tnc, setTnc] = useState({});
+  const [downloadLink, setDownloadLink] = useState('');
 
   useEffect(() => {
     setLoading(true);
+   
+         axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+      .then((res) => {
+        setDownloadLink(res[0].data[0].button_link)
+      })
+      .catch((err) => {
+        console.log(err);
+      });
     axios
       .get(process.env.REACT_APP_API_URL + "/term-and-conditions")
       .then((res) => res.data)
@@ -25,7 +35,7 @@ const TnC = (props) => {
 
   return (
   
-      <Layout title="Syarat dan Ketentuan Aplikasi Moxa">
+      <LayoutProduct downloadLink={downloadLink} title="Syarat dan Ketentuan Aplikasi Moxa">
         <div id="tnc">
           <div className="wrapper">
             <h1 className="title">Syarat dan Ketentuan Aplikasi Moxa</h1>
@@ -577,7 +587,7 @@ const TnC = (props) => {
         </div>
 
         <Contact />
-      </Layout>
+      </LayoutProduct>
   );
 };
 

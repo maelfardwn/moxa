@@ -12,6 +12,8 @@ import logo2 from "../../assets/img/LogoMoxaFooter.png";
 import vector from '../../assets/img/Vector.svg'
 import MetaTags from 'react-meta-tags';
 import ReactGA from "react-ga";
+import axios from "axios";
+
 ReactGA.initialize("UA-175679937-1");
 
 const LayoutProduct = (props) => {
@@ -21,7 +23,19 @@ const LayoutProduct = (props) => {
   const { width } = useWindowDimensions();
   const location = useLocation();
   const [nav,setNav] = useState('')
+
+  const [products,setProducts] = useState([
+  ])
   useEffect(() => {
+          axios.get("https://moxa-cms.shared.zali.pro/products?_sort=order:asc")        
+        .then((res) => {
+          console.log(res)
+          setProducts(res.data)
+        })
+        .catch((err) => {
+          console.log(err);
+        
+        });
     function getOS() {
       var userAgent = window.navigator.userAgent,
           platform = window.navigator.platform,
@@ -135,6 +149,14 @@ const LayoutProduct = (props) => {
       "availability": "https://schema.org/InStock"
     }
   }
+  const fitur = products.length>0? products.map(product => 
+    
+    
+    <li className="nested-menu">
+      <a href="/product/detail/id">
+        {product.name}
+      </a>
+    </li>): <h2>loading..</h2>
   return (
     <div>
       <MetaTags>
@@ -183,23 +205,8 @@ const LayoutProduct = (props) => {
               <ul className={`${location.pathname === "/faq" ? "on-orange" : null}`}>
                 <li className="is-nested">
                   <a href="/tentang">Fitur</a> <img width="15px" src={vector}/>
-
                   <ul className="nested-ul shadow">
-                    <li className="nested-menu">
-                      <a href="/tentang#tg-partners" onClick={handleMenuClick}>
-                        Partner Kami
-                      </a>
-                    </li>
-                    <li className="nested-menu">
-                      <a href="/tentang#fitur-produk" onClick={handleMenuClick}>
-                        Fitur Produk
-                      </a>
-                    </li>
-                    <li className="nested-menu">
-                      <a href="/tentang#trivia-banner" onClick={handleMenuClick}>
-                        Kuis Trivia
-                      </a>
-                    </li>
+                  {fitur}
                   </ul>
                 </li>
                 <li>
@@ -245,7 +252,7 @@ const LayoutProduct = (props) => {
                     <a className="tentangKami" href="/tentang">Tentang Kami</a>
                   </li>
                   <li>
-                    <a className="tentangKami" href="/#product">Hubungi Kami</a>
+                    <a className="tentangKami" href="/faq">Hubungi Kami</a>
                   </li>
                   <li>
                     <a className="tentangKami" href="/faq">FAQ</a>

@@ -28,7 +28,7 @@ const Blogs = (props) => {
   const [page, setPage] = useState(1);
   const [totalData, setTotalData] = useState(1);
   const [perPage, setPerPage] = useState(9);
-
+  const [downloadLink, setDownloadLink] = useState('');
   const { width } = useWindowDimensions();
 
   useEffect(() => {
@@ -36,8 +36,10 @@ const Blogs = (props) => {
       .all([
         axios.get(process.env.REACT_APP_API_URL + "/tags?articles_null=0&categories.category=Blog"),
         axios.get(process.env.REACT_APP_API_URL + "/articles/count"),
+       
       ])
       .then(
+        
         axios.spread((tags, count) => {
           setCategories(tags.data);
           const queries = queryString.parse(props.location.search);
@@ -54,6 +56,13 @@ const Blogs = (props) => {
   }, []);
 
   useEffect(() => {
+    axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+    .then((res) => {
+      setDownloadLink(res.data[0].button_link)
+    })
+    .catch((err) => {
+      console.log(err);
+    });
     const queries = queryString.parse(props.location.search);
 
     if (queries.t) {
@@ -220,7 +229,7 @@ const Blogs = (props) => {
 
   return (
     <>
-      <LayoutProduct title="Blog">
+      <LayoutProduct downloadLink={downloadLink} title="Blog">
         <div id="berita">
           <div className="news-top">
             <img src={require("../assets/img/shape46.png")} alt="shape46" className="shape46" />

@@ -33,13 +33,14 @@ const ProductDetail = (props) => {
   const [titleProduct, setTitle] = useState([]);
   const [variants, setVariants] = useState([]);
   const [products, setProducts] = useState([]);
-
+  const [downloadLink, setDownloadLink] = useState('');
   useEffect(() => {
     setLoading(true);
 
     axios
       .all([
         axios.get(process.env.REACT_APP_API_TEST + `/products/${props.match.params.id}`),
+        axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
       ])
       .then((res) => {
         setData(res[0].data)
@@ -48,6 +49,7 @@ const ProductDetail = (props) => {
         setVariants(res[0].data.variant)
         setBanner(res[0].data.banner.url)
         console.log('banner',res[0].data)
+        setDownloadLink(res[1].data[0].button_link)
         setProducts()
         setLoading(false);
       })
@@ -59,14 +61,14 @@ const ProductDetail = (props) => {
 
   return (
     <div>
-      <LayoutProduct title={"Moxa "+data.name} descriptions={data.descriptions}>
+      <LayoutProduct title={"Moxa "+data.name} downloadLink={downloadLink} descriptions={data.descriptions}>
         <div id="homepage">
           <PSection1  titleBanner={data.name} subtitleBanner={data.descriptions} image={banner}/>
           <PSection2Com title={titleProduct.title} titleSection2={data.name} subtitle={titleProduct.description} variant={variants} />
           <PSection3Com variant={variants} 
                        variantData={variants}
           />
-          <PSection4 />
+          <PSection4 downloadLink={downloadLink} />
          
         </div>
       </LayoutProduct>
