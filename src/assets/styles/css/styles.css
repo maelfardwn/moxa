@@ -483,7 +483,7 @@ li .tentangKami {
   top: 0;
   left: 0;
   width: 100vw;
-  margin-top: 50px;
+  margin-top: 160px;
   min-height: 640px;
   will-change: opacity;
 }
@@ -560,7 +560,7 @@ li .tentangKami {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  bottom: 7%;
+  bottom: -17%;
   left: 50%;
 }
 
