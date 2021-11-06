@@ -115,11 +115,6 @@
   padding-bottom: 20px;
   padding-top: 0px;
 }
-.H1Banner {
-  position: absolute;
-  left: -25px;
-  top: 320px;
-}
 #layout header .wrapper nav ul li:last-child {
   margin-right: 0px;
 }
@@ -144,8 +139,6 @@
 
 #layout header .wrapper nav ul li.is-nested img {
   width: 20px;
-  max-width: 20px;
-  max-height: 12px;
   height: 12px;
   margin-bottom: 10px;
 }
@@ -490,13 +483,12 @@ li .tentangKami {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  margin-top: 50px;
   min-height: 640px;
   will-change: opacity;
 }
 
 #homepage #banner .wrapper {
-  height: 100vh;
   min-height: 640px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,7 +510,7 @@ li .tentangKami {
   font-size: 40px;
   line-height: 46px;
   /* identical to box height */
-
+  margin-top: 150px;
   color: #04325f;
   margin-bottom: 10px;
 }
@@ -4294,7 +4286,7 @@ a .download-now:hover {
     background-repeat: no-repeat;
     position: absolute;
     left: 95px;
-    bottom: 873px;
+    bottom: 918px;
     height: 520px;
   }
   .SliderHp {
@@ -4302,7 +4294,7 @@ a .download-now:hover {
     position: absolute;
     width: 205px;
     left: 143px;
-    bottom: 916px;
+    bottom: 958px;
     height: 435px;
     border-radius: 20px;
     z-index: 9;
@@ -4313,6 +4305,7 @@ a .download-now:hover {
     position: absolute;
     left: 319px;
     width: 65%;
+    bottom: 1061px;
     height: 290px;
     margin-top: 100px;
     padding: 80px;
@@ -4473,13 +4466,14 @@ a .download-now:hover {
   position: absolute;
   left: 160px;
   margin: auto;
+  bottom: 998px;
   margin-top: 41px;
-  height: 322px;
+  height: 368px;
   padding: 80px;
 }
 .titleSection3 {
   position: absolute;
-  bottom: 250px;
+  bottom: 287px;
   left: 149px;
   color: #04325f;
   font-weight: 700;
@@ -4567,22 +4561,23 @@ a .download-now:hover {
     position: absolute;
     width: 80%;
     left: 70px;
+    bottom: 1029px;
   }
   .titleSection3 {
     position: absolute;
-    left: 50;
+    left: 232px;
     margin-top: 50px;
     margin-left: 15px;
   }
   .subtitleSection3 {
     position: absolute;
-    left: 50;
+    left: 232px;
     margin-left: 15px;
     margin-bottom: 20px;
   }
   .nav-handler {
     position: absolute;
-    left: 50;
+    left: 230px;
     margin-left: 15px;
   }
 }
@@ -4599,13 +4594,13 @@ a .download-now:hover {
   }
   .titleSection3 {
     position: absolute;
-    left: 50;
+    left: 50px;
     margin-top: 50px;
     margin-left: 15px;
   }
   .subtitleSection3 {
     position: absolute;
-    left: 50;
+    left: 50px;
     margin-left: 15px;
     margin-bottom: 20px;
   }

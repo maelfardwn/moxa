@@ -69,7 +69,7 @@ const HPSection1Fix = (props) => {
         ))}
 
         <div className="wrapper" >
-          <div className="row H1Banner">
+          <div className="row">
             <div className="col-md-6">
               <h1>{props.data[index].text}</h1>
               <h2>{props.data[index].subtext}</h2>
