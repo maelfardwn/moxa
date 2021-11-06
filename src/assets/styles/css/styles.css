@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Ubuntu&display=swap');
 #layout {
   width: 100%;
   position: relative;
@@ -15,7 +16,6 @@
   z-index: 99;
   -webkit-transition: 0.25s ease-in;
   transition: 0.25s ease-in;
-  
 }
 
 #layout header.scrolled {
@@ -46,7 +46,7 @@
 #layout header .wrapper .main-logo {
   /* display: flex; */
   position: absolute;
-  left: 10%;
+  left: 7%;
   top: 0px;
   background: white;
   padding: 5px;
@@ -63,8 +63,9 @@
 
 #layout header .wrapper .main-logo .logo img {
   width: 230px;
-  height: 90%;
-  padding: 30px;
+  margin-left: 4px;
+  height: 78px;
+  margin-top: 20px;
 }
 
 #layout header .wrapper .burger-menu {
@@ -85,7 +86,7 @@
 }
 
 #layout header .wrapper nav {
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 #layout header .wrapper nav ul {
@@ -102,7 +103,7 @@
 }
 
 #layout header .wrapper nav ul li {
-  margin-right: 50px;
+  margin-right: 45px;
   position: relative;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -114,7 +115,11 @@
   padding-bottom: 20px;
   padding-top: 0px;
 }
-
+.H1Banner {
+  position: absolute;
+  left: -25px;
+  top: 320px;
+}
 #layout header .wrapper nav ul li:last-child {
   margin-right: 0px;
 }
@@ -124,6 +129,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 22px;
 }
 
 #layout header .wrapper nav ul li a:hover {
@@ -134,6 +140,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#layout header .wrapper nav ul li.is-nested img {
+  width: 20px;
+  max-width: 20px;
+  max-height: 12px;
+  height: 12px;
+  margin-bottom: 10px;
 }
 
 #layout header .wrapper nav ul li.is-nested .nested-ul {
@@ -230,6 +244,10 @@
 }
 
 #layout header.scrolled .wrapper .main-logo img {
+  width: 190px;
+  margin-left: 4px;
+  height: 54px;
+  margin-top: 0;
 }
 
 #layout header.scrolled .wrapper nav ul li a:hover {
@@ -607,7 +625,7 @@ li .tentangKami {
   color: #04325f;
 }
 #homepage #sub .wrapper p {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
   letter-spacing: 0em;
   font-style: normal;
@@ -626,9 +644,11 @@ li .tentangKami {
   text-align: center;
   letter-spacing: 0.4px;
   color: #04325f;
+  width: 145px;
 }
 .partersSection {
   background: #f6f9ff;
+  height: 100vh;
 }
 .partersSection h1 {
   margin-top: 80px;
@@ -2771,11 +2791,11 @@ li .tentangKami {
 
 .downloadNow {
   background: #faab1c;
-  height: 40px;
+  height: 45px;
   width: 281px;
   display: flex;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 18px;
   color: #ffffff;
 }
 @media screen and (max-width: 991px) {
@@ -3829,7 +3849,7 @@ li .tentangKami {
 }
 .download-now {
   color: #ffffff;
-  padding: 7px;
+  padding: 10px;
   font-weight: 700;
   font-size: 22px;
   line-height: 25px;
@@ -3968,7 +3988,6 @@ a .download-now:hover {
 .HPSection2 {
   width: 145px;
   display: flex;
-  height: 235px;
   margin: 30px;
 }
 .PSection2 {
@@ -4483,27 +4502,28 @@ a .download-now:hover {
   .col-sm-6,
   .col-sm-3 {
     width: 33%;
-  }.wrappperSection3-3{
+  }
+  .wrappperSection3-3 {
     position: absolute;
     width: 80%;
     left: 70px;
   }
-  .titleSection3{
+  .titleSection3 {
     position: absolute;
-    left:50;
+    left: 50;
     margin-top: 50px;
     margin-left: 15px;
   }
-  .subtitleSection3{
+  .subtitleSection3 {
     position: absolute;
-    left:50;
+    left: 50;
     margin-left: 15px;
     margin-bottom: 20px;
   }
-  .nav-handler{
+  .nav-handler {
     position: absolute;
-    left:50;
-    margin-left:15px;
+    left: 50;
+    margin-left: 15px;
   }
   .wrappperSection3-3 {
     position: absolute;
@@ -4703,7 +4723,7 @@ button {
 }
 .cover-zoom {
   border-radius: 30px;
-  width: 100%;    
+  width: 100%;
   max-height: 313px;
   -webkit-transition: 0.25s linear;
   transition: 0.25s linear;

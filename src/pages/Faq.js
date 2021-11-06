@@ -12,6 +12,7 @@ import {
 
 import Layout from "../components/Layout/Layout";
 import Contact from "../components/Contact";
+import LayoutProduct from "../components/Layout/LayoutProduct";
 
 const Faq = (props) => {
   const [loading, setLoading] = useState(true);
@@ -48,7 +49,7 @@ const Faq = (props) => {
 
   return (
     <div>
-      <Layout title="FAQ">
+      <LayoutProduct title="FAQ">
         <div id="faq">
           <div className="wrapper">
             <h1 className="title">Punya Pertanyaan Lebih Banyak?</h1>
@@ -574,7 +575,7 @@ const Faq = (props) => {
         </div>
 
         <Contact />
-      </Layout>
+      </LayoutProduct>
     </div>
   );
 };

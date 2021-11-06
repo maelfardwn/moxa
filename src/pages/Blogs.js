@@ -6,6 +6,7 @@ import queryString from "query-string";
 import Pagination from "react-js-pagination";
 
 import Layout from "../components/Layout/Layout";
+import LayoutProduct from "../components/Layout/LayoutProduct";
 
 const Blogs = (props) => {
   const [articles, setArticles] = useState([]);
@@ -219,7 +220,7 @@ const Blogs = (props) => {
 
   return (
     <>
-      <Layout title="Blog">
+      <LayoutProduct title="Blog">
         <div id="berita">
           <div className="news-top">
             <img src={require("../assets/img/shape46.png")} alt="shape46" className="shape46" />
@@ -408,7 +409,7 @@ const Blogs = (props) => {
             </div>
           </div>
         </div>
-      </Layout>
+      </LayoutProduct>
     </>
   );
 };

@@ -107,7 +107,7 @@ const HPSection4Fix = (props) => {
               <h5 >Cari tahu berita terkini lewat artikel Moxa sebagai inspirasi untuk setiap pilihanmu  </h5>
             </div>
           </div>
-          <div className="row" style={{marginTop:'50px',marginBottom:'50px'}}>
+          <div className="row" style={{marginTop:'50px',marginBottom:'30px'}}>
           {items}
           </div>
           <div  style={{margin:'auto',textAlign:'center',padding:'0'}}>

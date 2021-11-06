@@ -68,9 +68,9 @@ const HPSection1Fix = (props) => {
           </div>
         ))}
 
-        <div className="wrapper" style={{marginTop:'100px'}}>
-          <div className="row">
-            <div className="col-md-8">
+        <div className="wrapper" >
+          <div className="row H1Banner">
+            <div className="col-md-6">
               <h1>{props.data[index].text}</h1>
               <h2>{props.data[index].subtext}</h2>
               

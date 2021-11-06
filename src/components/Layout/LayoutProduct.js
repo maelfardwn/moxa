@@ -7,9 +7,9 @@ import TwitterImg from '../../assets/img/TwitterImg.png'
 import LinkedinImg from '../../assets/img/LinkedinImg.png'
 import YoutubeImg from '../../assets/img/YoutubeImg.png'
 import mainLogo from "../../assets/img/main-logo.png";
-import logo from "../../assets/img/logo-moxaid.png";
+import logo from "../../assets/img/LogoMoxa.svg";
 import logo2 from "../../assets/img/LogoMoxaFooter.png";
-import vector from '../../assets/img/Vector.png'
+import vector from '../../assets/img/Vector.svg'
 import MetaTags from 'react-meta-tags';
 import ReactGA from "react-ga";
 ReactGA.initialize("UA-175679937-1");
@@ -203,14 +203,12 @@ const LayoutProduct = (props) => {
                   </ul>
                 </li>
                 <li>
-                  <a href="/#testimonial" onClick={handleMenuClick}>
+                  <a href="/faq" onClick={handleMenuClick}>
                     Faq
-                  </a>  
-                  <img style={{marginLeft:'5px'}} width="15px" src={vector}/>
-                 
+                  </a> 
                 </li>
                 <li className="is-nested">
-                  <a href="/faq">Artikel</a> <img  width="15px" src={vector}/>
+                  <a href="/artikel">Artikel</a> <img  width="15px" src={vector}/>
                   <ul className="nested-ul shadow w-200">
                     <li className="nested-menu">
                       <a href="/artikel/blog" onClick={handleMenuClick}>
@@ -244,7 +242,7 @@ const LayoutProduct = (props) => {
               <div className="col-lg-4 col-md-6 f-1b">
                 <ul>
                   <li>
-                    <a className="tentangKami" href="/faq#contact">Tentang Kami</a>
+                    <a className="tentangKami" href="/tentang">Tentang Kami</a>
                   </li>
                   <li>
                     <a className="tentangKami" href="/#product">Hubungi Kami</a>

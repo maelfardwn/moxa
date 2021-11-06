@@ -83,7 +83,7 @@ const NewsDetail = (props) => {
           descriptions={data.meta_descriptions}
           keywords={data.meta_keywords}
           image={data.cover.url}
-          url={'https://moxa-cms.shared.zali.pro' + props.location.pathname}
+          url={'https://moxa-cms.shared.zali.pro/' + props.location.pathname}
         >
           <div id="berita-detail">
             <div className="wrapper">
