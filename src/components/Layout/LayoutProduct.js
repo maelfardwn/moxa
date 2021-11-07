@@ -205,7 +205,7 @@ const LayoutProduct = (props) => {
               <ul className={`${location.pathname === "/faq" ? "on-orange" : null}`}>
                 <li className="is-nested">
                   <a href="/tentang">Fitur</a> <img width="15px" src={vector}/>
-                  <ul className=" menu-api nested-ul shadow ">
+                  <ul className="  nested-ul menuFitur shadow ">
                   {fitur}
                   </ul>
                 </li>
