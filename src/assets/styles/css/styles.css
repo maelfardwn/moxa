@@ -696,9 +696,9 @@ li .tentangKami{
 #homepage #product .left .lists {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: repeat(2, 1fr);
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[3];
+  -ms-grid-rows: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -2434,7 +2434,7 @@ li .tentangKami{
 #trivia-page .wrapper .trivia-quiz .trivia-option2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(120px, 300px))[3];
+  -ms-grid-columns: repeat(3, minmax(120px, 300px));
       grid-template-columns: repeat(3, minmax(120px, 300px));
   grid-gap: 20px 1rem;
   margin-bottom: 40px;
@@ -3204,14 +3204,14 @@ li .tentangKami{
     display: none;
   }
   #layout #trivia-page .wrapper .trivia-quiz .trivia-option {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
   }
   #layout #trivia-page .wrapper .trivia-quiz .trivia-option-item {
     width: 100%;
   }
   #layout #trivia-page .wrapper .trivia-quiz .trivia-option2 {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
   }
   #layout #trivia-page .wrapper .trivia-quiz .trivia-option2-item {
