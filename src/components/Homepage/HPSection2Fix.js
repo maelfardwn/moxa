@@ -15,27 +15,14 @@ const HPSection2Fix = (props) => {
   
   
         const productsData = props.products.length>0? props.products.map((product,i)=>
-       {if(i==5)
-        return <div className="col HPSection2" style={{marginBottom:'30px',marginLeft:'150px'}}>
+       
+         <div className="col HPSection2" style={{marginBottom:'30px',marginLeft:'150px'}}>
               <a href={`/product/detail/${product.id}`} style={{cursor:'pointer',textDecoration:'none'}}>
               <img height="128px" width="128px" src={product.icon.url} style={{marginBottom:'15px'}}/><br/>
               <h4 className="productsWording">{product.name}</h4>
               </a>
             </div>
-             if (i==8)
-             return <div className="col HPSection2" style={{marginBottom:'30px',marginRight:'100px'}}>
-                   <a href={`/product/detail/${product.id}`} style={{cursor:'pointer',textDecoration:'none'}}>
-                   <img height="128px" width="128px" src={product.icon.url} style={{marginBottom:'15px'}}/><br/>
-                   <h4 className="productsWording">{product.name}</h4>
-                   </a>
-                 </div>
-                 if(i!=5 || i!=8)
-           return  <div className="col HPSection2" style={{marginBottom:'30px'}}>
-           <a href={`/product/detail/${product.id}`} style={{cursor:'pointer',textDecoration:'none'}}>
-           <img height="128px" width="128px" src={product.icon.url} style={{marginBottom:'15px'}}/><br/>
-           <h4 className="productsWording">{product.name}</h4>
-           </a>
-         </div>}
+           
        ): <h2>loading..</h2>
   
   return (

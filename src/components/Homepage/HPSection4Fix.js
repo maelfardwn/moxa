@@ -15,7 +15,7 @@ const HPSection4Fix = (props) => {
 
   const  getData= async()=> {
     let getData
-    await axios.get("https://moxa-cms.shared.zali.pro/articles") 
+    await axios.get("https://dev.moxa.id/cms/articles") 
     .then((res) => {
        getData = res.data 
       setLoading(false);
@@ -29,9 +29,9 @@ const HPSection4Fix = (props) => {
     setLoading(true);
     axios
       .all([
-        axios.get("https://moxa-cms.shared.zali.pro/homepage"),
-        axios.get("https://moxa-cms.shared.zali.pro/partners?_sort=order:asc"),
-        axios.get("https://moxa-cms.shared.zali.pro/articles"),
+        axios.get("https://dev.moxa.id/cms/homepage"),
+        axios.get("https://dev.moxa.id/cms/partners?_sort=order:asc"),
+        axios.get("https://dev.moxa.id/cms/articles"),
       ])
       .then((res) => {
         setText1(res[0].data.text_partner_1);

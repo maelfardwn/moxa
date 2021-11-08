@@ -79,11 +79,11 @@ const HomepageFix = (props) => {
     setLoading(true);
     axios
       .all([
-        axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`),
-        axios.get(`https://moxa-cms.shared.zali.pro/homepage`),
-        axios.get("https://moxa-cms.shared.zali.pro/products?_sort=order:asc"),
-        axios.get("https://moxa-cms.shared.zali.pro"),
-        axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+        axios.get(`https://dev.moxa.id/cms/home-banners?_sort=order:asc`),
+        axios.get(`https://dev.moxa.id/cms/homepage`),
+        axios.get("https://dev.moxa.id/cms/products?_sort=order:asc"),
+        axios.get("https://dev.moxa.id/cms"),
+        axios.get(`https://dev.moxa.id/cms/home-banners?_sort=order:asc`)
       ])
       .then((res) => {
         setData(res[0].data);

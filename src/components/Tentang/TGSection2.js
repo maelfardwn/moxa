@@ -125,7 +125,7 @@ const TGSection2 = (props) => {
                     <div className="col-lg-4 col-sm-6 product" key={i}>
                       <img src={pro.icon.url} alt={pro.name} />
                       <p className="bold">{pro.name}</p>
-                      <p>{pro.descriptions}</p>
+                      <p>{pro.descriptions}asaas</p>
                     </div>
                   ))}
                 </div>

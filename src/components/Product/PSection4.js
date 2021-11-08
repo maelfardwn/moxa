@@ -10,7 +10,7 @@ const PSection4 = (props) => {
   let history = useHistory();
   const [downloadLink, setDownloadLink] = useState('');
   useEffect(() => {
-        axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+        axios.get(`https://dev.moxa.id/cms/home-banners?_sort=order:asc`)
       .then((res) => {
         
         setDownloadLink(res[0].data[0].button_link)

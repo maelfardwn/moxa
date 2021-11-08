@@ -19,7 +19,7 @@ const Tentang = (props) => {
   useEffect(() => {
     setLoading(true);
 
-    axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+    axios.get(`https://dev.moxa.id/cms/home-banners?_sort=order:asc`)
     .then((res) => {
       setDownloadLink(res.data[0].button_link)
     })

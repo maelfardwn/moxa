@@ -37,7 +37,7 @@ const ProductDetail = (props) => {
     axios
       .all([
         axios.get(process.env.REACT_APP_API_TEST + `/products/${props.match.params.id}`),
-        axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+        axios.get(`https://dev.moxa.id/cms/home-banners?_sort=order:asc`)
       ])
       .then((res) => {
         setData(res[0].data)

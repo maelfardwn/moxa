@@ -227,11 +227,13 @@
 
 #layout header.scrolled .wrapper .main-logo img {
   width: 190px;
-  margin-left: 4px;
+  margin-left: -36px;
   height: 54px;
   margin-top: 0;
 }
-
+#layout header .wrapper nav {
+  padding-top: 0px;
+}
 #layout header.scrolled .wrapper nav ul li a:hover {
   color: #faab1c !important;
 }
@@ -3943,7 +3945,7 @@ a .download-now:hover{
     width: 205px;
     left: 143px;
     bottom: 958px;
-    height: 435px;
+    height: 440px;
     border-radius: 20px;
     z-index: 9;
     will-change: opacity;

@@ -15,7 +15,7 @@ const NewsDetail = (props) => {
     setLoading(true);
     let keyword = "";
 
-    axios.get(`https://moxa-cms.shared.zali.pro/home-banners?_sort=order:asc`)
+    axios.get(`https://dev.moxa.id/cms/home-banners?_sort=order:asc`)
     .then((res) => {
       setDownloadLink(res.data[0].button_link)
     })
@@ -24,7 +24,7 @@ const NewsDetail = (props) => {
     });
 
     axios
-      .get(`https://moxa-cms.shared.zali.pro/articles/${props.match.params.id}`)
+      .get(`https://dev.moxa.id/cms/articles/${props.match.params.id}`)
       .then((res) => res.data)
       .then((data) => {
         setData(data);
@@ -32,7 +32,7 @@ const NewsDetail = (props) => {
         keyword = data.categories[0].category || "berita";
 
         axios
-          .get(`https://moxa-cms.shared.zali.pro/articles?_limit=10&categories.category_contains=${keyword}`
+          .get(`https://dev.moxa.id/cms/articles?_limit=10&categories.category_contains=${keyword}`
           )
           .then((res) => res.data)
           .then((data) => {
@@ -57,7 +57,7 @@ const NewsDetail = (props) => {
         setLoading(false);
 
         axios
-          .get(`https://moxa-cms.shared.zali.pro/articles?_limit=10&categories.category_contains=${keyword}`
+          .get(`https://dev.moxa.id/cms/articles?_limit=10&categories.category_contains=${keyword}`
           )
           .then((res) => res.data)
           .then((data) => {
@@ -93,7 +93,7 @@ const NewsDetail = (props) => {
           descriptions={data.meta_descriptions}
           keywords={data.meta_keywords}
           image={data.cover.url}
-          url={'https://moxa-cms.shared.zali.pro/' + props.location.pathname}
+          url={'https://dev.moxa.id/cms/' + props.location.pathname}
         >
           <div id="berita-detail">
             <div className="wrapper">
