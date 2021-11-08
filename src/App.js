@@ -6,7 +6,6 @@ import ReactGA from "react-ga";
 import TnC from "./pages/TnC";
 import Pp from "./pages/Pp";
 // import Faq from "./pages/Faq";
-import Homepage from "./pages/Homepage";
 import Tentang from "./pages/Tentang";
 import News from "./pages/News";
 import NewsDetail from "./pages/NewsDetail";

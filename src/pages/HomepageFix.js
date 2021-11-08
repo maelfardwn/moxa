@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import Layout from "../components/Layout/Layout";
-import HPSection2 from "../components/Homepage/HPSection2";
-import HPSection3 from "../components/Homepage/HPSection3";
-import HPSection4 from "../components/Homepage/HPSection4";
 import HPSectionTesti from "../components/Homepage/HPSectionTesti";
 import HPSectionTrivia from "../components/Homepage/HPSectionTrivia";
 import HpSectionUsp from "../components/Homepage/HPSectionUsp";
