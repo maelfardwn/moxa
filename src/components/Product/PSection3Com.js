@@ -103,7 +103,7 @@ const PSection3Com = (props) => {
     <div> 
     <div className="wrapper">
 
-     <div className="row" style={{zIndex:'999'}}>
+     <div className="row btn-variant" style={{zIndex:'999'}}>
        {tabs}
       </div>
       </div>
