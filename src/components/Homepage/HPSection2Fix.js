@@ -53,7 +53,7 @@ const HPSection2Fix = (props) => {
     <div>
       <div id="sub">
         <div className="wrapper">
-          <div className="row" style={{marginBottom:'100px'}}>
+          <div className="row" style={{marginBottom:'35px'}}>
             <div className="col-lg-10 m-auto">
               <h1 >Jelajahi Berbagai Pilihan Produk Moxa </h1>
               <p >Rasakan kemudahan mengajukan beragam produk keuangan dalam satu sentuhan lewat fitur unggulan Moxa </p>
