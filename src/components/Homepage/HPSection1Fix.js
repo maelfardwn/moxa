@@ -17,7 +17,7 @@ const HPSection1 = (props) => {
   });
 
   useEffect(
-    () => void setInterval(() => setIndex((state) => (state + 1) % props.data.length), 5000),
+    () =>  setInterval(() => setIndex((state) => (state + 1) % (props.data.length+1)), 5000),
     []
   );
 
