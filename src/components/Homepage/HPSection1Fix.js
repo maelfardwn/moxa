@@ -7,7 +7,7 @@ import Car from '../../assets/img/CarImage.png'
 ReactGA.initialize("UA-175679937-1");
 
 const HPSection1Fix = (props) => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
 
   const { width } = useWindowDimensions();
 
@@ -49,7 +49,7 @@ const HPSection1Fix = (props) => {
                   key={key}
                   style={{
                     ...props,
-                    backgroundImage: `url(${item.image.url})`,
+                    backgroundImage: `url(${item.image_mobile.url})`,
                   }}
                 ></animated.div>
               </div>
