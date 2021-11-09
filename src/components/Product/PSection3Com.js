@@ -38,19 +38,22 @@ const PSection3Com = (props) => {
       let [indexGuide,setIndexGuide] = useState(0)
       
           const previousStep=()=>{
-            
+            setNextButton(false)
               if(indexGuide>0){
                 setPrevButton(false)
-                  setIndexGuide(indexGuide-=1,() =>{console.log(indexGuide)})
+                  setIndexGuide(indexGuide-=1,() =>{console.log('prev',indexGuide)
+                   
+                   })
               }
-              if(indexGuide<=0){
+              if(indexGuide==0 ){
                 setPrevButton(true)
               }
             }
       const nextStep=()=>{
+        setPrevButton(false)
         if(indexGuide<props.variant[tabsIndex].guides.length){
-          setIndexGuide(indexGuide+=1,() =>{console.log(indexGuide)})
-          setPrevButton(false)
+          setIndexGuide(indexGuide+=1,() =>{console.log('next'+indexGuide)})
+          
           console.log(indexGuide)
           setNextButton(false)
         }

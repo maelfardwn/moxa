@@ -91,7 +91,7 @@ const HomepageFix = (props) => {
         setProducts(res[2].data)
         setpartnersApi(res[3].data)
         setDownloadLink(res[4].data[0].button_link)
-        console.log('res product',res[2].data)
+        console.log('res image',res[0].data[0].image_mobile.name)
         setLoading(false);
       })
       .catch((err) => {

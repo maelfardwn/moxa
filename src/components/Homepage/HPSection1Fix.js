@@ -41,16 +41,17 @@ const HPSection1 = (props) => {
       <div id="banner">
         {transitions.map(({ item, props, key }) => (
           <div>
-            {width > 576 ? (
+            {width < 576 ? (
               <div>
+               {item.image_mobile?
                 <animated.div
                   className="slider"
                   key={key}
                   style={{
                     ...props,
-                    backgroundImage: `url(${item.image.url})`,
+                    backgroundImage: `url(${item.image_mobile.name})`,
                   }}
-                ></animated.div>
+                ></animated.div> : null}
               </div>
             ) : (
               <div>
