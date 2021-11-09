@@ -187,6 +187,17 @@
   display: flex;
   margin: 30px;
 }
+@media screen and (max-width: 1243px) {
+  .HPSection2 {
+    margin-left: 30px !important;
+  }
+}
+@media screen and (max-width: 422px) {
+  .HPSection2 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
 @media screen and (min-width: 768px) {
   #layout header .wrapper nav ul.on-orange li a:hover {
     color: #ffffff;
@@ -435,6 +446,7 @@ li .tentangKami{
 #layout footer .f-2 .wrapper a {
   color: white;
   text-decoration: none;
+  font-size: 16px;
 }
 
 #layout footer .f-2 .wrapper a:hover {
@@ -490,25 +502,19 @@ li .tentangKami{
 #homepage #banner .wrapper h1 {
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 46px;
+  font-weight: 500;
+  font-size: 45px;
   /* identical to box height */
-  
-  
   color: #04325F;
   margin-bottom: 10px;
 }
 
 #homepage #banner .wrapper h2 {
-
   font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 40px;
-  
+  font-size: 28px;
   color: #04325F;
+  margin-bottom: 40px;
+  letter-spacing: -1px;
 }
 
 #homepage #banner .wrapper .download-btn {
@@ -2677,6 +2683,7 @@ li .tentangKami{
   #layout header .wrapper nav ul li {
     margin-right: 0px;
     margin-bottom: 20px;
+    padding-top: 0;
     padding-bottom: 0;
     width: 100%;
     text-align: center;
@@ -2711,7 +2718,8 @@ li .tentangKami{
             box-shadow: none !important;
     width: 100%;
   }
-  #layout header .wrapper nav ul li.is-nested .nested-ul.w-200 {
+  #layout header .wrapper nav ul li.is-nested .nested-ul.w-200,
+  #layout header .wrapper nav ul li.is-nested .nested-ul.menuFitur {
     width: 100%;
   }
   #layout header .wrapper nav ul li.is-nested .nested-ul .nested-menu a {
@@ -2910,11 +2918,14 @@ li .tentangKami{
     color: white;
   }
   li .downloadNow{
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
   }
   .downloadNow{
     height: 65px;
+  }
+  #layout header .wrapper nav ul li img {
+    display: none;
   }
 }
 
@@ -4552,8 +4563,8 @@ button{
     transition: 0.25s linear;
 }
   .cover-zoom:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 .titleBlog{
   margin: 20px 0 0;
@@ -4654,6 +4665,23 @@ button{
   justify-content: center;
   gap: 60px 20px;
 }
+
+@media screen and (max-width: 414px) {
+  .logo-partner {
+    gap: 4vh 0;
+  }
+
+  .logo-partner > div {
+    flex: 50%;
+  }
+
+  .logo-partner > div > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100% !important;
+  }
+}
+ 
 
 @media screen and (max-width: 1133px) {
   .WrapperBackground4{
