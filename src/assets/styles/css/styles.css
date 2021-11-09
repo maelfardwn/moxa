@@ -4700,6 +4700,10 @@ button{
     margin: 0 auto;
     max-width: 100% !important;
   }
+
+  #layout footer .f-1b ul {
+    max-width: 100%;
+  }
 }
  
 
