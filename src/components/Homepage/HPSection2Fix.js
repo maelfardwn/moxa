@@ -59,7 +59,7 @@ const HPSection2Fix = (props) => {
               <p >Rasakan kemudahan mengajukan beragam produk keuangan dalam satu sentuhan lewat fitur unggulan Moxa </p>
             </div>
           </div>
-          <div className="row " >
+          <div className="row HPSection2-wrapper" >
           {productsData}
           </div>
          
