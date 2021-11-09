@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useLayoutEffect } from "react";
 import { useTransition, animated, config } from "react-spring";
 import useWindowDimensions from "../../hooks/useWindowDimentions";
 import ReactGA from "react-ga";
@@ -15,9 +15,9 @@ const HPSection1 = (props) => {
     leave: { opacity: 0 },
     config: config.molasses,
   });
-
+  
   useEffect(
-    () =>  setInterval(() => setIndex((state) => (state + 1) % (props.data.length+1)), 5000),
+    () =>  setInterval(() => setIndex((state) => (state + 1) % (props.data.length+1)), 5000), 
     []
   );
 
@@ -34,20 +34,21 @@ const HPSection1 = (props) => {
       action: "Cliked IOS App Store",
     });
   };
+  
 
   return (
     <div>
       <div id="banner">
         {transitions.map(({ item, props, key }) => (
           <div>
-            {width < 576 ? (
+            {width > 576 ? (
               <div>
                 <animated.div
                   className="slider"
                   key={key}
                   style={{
                     ...props,
-                    backgroundImage: `url(${item.image_mobile.url})`,
+                    backgroundImage: `url(${item.image.url})`,
                   }}
                 ></animated.div>
               </div>
