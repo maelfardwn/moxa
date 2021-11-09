@@ -4652,7 +4652,7 @@ button{
 .logo-partner {
   align-items: center;
   justify-content: center;
-  gap: 60px 20px;
+  gap: 60px 40px;
 }
 
 @media screen and (max-width: 1133px) {
