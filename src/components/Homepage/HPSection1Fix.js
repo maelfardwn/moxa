@@ -49,7 +49,7 @@ const HPSection1Fix = (props) => {
                   key={key}
                   style={{
                     ...props,
-                    backgroundImage: `url(${item.image.url})`,
+                    backgroundImage: `url(${item.image_mobile.url})`,
                   }}
                 ></animated.div>
               </div>
