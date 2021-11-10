@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import useWindowDimensions from "../../hooks/useWindowDimentions";
@@ -79,10 +80,14 @@ const LayoutProduct = (props) => {
 
   const handleBurgerClick = () => {
     setShow(!show);
+    //console.log(document.body.style.overflow);
+    document.body.style.overflow = "hidden";
   };
 
   const handleClose = () => {
     setShow(false);
+    //console.log(document.body.style.overflow);
+    document.body.style.overflow = "scroll";
   };
 
   const handleMenuClick = () => {
@@ -157,16 +162,7 @@ const LayoutProduct = (props) => {
         {product.name}
       </a>
     </li>): <h2>loading..</h2>
-    const [hide,setHide]=useState(false)
-  const hideFitur=()=> {
-    if(hide){
-      setHide(false)
-    } 
-     if(!hide){
-      setHide(true)
-    }
-    
-  }
+
   return (
     <div>
       <MetaTags>
@@ -214,9 +210,9 @@ const LayoutProduct = (props) => {
             <nav className={show ? `open` : null}>
               <ul className={`${location.pathname === "/faq" ? "on-orange" : null}`}>
                 <li className="is-nested">
-                  <a href="/tentang">Fitur</a>  <img width="15px"  onClick={hideFitur} src={vector}/>
+                  <a href="/tentang">Fitur</a>  <img width="15px" src={vector}/>
                   <ul className="  nested-ul menuFitur shadow ">
-                  {hide ? <h3>none</h3>: fitur}
+                  {fitur}
                   </ul>
                 </li>
                 <li>
