@@ -1,3 +1,8 @@
+/* General Class */
+.row-center {
+  justify-content: center;
+}
+
 #layout {
   width: 100%;
   position: relative;
@@ -206,8 +211,8 @@
 }
 @media screen and (max-width: 422px) {
   .HPSection2 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
   }
 }
 @media screen and (min-width: 768px) {
@@ -659,6 +664,7 @@ li .tentangKami{
   letter-spacing: 0.4px;
 
   color: #04325F;
+  min-width: 145px;
 }
 .partersSection{
   background: #f6f9ff;
@@ -3353,10 +3359,14 @@ li .tentangKami{
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  #layout #homepage #sub .wrapper h1 {
+  #layout #homepage #sub .wrapper h1,
+  #layout #content h1,
+  #homepage #sub .wrapper h3 {
     font-size: 24px;
   }
-  #layout #homepage #sub .wrapper p {
+  #layout #homepage #sub .wrapper p,
+  .partersSection p,
+  #homepage #sub .wrapper h5 {
     font-size: 20px;
   }
   #layout #homepage #product .shape40 {
@@ -4686,7 +4696,7 @@ button{
   gap: 60px 40px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 942px) {
   .logo-partner {
     gap: 4vh 0;
   }
@@ -4703,6 +4713,10 @@ button{
 
   #layout footer .f-1b ul {
     max-width: 100%;
+  }
+
+  #layout footer .f-1b ul > li {
+    margin-left: 0;
   }
 }
  
