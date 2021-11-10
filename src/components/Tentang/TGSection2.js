@@ -11,23 +11,30 @@ const TGSection2 = (props) => {
 
   const { width } = useWindowDimentions();
 
+  const  getData= async()=> {
+    let getData
+    await axios.get("https://dev.moxa.id/cms/products?_sort=order:asc") 
+    .then((res) => {
+       getData = res.data 
+      setLoading(false);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+    return getData
+  }
   useEffect(() => {
     setLoading(true);
-
-    axios
-      .get(process.env.REACT_APP_API_URL + "/products?_sort=order:asc")
-      .then((res) => res.data)
-      .then((data) => {
-        setProducts(data);
+      const fetch = async () => {
         setLoading(false);
-
-        const row = data.length / 2;
+        const rowData= await getData();
+        console.log('tentng',rowData)
+        setProducts(rowData);
+        const row = getData().length / 2
         setProductsRow(row);
-        setLastRow(data.length % 2);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+        setLastRow(rowData.length / 2);
+      }
+      fetch()
   }, []);
 
   const settings = {
@@ -67,8 +74,9 @@ const TGSection2 = (props) => {
             <div className="sub-title">{props.data.section_2_text_2}</div>
 
             {width < 768 ? (
+              productsRow.length>0 ? 
               <Slider {...settings}>
-                {Array.from(Array(productsRow), (x, index) => index + 1).map((r, i) => (
+                { Array.from(Array(productsRow), (x, index) => index + 1).map((r, i) => (
                   <div>
                     {Array.from(Array(2), (x, index) => index).map((v, i) => (
                       <div>
@@ -104,11 +112,11 @@ const TGSection2 = (props) => {
                           </div>
                         ) : (
                           <div>
-                            {products[6 + v] ? (
+                            {products[8 + v] ? (
                               <div className={`product prd-${i}`} key={i}>
-                                <img src={products[6 + v].icon.url} alt={products[6 + v].name} />
-                                <p className="bold">{products[6 + v].name}</p>
-                                <p>{products[6 + v].descriptions}</p>
+                                <img src={products[8 + v].icon.url} alt={products[8 + v].name} />
+                                <p className="bold">{products[8 + v].name}</p>
+                                <p>{products[8 + v].descriptions}</p>
                               </div>
                             ) : null}
                           </div>
@@ -118,14 +126,24 @@ const TGSection2 = (props) => {
                   </div>
                 ))}
               </Slider>
-            ) : (
+            :  <div>
+                <div className="row">
+                  {products.map((pro, i) => (
+                   <div className="col-sm-12 product" key={i}>
+                    <img src={pro.icon.url} alt={pro.name} />
+                    <p className="bold">{pro.name}</p>
+                    <p>{pro.descriptions}</p>
+                    </div>
+                  ))}
+            </div>
+          </div>) : (
               <div>
                 <div className="row">
                   {products.map((pro, i) => (
                     <div className="col-lg-4 col-sm-6 product" key={i}>
                       <img src={pro.icon.url} alt={pro.name} />
                       <p className="bold">{pro.name}</p>
-                      <p>{pro.descriptions}asaas</p>
+                      <p>{pro.descriptions}</p>
                     </div>
                   ))}
                 </div>
