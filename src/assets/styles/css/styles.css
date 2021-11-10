@@ -477,6 +477,15 @@ li .tentangKami{
 }
 
 @media screen and (max-width: 767px) {
+
+  #layout footer .f-2 .wrapper a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+#layout footer .f-1b ul > li {
+  margin-left: 0;
+}
   .wrapper {
     width: 90%;
   }

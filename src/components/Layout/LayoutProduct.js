@@ -11,7 +11,7 @@ import logo from "../../assets/img/LogoMoxa.svg";
 import logo2 from "../../assets/img/LogoMoxaFooter.png";
 import vector from '../../assets/img/Vector.svg'
 import MetaTags from 'react-meta-tags';
-import ReactGA from "react-ga";
+import ReactGA, { set } from "react-ga";
 import axios from "axios";
 
 ReactGA.initialize("UA-175679937-1");
@@ -157,6 +157,16 @@ const LayoutProduct = (props) => {
         {product.name}
       </a>
     </li>): <h2>loading..</h2>
+    const [hide,setHide]=useState(false)
+  const hideFitur=()=> {
+    if(hide){
+      setHide(false)
+    } 
+     if(!hide){
+      setHide(true)
+    }
+    
+  }
   return (
     <div>
       <MetaTags>
@@ -200,13 +210,13 @@ const LayoutProduct = (props) => {
               <div className="line"></div>
               <div className="line"></div>
             </div>
-
+ 
             <nav className={show ? `open` : null}>
               <ul className={`${location.pathname === "/faq" ? "on-orange" : null}`}>
                 <li className="is-nested">
-                  <a href="/tentang">Fitur</a> <img width="15px" src={vector}/>
+                  <a href="/tentang">Fitur</a>  <img width="15px"  onClick={hideFitur} src={vector}/>
                   <ul className="  nested-ul menuFitur shadow ">
-                  {fitur}
+                  {hide ? <h3>none</h3>: fitur}
                   </ul>
                 </li>
                 <li>
