@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import useWindowDimensions from "../../hooks/useWindowDimentions";
@@ -79,10 +80,14 @@ const LayoutProduct = (props) => {
 
   const handleBurgerClick = () => {
     setShow(!show);
+    //console.log(document.body.style.overflow);
+    document.body.style.overflow = "hidden";
   };
 
   const handleClose = () => {
     setShow(false);
+    //console.log(document.body.style.overflow);
+    document.body.style.overflow = "scroll";
   };
 
   const handleMenuClick = () => {
