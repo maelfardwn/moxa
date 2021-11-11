@@ -258,7 +258,7 @@ const LayoutProduct = (props) => {
                     <a className="tentangKami" href="/tentang">Tentang Kami</a>
                   </li>
                   <li>
-                    <a className="tentangKami" href="/faq">Hubungi Kami</a>
+                    <a className="tentangKami" href="/faq#contact">Hubungi Kami</a>
                   </li>
                   <li>
                     <a className="tentangKami" href="/faq">FAQ</a>
@@ -266,16 +266,16 @@ const LayoutProduct = (props) => {
                 </ul>
 
                 <div className="socmed-btn">
-                  <a href="http://twitter.com/moxa_financial" target="_blank">
+                  <a href="http://facebook.com/MoxaFinancial" target="_blank">
                     <img src={FbLogo}/>
                   </a>
-                  <a href="http://twitter.com/moxa_financial" target="_blank">
+                  <a href="http://instagram.com/moxafinancial" target="_blank">
                     <img src={TwitterImg}/>
                   </a>
-                  <a href="http://instagram.com/moxafinancial" target="_blank">
+                  <a href="http://linkedin.com/company/moxafinancial" target="_blank">
                     <img src={LinkedinImg}/>
                  </a>
-                  <a href="http://linkedin.com/company/moxafinancial" target="_blank">
+                  <a href="https://www.youtube.com/channel/UCizeEUdXejBHAARd4QTJ8AQ" target="_blank">
                     <img src={YoutubeImg}/>
                  </a>
                 </div>
