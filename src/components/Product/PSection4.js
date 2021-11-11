@@ -9,11 +9,23 @@ const PSection4 = (props) => {
 
   let history = useHistory();
   const [downloadLink, setDownloadLink] = useState('');
+  const [moreInfoLine1,setMoreInfoLine1] = useState('')
+  const [moreInfoLine2,setMoreInfoLine2] = useState('')
+
   useEffect(() => {
         axios.get(`https://dev.moxa.id/cms/home-banners?_sort=order:asc`)
       .then((res) => {
         
         setDownloadLink(res[0].data[0].button_link)
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+      axios.get(`https://dev.moxa.id/cms/about-page`)
+      .then((res) => {
+        const data = res.data.more_product_info.split('.')
+        setMoreInfoLine1(data[0]+'.')
+        setMoreInfoLine2(data[1])
       })
       .catch((err) => {
         console.log(err);
@@ -25,7 +37,7 @@ const PSection4 = (props) => {
     <div className="WrapperSection4">
       <div className="WrapperBackground4">
         <h2>INFORMASI LEBIH LANJUT</h2>
-        <p>Raih kebebasan finansial kamu lewat fitur-fitur unggulan Moxa.<br/> Kunjungi halaman FAQ untuk info lebih lanjut.</p>
+        <p>{moreInfoLine1}{moreInfoLine2}</p>
         <div className="row buttonWrapper" >
           <div className="col-md-6" style={{display:'flex',justifyContent:'flex-end'}}>
               <a className="btnFaq" href="/faq" style={{marginRight:'40px'}}>Lihat FAQ</a>
