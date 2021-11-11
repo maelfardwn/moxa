@@ -476,8 +476,8 @@ li .tentangKami{
 }
 
 .wrapper {
-  width: 80%;
-  max-width: 1170px;
+  width: calc(100vw - 241px);
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -4071,6 +4071,10 @@ a .download-now:hover{
     left: 20px;
     margin-left: 80px;
   }
+
+  .partersSection p {
+    font-size: 28px;
+  }
 }
 @media screen and (max-width: 1250px) {
   .FrameHP {
@@ -4289,6 +4293,16 @@ a .download-now:hover{
     bottom: 25px;
     left: 151px;
     margin-left: 17px;
+  }
+
+  #homepage.detail-product #banner {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+  }
+
+  #homepage.detail-product #sub {
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -4746,6 +4760,14 @@ button{
   align-items: center;
   justify-content: center;
   gap: 60px 40px;
+}
+
+.jelajahi-produk .col-lg-4 {
+  padding: 0 33px;
+}
+
+button:focus {
+  outline:0;
 }
 
 @media screen and (max-width: 942px) {

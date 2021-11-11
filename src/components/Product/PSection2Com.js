@@ -29,7 +29,7 @@ const PSection2Com = (props) => {
               <p >{props.subtitle}  </p>
             </div>
           </div>
-          <div className="row row-center" style={{marginTop:'50px',marginBottom:'50px'}}>
+          <div className="row row-center jelajahi-produk" style={{marginTop:'50px',marginBottom:'50px'}}>
              {variants}
           </div>
           <div className="row">
