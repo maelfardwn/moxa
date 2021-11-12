@@ -27,13 +27,14 @@ const ProductDetail = (props) => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [banner, setBanner] = useState({});
+  const [bannerMobile, setBannerMobile] = useState({});
   const [titleProduct, setTitle] = useState([]);
   const [variants, setVariants] = useState([]);
   const [products, setProducts] = useState([]);
   const [downloadLink, setDownloadLink] = useState('');
+
   useEffect(() => {
     setLoading(true);
-
     axios
       .all([
         axios.get(process.env.REACT_APP_API_TEST + `/products/${props.match.params.id}`),
@@ -45,6 +46,7 @@ const ProductDetail = (props) => {
         setTitle(res[0].data.variant_introduction)
         setVariants(res[0].data.variant)
         setBanner(res[0].data.banner.url)
+        setBannerMobile(res[0].data.banner_mobile.url)
         console.log('banner',res[0].data)
         setDownloadLink(res[1].data[0].button_link)
         setProducts()
@@ -58,9 +60,10 @@ const ProductDetail = (props) => {
 
   return (
     <div>
+
       <LayoutProduct title={"Moxa "+data.name} downloadLink={downloadLink} descriptions={data.descriptions}>
         <div id="homepage" className="detail-product">
-          <PSection1  titleBanner={data.name} subtitleBanner={data.descriptions} image={banner}/>
+          <PSection1  titleBanner={data.name} subtitleBanner={data.descriptions} image={banner} imageMobile={bannerMobile} />
           <PSection2Com title={titleProduct.title} titleSection2={data.name} subtitle={titleProduct.description} variant={variants} />
           <PSection3Com variant={variants} 
                        variantData={variants}
