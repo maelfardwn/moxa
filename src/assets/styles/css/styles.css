@@ -3372,6 +3372,7 @@ li .tentangKami{
   #layout #content h1,
   #homepage #sub .wrapper h3 {
     font-size: 24px;
+    margin-top: 0px;
   }
   #layout #homepage #sub .wrapper p,
   .partersSection p,
@@ -4363,7 +4364,8 @@ a .download-now:hover{
     margin: 0 auto 20px !important;
   }
 }
-	.buttonWrapper .btnDownload {
+
+.buttonWrapper .btnDownload {
   background: #faab1c;
   height: 62px;
   display: flex;
@@ -4377,160 +4379,8 @@ a .download-now:hover{
   font-weight: 700;
   font-size: 28px;
 }
-@media screen and (max-width: 576px) {
-  .col-sm-6, .col-sm-3{
-    width: 33%;
-  }.wrappperSection3-3{
-    position: absolute;
-    width: 80%;
-    left: 70px;
-  }
-  .titleSection3{
-    position: absolute;
-    left:50;
-    margin-top: 50px;
-    margin-left: 15px;
-  }
-  .subtitleSection3{
-    position: absolute;
-    left:50;
-    margin-left: 15px;
-    margin-bottom: 20px;
-  }
-  .nav-handler{
-    position: absolute;
-    left:50;
-    margin-left:15px;
-  }
-}
 
-@media screen and (max-width: 577px) {
-  .col-sm-6,
-  .col-sm-3 {
-    width: 33%;
-  }
-  .wrappperSection3-3 {
-    position: absolute;
-    width: 80%;
-    left: 70px;
-  }
-  .titleSection3 {
-    position: absolute;
-    left: 50px;
-    margin-top: 50px;
-    margin-left: 15px;
-  }
-  .subtitleSection3 {
-    position: absolute;
-    left: 50px;
-    margin-left: 15px;
-    margin-bottom: 20px;
-  }
-  .nav-handler {
-    position: absolute;
-    left: 50;
-    margin-left: 15px;
-  }
-  .wrappperSection3-3 {
-    position: absolute;
-    width: 80%;
-    left: 70px;
-  }
-  .titleSection3 {
-    position: absolute;
-    left: 50;
-    margin-top: 50px;
-    margin-left: 15px;
-  }
-  .subtitleSection3 {
-    position: absolute;
-    left: 50;
-    margin-left: 15px;
-    margin-bottom: 20px;
-  }
-  .nav-handler {
-    position: absolute;
-    left: 50;
-    margin-left: 15px;
-  }
-}
-@media screen and (max-width: 577px) {
-  .FrameHP {
-    width: 150px;
-    z-index: 9;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 128px;
-    bottom: 1269px;
-    height: 260px;
-  }
-  .SliderHp {
-    width: 102px;
-    height: 216px;
-    top: 20px;
-    left: 153px;
-    border-radius: 10px;
-    bottom: 1292px;
-  }
-  .wrappperSection3-3 {
-    position: absolute;
-    width: 70vw;
-    bottom: 764px;
-    height: 60vh;
-    left: -35vw;
-    top: 22vh;
-  }
-  .titleSection3 {
-    position: absolute;
-    bottom: 447px;
-    margin-top: 50px;
-    margin-left: 15px;
-  }
-  .subtitleSection3 {
-    position: absolute;
-    bottom: 120px;
-    top: 140px;
-    margin-left: 15px;
-    margin-bottom: 20px;
-    overflow-x: hidden;
-    height: 225px;
-    width: 50vw;
-  }
-  .nav-handler {
-    position: absolute;
-    left: 69px;
-    margin-left: 0;
-  }
-  .buttonWrapper .btnFaq {
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 30px;
-    width: 215px;
-    border: none;
-    color: white;
-    font-weight: 700;
-    font-size: 15px;
-    margin: 0 auto 20px auto !important;
-}
-.productButtonDownloadFooter{
-  display: flex;
-  justify-content: center;
-}
-.buttonWrapper .btnDownload {
-  height: 35px;
-  width: 220px;
-  font-size: 15px;
-  margin: 0 auto 0 auto !important;
-}
-  .col-sm-6,
-  .col-sm-3 {
-    width: 33%;
-  }
-}
-@media screen and (max-width: 339px) {
+/* @media screen and (max-width: 339px) {
   .wrappperSection3-3 {
     position: absolute;
     width: 80%;
@@ -4570,8 +4420,8 @@ a .download-now:hover{
     left: 50;
     margin-left: 15px;
   }
-}
-@media screen and (max-width: 290px) {
+} */
+/* @media screen and (max-width: 290px) {
   .FrameHP {
     width: 600px;
     z-index: 9;
@@ -4623,7 +4473,7 @@ a .download-now:hover{
     left: 100px;
     bottom: 1454px;
   }
-}
+} */
 button{
   margin: 0px;
   padding: 0px;
@@ -5065,5 +4915,117 @@ button:focus {
     height:30px;
     width:200px;
     font-size:14px;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .FrameHP {
+    width: 150px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 260px;
+    top: -230px;
+    bottom: unset;
+  }
+  .SliderHp {
+    width: 102px;
+    height: 216px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    bottom: unset;
+    top: -210px
+;
+  }
+  .wrappperSection3-3 {
+    position: relative;
+    width: 80vw;
+    bottom: unset;
+    height: auto;
+    left: unset;
+    top: unset;
+    padding: 20px;
+    text-align: center;
+    min-height: 350px;
+  }
+
+  .titleSection3 {
+    position: unset;
+    bottom: 447px;
+    margin: 0 auto;
+  }
+  .subtitleSection3 {
+    position: unset;
+    bottom: 120px;
+    top: 140px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+    height: auto;
+    width: auto;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+  .nav-handler {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-left: 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .wrappperSection3 {
+    margin-top: 300px;
+  }
+
+  .WrapperSection4 {
+    margin-top: 40px;
+  }
+  
+  .buttonWrapper .btnFaq {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 215px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0 auto 20px auto !important;
+  }
+
+  .productButtonDownloadFooter{
+    display: flex;
+    justify-content: center;
+  }
+  .buttonWrapper .btnDownload {
+    height: 35px;
+    width: 220px;
+    font-size: 15px;
+    margin: 0 auto 0 auto !important;
+  }
+  .col-sm-6,
+  .col-sm-3 {
+    width: 33%;
+  }
+
+  .jelajahi-produk.row-center {
+    margin-bottom: 0 !important;
+  }
+
+  .jelajahi-produk .product-description {
+    line-height: 32px;
+  }
+
+  .HPSection2 {
+    margin-left: 15px !important;
+    margin-right: 15px!important;
   }
 }
