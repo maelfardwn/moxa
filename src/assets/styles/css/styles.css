@@ -629,6 +629,7 @@ li .tentangKami{
   font-size: 35px;
   line-height: 40px;
   color: #04325F;
+  margin-top: 40px;
 }
 
 #homepage #sub .wrapper h3 {
@@ -3614,9 +3615,19 @@ li .tentangKami{
   font-size: 25px;
 }
 
-@media screen and (min-width: 1440px) {
+
+@media screen and (min-width: 1440px) and (max-width: 1499px){
   #tentang #trivia-banner .visual {
     width: 450px;
+  }
+
+  .logo-partner {
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .logo-partner {
+    padding: 0 10rem;
   }
 }
 .download-now{
@@ -4547,28 +4558,30 @@ button{
 
 .WrapperBackground4{
   background: #005DAA;
-  width: 70vw;
-  height: 345px;
+  width: 82vw;
+  min-height: 345px;
   margin: 0 auto;
   margin-bottom: 0px;
   text-align: center;
   border-radius: 30px;
   margin-bottom: 100px;
+  padding: 67px 0 56px;
 }
 .WrapperBackground4 h2{
   color:white;
-  padding-top:50px;
   font-size:30px;
-  font-weight:700
+  font-weight:700;
+  margin: 0;
 }
 .WrapperBackground4 p{
   color:white;
   padding-left:70px;
   padding-right:70px;
-  padding-top:10px;
+  padding-top:20px;
   margin:auto;
   font-size:30px;
   font-weight:400;
+  line-height: 34px;
 }
 .buttonWrapper{
   margin-top: 30px;
@@ -5027,5 +5040,17 @@ button:focus {
   .HPSection2 {
     margin-left: 15px !important;
     margin-right: 15px!important;
+  }
+
+  .btn-variant {
+    gap: 20px 10px;
+  }
+
+  .btn-variant .col-md-4 button {
+    padding: 0 15px!important;
+    min-width: auto;
+    font-size: 15px !important;
+    height: 40px !important;
+    margin-top: 0 !important;
   }
 }
