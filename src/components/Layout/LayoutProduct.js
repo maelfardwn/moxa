@@ -170,7 +170,7 @@ const LayoutProduct = (props) => {
         <title>{props.title}</title>
         <link rel="canonical" href={"http://mysite.com/"+ props.title} />
         <meta charSet="utf-8" />
-        <meta name="keywords" content={props.title + props.descriptions} />
+        <meta name="keywords" content={props.title + ' '+ props.descriptions} />
         <meta name="description" content={props.descriptions} />
         <meta name="image" content='https://moxa.vercel.app/assets/images/Moxa-logo.png' data-react-helmet="true"/>
 
