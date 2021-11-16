@@ -646,7 +646,7 @@ li .tentangKami{
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 34px;
   text-align: center;
   
@@ -658,7 +658,7 @@ li .tentangKami{
   letter-spacing: 0em;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 34px;
   color: #04325F;
 }
@@ -695,7 +695,7 @@ li .tentangKami{
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 34px;
   text-align: center;
   
@@ -4022,6 +4022,11 @@ a .download-now:hover{
     margin-top:800px;
   }
 }
+@media screen and (max-device-width: 1470px) and (-webkit-min-device-pixel-ratio: 2) {
+  .WrapperSection4{
+    margin-top:900px;
+  }
+}
 @media screen and (max-width: 1350px) {
   .FrameHP {
     width: 300px;
@@ -4085,7 +4090,10 @@ a .download-now:hover{
   }
 
   .partersSection p {
-    font-size: 28px;
+    font-size: 20px;
+  }
+  .WrapperSection4{
+    margin-top:600px;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -4579,7 +4587,7 @@ button{
   padding-right:70px;
   padding-top:20px;
   margin:auto;
-  font-size:30px;
+  font-size:20px;
   font-weight:400;
   line-height: 34px;
 }
@@ -4680,7 +4688,7 @@ button:focus {
     padding-right:70px;
     padding-top:10px;
     margin:auto;
-    font-size:30px;
+    font-size:20px;
     font-weight:400;
   }
   .buttonWrapper{
@@ -4720,7 +4728,7 @@ button:focus {
     padding-right:70px;
     padding-top:10px;
     margin:auto;
-    font-size:23px;
+    font-size:20px;
     font-weight:400;
   }
   .buttonWrapper{
