@@ -625,7 +625,7 @@ li .tentangKami{
 #homepage #sub .wrapper h1 {
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 35px;
   line-height: 40px;
   color: #04325F;
@@ -635,7 +635,7 @@ li .tentangKami{
 #homepage #sub .wrapper h3 {
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 35px;
   line-height: 40px;
   text-align: center;
@@ -683,7 +683,7 @@ li .tentangKami{
   margin: 80px 0 20px;
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 35px;
   line-height: 40px;
   text-align: center;
@@ -4529,7 +4529,7 @@ button{
   text-align: start;
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 30px;
   line-height: 34px;
   color: #04325F;
@@ -4570,7 +4570,7 @@ button{
 .WrapperBackground4 h2{
   color:white;
   font-size:30px;
-  font-weight:700;
+  font-weight:500;
   margin: 0;
 }
 .WrapperBackground4 p{
