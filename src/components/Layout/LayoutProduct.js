@@ -210,7 +210,7 @@ const LayoutProduct = (props) => {
             <nav className={show ? `open` : null}>
               <ul className={`${location.pathname === "/faq" ? "on-orange" : null}`}>
                 <li className="is-nested">
-                  <a href="/tentang">Fitur</a>  <img width="15px" src={vector}/>
+                  <a href="/">Fitur</a>  <img width="15px" src={vector}/>
                   <ul className="  nested-ul menuFitur shadow ">
                   {fitur}
                   </ul>

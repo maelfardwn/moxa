@@ -5062,3 +5062,8 @@ button:focus {
     margin-top: 0 !important;
   }
 }
+@media screen and (min-width: 1576px) {
+  .HPSection2-wrapper {
+    padding: 0 4rem;
+  }
+}
