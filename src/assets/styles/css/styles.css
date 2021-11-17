@@ -4959,8 +4959,7 @@ button:focus {
     transform: translate(-50%, 0);
     border-radius: 10px;
     bottom: unset;
-    top: -210px
-;
+    top: -210px;
   }
   .wrappperSection3-3 {
     position: relative;
@@ -5061,6 +5060,15 @@ button:focus {
     font-size: 15px !important;
     height: 40px !important;
     margin-top: 0 !important;
+  }
+
+  .WrapperBackground4 {
+    padding: 0 0 20px;
+    height: auto;
+  }
+
+  .WrapperBackground4 p {
+    padding: 10px 20px;
   }
 }
 @media screen and (min-width: 1576px) {
