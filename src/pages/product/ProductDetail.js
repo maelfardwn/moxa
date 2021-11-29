@@ -37,7 +37,7 @@ const ProductDetail = (props) => {
     setLoading(true);
     axios
       .all([
-        axios.get(process.env.REACT_APP_API_TEST + `/products/${props.match.params.id}`),
+        axios.get(process.env.REACT_APP_API_TEST + `/products/${props.match.params.slug}`),
         axios.get(`https://dev.moxa.id/cms/home-banners?_sort=order:asc`)
       ])
       .then((res) => {

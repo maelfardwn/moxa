@@ -158,7 +158,7 @@ const LayoutProduct = (props) => {
     
     
     <li className="nested-menu menu-api">
-      <a href={"/product/detail/"+product.id}>
+      <a href={"/product/detail/"+product.slug}>
         {product.name}
       </a>
     </li>): <h2>loading..</h2>
@@ -197,7 +197,7 @@ const LayoutProduct = (props) => {
           <div className="wrapper">
             <div className="main-logo">
               <a href="/" className="logo">
-                <img src={mainLogo} alt="logo moxaid" />
+                <img src={mainLogo} alt={props.title} />
               </a>
             </div>
 
