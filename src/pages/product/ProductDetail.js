@@ -24,6 +24,7 @@ import PSection3Com from "../../components/Product/PSection3Com";
 
 
 const ProductDetail = (props) => {
+  const id = props.match.params.slug
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [banner, setBanner] = useState({});
@@ -32,16 +33,20 @@ const ProductDetail = (props) => {
   const [variants, setVariants] = useState([]);
   const [products, setProducts] = useState([]);
   const [downloadLink, setDownloadLink] = useState('');
-
+  const [titlePage, setTitlePage] = useState("loading...")
   useEffect(() => {
     setLoading(true);
+    if(data.length <0 ){
+      setData([{name: 'loading'}])
+    } else {
     axios
       .all([
-        axios.get(process.env.REACT_APP_API_TEST + `/products/${props.match.params.slug}`),
+        axios.get(process.env.REACT_APP_API_TEST + `/products/${id}`),
         axios.get(`https://dev.moxa.id/cms/home-banners?_sort=order:asc`)
       ])
       .then((res) => {
         setData(res[0].data)
+        setTitlePage(res[0].data.name)
         console.log('detail',res[0].data)
         setTitle(res[0].data.variant_introduction)
         setVariants(res[0].data.variant)
@@ -55,13 +60,13 @@ const ProductDetail = (props) => {
       .catch((err) => {
         console.log(err);
         setLoading(false);
-      });
+      });}
   }, []);
 
   return (
     <div>
 
-      <LayoutProduct title={"Moxa "+data.name} downloadLink={downloadLink} descriptions={data.descriptions}>
+      <LayoutProduct title={"Moxa "+titlePage} downloadLink={downloadLink} descriptions={data.descriptions}>
         <div id="homepage" className="detail-product">
           <PSection1  titleBanner={data.name} subtitleBanner={data.descriptions} image={banner} imageMobile={bannerMobile} />
           <PSection2Com title={titleProduct.title} titleSection2={data.name} subtitle={titleProduct.description} variant={variants} />
