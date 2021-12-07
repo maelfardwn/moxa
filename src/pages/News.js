@@ -271,7 +271,7 @@ const News = (props) => {
                 </div>
 
                 {width < 992 ? (
-                  <div>
+                  <>
                     <div className="sort-m">
                       <label>Sort by:</label>
 
@@ -315,9 +315,9 @@ const News = (props) => {
                         </div>
                       ))}
                     </div>
-                  </div>
+                  </>
                 ) : (
-                  <div>
+                  <>
                     <div className="sort">
                       <label>Sort by:</label>
 
@@ -355,7 +355,7 @@ const News = (props) => {
                         ))}
                       </div>
                     </div>
-                  </div>
+                  </>
                 )}
               </div>
             </div>
