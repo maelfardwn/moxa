@@ -4331,7 +4331,7 @@ a .download-now:hover{
 
   #homepage.detail-product #banner {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     height: 200px;
   }
 
