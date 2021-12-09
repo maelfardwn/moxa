@@ -236,7 +236,7 @@ const LayoutProduct = (props) => {
                   </ul>
                 </li>
                 <li >
-                <div className="downloadNow">
+                <div className="downloadNow PSection2">
                   <a className="downloadNow download-now" style={{color:"#ffffff"}} href={props.downloadLink} target="_blank">Download Sekarang</a>
                 </div>
                 </li>

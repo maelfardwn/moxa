@@ -39,10 +39,10 @@ const PSection4 = (props) => {
         <h2>INFORMASI LEBIH LANJUT</h2>
         <p>{moreInfoLine1}{moreInfoLine2}</p>
         <div className="row buttonWrapper" >
-          <div className="col-md-6" style={{display:'flex',justifyContent:'flex-end'}}>
+          <div className="col-md-6 PSection2" style={{display:'flex',justifyContent:'flex-end'}}>
               <a className="btnFaq" href="/faq" style={{marginRight:'40px'}}>Lihat FAQ</a>
           </div>
-          <div className="col-md-6 productButtonDownloadFooter" >
+          <div className="col-md-6 productButtonDownloadFooter PSection2" >
           
               <a  className="btnDownload" href={props.downloadLink} style={{marginLeft:'20px'}}>Download Sekarang</a>
            

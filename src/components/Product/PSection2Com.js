@@ -6,14 +6,14 @@ import iconMotor from '../../assets/img/motorIcon.png'
 const PSection2Com = (props) => {
   
       const variants = props.variant && props.variant.length==1 ? props.variant.map((variant)=>
-        <div className="col-lg-12 PSection2"  style={{marginTop:'30px'}}>
+        <div className="col-lg-12"  style={{marginTop:'30px'}}>
         <img src={variant.icon.url}/><br/>
         <h6 className="product-title">{variant.title}</h6>
         <div style={{display:'flex',justifyContent:'center'}}>
           <h6 className="product-description">{variant.description} </h6>
         </div>
     </div>) : props.variant ? props.variant.map((variant)=>
-        <div className="col-lg-4 PSection2"  >
+        <div className="col-lg-4"  >
         <img src={variant.icon.url}/><br/>
         <h6 className="product-title">{variant.title}</h6>
         <h6 className="product-description">{variant.description} </h6>
