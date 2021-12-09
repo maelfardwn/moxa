@@ -27,7 +27,7 @@ const PSection1 = (props) => {
   return (
     <div>
        {width < 576 ? (
-      <div id="banner" style={{backgroundImage:`url(${props.imageMobile})`,width:'auto',height:'auto'}}>
+      <div id="banner" style={{backgroundImage:`url(${props.imageMobile})`,backgroundSize:'cover',width:'auto',height:'auto'}}>
         <div className="wrapper" style={{marginTop:'100px'}}>
           <div className="row">
             <div className="col-md-8 PSection1" >
