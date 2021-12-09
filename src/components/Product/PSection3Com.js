@@ -65,7 +65,7 @@ const PSection3Com = (props) => {
       ? props.variant.map((variant, i) =>
           i == tabsIndex ? (
             <div
-              className="col-md-4"
+              className="col-md-4 buttonTabProduct"
               style={{
                 zIndex: "90",
                 display: "flex",
@@ -92,7 +92,7 @@ const PSection3Com = (props) => {
             </div>
           ) : (
             <div
-              className="col-md-4"
+              className="col-md-4 buttonTabProduct"
               style={{
                 zIndex: "90",
                 display: "flex",

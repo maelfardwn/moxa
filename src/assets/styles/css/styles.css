@@ -199,6 +199,16 @@
   padding: 0;
   -margin: 30px;
 }
+.HPSection2 img:hover {
+  transform: scale(1.3);
+}
+.buttonTabProduct:hover {
+  transform: scale(1.1);
+}
+.PSection2 img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
 .HPSection2-wrapper {
   justify-content: center;
   grid-gap: 40px 75px;
@@ -4699,7 +4709,6 @@ button:focus {
     width: 100px;
     height: 100px;
   }
-
   .HPSection2:nth-child(6) {
     margin-left: 30px !important;
   }
