@@ -123,138 +123,169 @@ const PSection3Com = (props) => {
       : null;
   const variantData =
     props.variant.length > 0 ? (
-      
-      props.variant[tabsIndex].guides.length == 1 && props.variant[tabsIndex].guides.length>0 ?
-      <div className="wrappperSection3">
-        <img src={frameHP} className="FrameHP" />
-        <img
-          src={props.variant[tabsIndex].guides[indexGuide].image.url}
-          className="SliderHp"
-        />
-        <div className="wrappperSection3-2">
-          <div className="wrappperSection3-3">
-            <div className="row">
-              <h3 className="titleSection3">
-                {props.variant[tabsIndex].guides[indexGuide].title}
-              </h3>
-            </div>
-            <div className="row">
-              <h4 className="subtitleSection3">
-                {props.variant[tabsIndex].guides[indexGuide].description}{" "}
-              </h4>
-            </div>
-            <div className="nav-handler row ">
-              <div className="col-md-3 col-sm-3 ">
-                <button
-                  onClick={previousStep}
-                  disabled={true}
-                  style={{ height: "37px", border: "none", background: "none" }}
-                >
-                  {" "}
-                  <img src={arrowLeft} alt="right" />
-                </button>
+      props.variant[tabsIndex].guides.length == 1 &&
+      props.variant[tabsIndex].guides.length > 0 ? (
+        <div className="wrappperSection3">
+          <img src={frameHP} className="FrameHP" />
+          {props.variant[tabsIndex].guides[indexGuide].image.url.match(
+            /uploads/
+          ) ? (
+            <img
+              src={`https://dev.moxa.id/cms/${props.variant[tabsIndex].guides[indexGuide].image.url}`}
+              className="SliderHp"
+            />
+          ) : (
+            <img
+              src={props.variant[tabsIndex].guides[indexGuide].image.url}
+              className="SliderHp"
+            />
+          )}
+          <div className="wrappperSection3-2">
+            <div className="wrappperSection3-3">
+              <div className="row">
+                <h3 className="titleSection3">
+                  {props.variant[tabsIndex].guides[indexGuide].title}
+                </h3>
               </div>
-              <div
-                className="col-md-6 col-sm-6 "
-                style={{ display: "flex", justifyContent: "center" }}
-              >
-                <h5 style={{ margin: "auto" }}>
-                  {" "}
-                  {indexGuide + 1}/{props.variant[tabsIndex].guides.length}{" "}
-                </h5>
+              <div className="row">
+                <h4 className="subtitleSection3">
+                  {props.variant[tabsIndex].guides[indexGuide].description}{" "}
+                </h4>
               </div>
-              <div
-                className="col-md-3 col-sm-3 "
-                style={{ display: "flex", justifyContent: "flex-end" }}
-              >
-                <button
-                  onClick={nextStep}
-                  disabled={true}
-                  style={{ height: "37px", border: "none", background: "none" }}
+              <div className="nav-handler row ">
+                <div className="col-md-3 col-sm-3 ">
+                  <button
+                    onClick={previousStep}
+                    disabled={true}
+                    style={{
+                      height: "37px",
+                      border: "none",
+                      background: "none",
+                    }}
+                  >
+                    {" "}
+                    <img src={arrowLeft} alt="right" />
+                  </button>
+                </div>
+                <div
+                  className="col-md-6 col-sm-6 "
+                  style={{ display: "flex", justifyContent: "center" }}
                 >
-                  <img src={arrowRight} alt="left" />
-                </button>
-                <a></a>{" "}
+                  <h5 style={{ margin: "auto" }}>
+                    {" "}
+                    {indexGuide + 1}/{props.variant[tabsIndex].guides.length}{" "}
+                  </h5>
+                </div>
+                <div
+                  className="col-md-3 col-sm-3 "
+                  style={{ display: "flex", justifyContent: "flex-end" }}
+                >
+                  <button
+                    onClick={nextStep}
+                    disabled={true}
+                    style={{
+                      height: "37px",
+                      border: "none",
+                      background: "none",
+                    }}
+                  >
+                    <img src={arrowRight} alt="left" />
+                  </button>
+                  <a></a>{" "}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      : props.variant[tabsIndex].guides.length>0?
-      <div className="wrappperSection3">
-        <img src={frameHP} className="FrameHP" />
-        <img
-          src={props.variant[tabsIndex].guides[indexGuide].image.url}
-          className="SliderHp"
-        />
-        <div className="wrappperSection3-2">
-          <div className="wrappperSection3-3">
-            <div className="row">
-              <h3 className="titleSection3">
-                {props.variant[tabsIndex].guides[indexGuide].title}
-              </h3>
-            </div>
-            <div className="row">
-              <h4 className="subtitleSection3">
-                {props.variant[tabsIndex].guides[indexGuide].description}{" "}
-              </h4>
-            </div>
-            <div className="nav-handler row ">
-              <div className="col-md-3 col-sm-3 ">
-                <button
-                  onClick={previousStep}
-                  disabled={prevButton}
-                  style={{ height: "37px", border: "none", background: "none" }}
-                >
-                  {" "}
-                  <img src={arrowLeft} alt="right" />
-                </button>
+      ) : props.variant[tabsIndex].guides.length > 0 ? (
+        <div className="wrappperSection3">
+          <img src={frameHP} className="FrameHP" />
+          {props.variant[tabsIndex].guides[indexGuide].image.url.match(
+            /uploads/
+          ) ? (
+            <img
+              src={`https://dev.moxa.id/cms/${props.variant[tabsIndex].guides[indexGuide].image.url}`}
+              className="SliderHp"
+            />
+          ) : (
+            <img
+              src={props.variant[tabsIndex].guides[indexGuide].image.url}
+              className="SliderHp"
+            />
+          )}
+          <div className="wrappperSection3-2">
+            <div className="wrappperSection3-3">
+              <div className="row">
+                <h3 className="titleSection3">
+                  {props.variant[tabsIndex].guides[indexGuide].title}
+                </h3>
               </div>
-              <div
-                className="col-md-6 col-sm-6 "
-                style={{ display: "flex", justifyContent: "center" }}
-              >
-                <h5 style={{ margin: "auto" }}>
-                  {" "}
-                  {indexGuide + 1}/{props.variant[tabsIndex].guides.length}{" "}
-                </h5>
+              <div className="row">
+                <h4 className="subtitleSection3">
+                  {props.variant[tabsIndex].guides[indexGuide].description}{" "}
+                </h4>
               </div>
-              <div
-                className="col-md-3 col-sm-3 "
-                style={{ display: "flex", justifyContent: "flex-end" }}
-              >
-                <button
-                  onClick={nextStep}
-                  disabled={nextButton}
-                  style={{ height: "37px", border: "none", background: "none" }}
+              <div className="nav-handler row ">
+                <div className="col-md-3 col-sm-3 ">
+                  <button
+                    onClick={previousStep}
+                    disabled={prevButton}
+                    style={{
+                      height: "37px",
+                      border: "none",
+                      background: "none",
+                    }}
+                  >
+                    {" "}
+                    <img src={arrowLeft} alt="right" />
+                  </button>
+                </div>
+                <div
+                  className="col-md-6 col-sm-6 "
+                  style={{ display: "flex", justifyContent: "center" }}
                 >
-                  <img src={arrowRight} alt="left" />
-                </button>
-                <a></a>{" "}
+                  <h5 style={{ margin: "auto" }}>
+                    {" "}
+                    {indexGuide + 1}/{props.variant[tabsIndex].guides.length}{" "}
+                  </h5>
+                </div>
+                <div
+                  className="col-md-3 col-sm-3 "
+                  style={{ display: "flex", justifyContent: "flex-end" }}
+                >
+                  <button
+                    onClick={nextStep}
+                    disabled={nextButton}
+                    style={{
+                      height: "37px",
+                      border: "none",
+                      background: "none",
+                    }}
+                  >
+                    <img src={arrowRight} alt="left" />
+                  </button>
+                  <a></a>{" "}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div> :
-      <div className="wrappperSection3">
-      <img src={frameHP} className="FrameHP" />
-      
-      <div className="wrappperSection3-2">
-        <div className="wrappperSection3-3">
-          <div className="row">
-            <h3 className="titleSection3">
-             No data title
-            </h3>
+      ) : (
+        <div className="wrappperSection3">
+          <img src={frameHP} className="FrameHP" />
+
+          <div className="wrappperSection3-2">
+            <div className="wrappperSection3-3">
+              <div className="row">
+                <h3 className="titleSection3">No data title</h3>
+              </div>
+              <div className="row">
+                <h4 className="subtitleSection3">No data description</h4>
+              </div>
+            </div>
           </div>
-          <div className="row">
-            <h4 className="subtitleSection3">
-            No data description
-            </h4>
-          </div>
-          
         </div>
-      </div>
-    </div>
+      )
     ) : (
       <h2>loading</h2>
     );

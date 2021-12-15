@@ -1,41 +1,73 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import iconMotor from '../../assets/img/motorIcon.png'
-
+import iconMotor from "../../assets/img/motorIcon.png";
 
 const PSection2Com = (props) => {
-  
-      const variants = props.variant && props.variant.length==1 ? props.variant.map((variant)=>
-        <div className="col-lg-12"  style={{marginTop:'30px'}}>
-        <img src={variant.icon.url}/><br/>
-        <h6 className="product-title">{variant.title}</h6>
-        <div style={{display:'flex',justifyContent:'center'}}>
+  const variants =
+    props.variant && props.variant.length == 1 ? (
+      props.variant.map((variant) => (
+        variant.icon.url.match(/uploads/) ? (
+          <div className="col-lg-12" style={{ marginTop: "30px" }}>
+          <img src={`https://dev.moxa.id/cms/${variant.icon.url}`} />
+          <br />
+          <h6 className="product-title">{variant.title}</h6>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <h6 className="product-description">{variant.description} </h6>
+          </div>
+        </div>
+        ) : (
+        <div className="col-lg-12" style={{ marginTop: "30px" }}>
+          <img src={variant.icon.url} />
+          <br />
+          <h6 className="product-title">{variant.title}</h6>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <h6 className="product-description">{variant.description} </h6>
+          </div>
+        </div>)
+      ))
+    ) : props.variant ? (
+      props.variant.map((variant) => (
+        variant.icon.url.match(/uploads/) ? (
+          <div className="col-lg-4">
+          <img src={`https://dev.moxa.id/cms/${variant.icon.url}`} />
+          <br />
+          <h6 className="product-title">{variant.title}</h6>
           <h6 className="product-description">{variant.description} </h6>
         </div>
-    </div>) : props.variant ? props.variant.map((variant)=>
-        <div className="col-lg-4"  >
-        <img src={variant.icon.url}/><br/>
-        <h6 className="product-title">{variant.title}</h6>
-        <h6 className="product-description">{variant.description} </h6>
-    </div>) :<h2>Loading</h2>
+        ): (
+        <div className="col-lg-4">
+          <img src={variant.icon.url} />
+          <br />
+          <h6 className="product-title">{variant.title}</h6>
+          <h6 className="product-description">{variant.description} </h6>
+        </div>)
+      ))
+    ) : (
+      <h2>Loading</h2>
+    );
   return (
     <div>
       <div id="sub">
-       
         <div className="wrapper">
           <div className="row">
             <div className="col-lg-8 m-auto PSection1">
-              <h1 >{props.title}</h1>
-              <p >{props.subtitle}  </p>
+              <h1>{props.title}</h1>
+              <p>{props.subtitle} </p>
             </div>
           </div>
-          <div className="row row-center jelajahi-produk" style={{marginTop:'50px'}}>
-             {variants}
+          <div
+            className="row row-center jelajahi-produk"
+            style={{ marginTop: "50px" }}
+          >
+            {variants}
           </div>
           <div className="row">
             <div className="col-lg-8 m-auto PSection3">
-              <h1 >Cara Mengajukan {props.titleSection2} </h1>
-              <p >Cari tahu langkah mudah mengajukan {props.titleSection2} hanya dalam hitungan menit  </p>
+              <h1>Cara Mengajukan {props.titleSection2} </h1>
+              <p>
+                Cari tahu langkah mudah mengajukan {props.titleSection2} hanya
+                dalam hitungan menit{" "}
+              </p>
             </div>
           </div>
         </div>
