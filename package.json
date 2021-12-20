@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://moxa.vercel.app",
+  "homepage": "https://www.moxa.id/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -34,6 +34,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-app": "set PORT=8012 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

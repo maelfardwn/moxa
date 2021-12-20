@@ -16,7 +16,6 @@ import PSection2 from "../../components/Product/PSection2";
 import PSection3 from "../../components/Product/PSection3";
 import PSection4 from "../../components/Product/PSection4";
 import CarImage from '../../assets/img/CarImage.png'
-import TestDrive from '../../assets/img/IconCar.png'
 import PSection23 from "../../components/Product/PSection23";
 import PSection33 from "../../components/Product/PSection33";
 import PSection2Com from "../../components/Product/PSection2Com";
@@ -41,8 +40,8 @@ const ProductDetail = (props) => {
     } else {
     axios
       .all([
-        axios.get(process.env.REACT_APP_API_TEST + `/products/${id}`),
-        axios.get(`https://dev.moxa.id/cms/home-banners?_sort=order:asc`)
+        axios.get(process.env.REACT_APP_API_URL + `/products/${id}`),
+        axios.get(process.env.REACT_APP_API_URL +`/home-banners?_sort=order:asc`)
       ])
       .then((res) => {
         setData(res[0].data)

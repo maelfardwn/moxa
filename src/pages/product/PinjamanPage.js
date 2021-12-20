@@ -16,7 +16,7 @@ import PSection2 from "../../components/Product/PSection2";
 import PSection3 from "../../components/Product/PSection3";
 import PSection4 from "../../components/Product/PSection4";
 import MoneyImage from '../../assets/img/MoneyImage.png'
-import TestDrive from '../../assets/img/IconCar.png'
+import TestDrive from '../../assets/img'
 import PSection23 from "../../components/Product/PSection23";
 import PSection33 from "../../components/Product/PSection33";
 import PSection32 from "../../components/Product/PSection32";

@@ -28,7 +28,7 @@ const LayoutProduct = (props) => {
   const [products,setProducts] = useState([
   ])
   useEffect(() => {
-          axios.get("https://dev.moxa.id/cms/products?_sort=order:asc")        
+          axios.get(process.env.REACT_APP_API_URL + "/products?_sort=order:asc")        
         .then((res) => {
           console.log(res)
           setProducts(res.data)

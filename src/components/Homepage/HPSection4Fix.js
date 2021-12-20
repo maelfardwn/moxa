@@ -15,7 +15,7 @@ const HPSection4Fix = (props) => {
 
   const  getData= async()=> {
     let getData
-    await axios.get("https://dev.moxa.id/cms/articles") 
+    await axios.get(process.env.REACT_APP_API_URL + "/articles") 
     .then((res) => {
        getData = res.data 
       setLoading(false);
@@ -29,9 +29,9 @@ const HPSection4Fix = (props) => {
     setLoading(true);
     axios
       .all([
-        axios.get("https://dev.moxa.id/cms/homepage"),
-        axios.get("https://dev.moxa.id/cms/partners?_sort=order:asc"),
-        axios.get("https://dev.moxa.id/cms/articles"),
+        axios.get(process.env.REACT_APP_API_URL + "/homepage"),
+        axios.get(process.env.REACT_APP_API_URL + "/partners?_sort=order:asc"),
+        axios.get(process.env.REACT_APP_API_URL + "/articles"),
       ])
       .then((res) => {
         setText1(res[0].data.text_partner_1);

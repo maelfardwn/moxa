@@ -8,7 +8,7 @@ const PSection2Com = (props) => {
       props.variant.map((variant) => (
         variant.icon.url.match(/uploads/) ? (
           <div className="col-lg-12" style={{ marginTop: "30px" }}>
-          <img src={`https://dev.moxa.id/cms/${variant.icon.url}`} />
+          <img src={process.env.REACT_APP_API_URL + `/${variant.icon.url}`} />
           <br />
           <h6 className="product-title">{variant.title}</h6>
           <div style={{ display: "flex", justifyContent: "center" }}>
@@ -29,7 +29,7 @@ const PSection2Com = (props) => {
       props.variant.map((variant) => (
         variant.icon.url.match(/uploads/) ? (
           <div className="col-lg-4">
-          <img src={`https://dev.moxa.id/cms/${variant.icon.url}`} />
+          <img src={process.env.REACT_APP_API_URL + `/${variant.icon.url}`} />
           <br />
           <h6 className="product-title">{variant.title}</h6>
           <h6 className="product-description">{variant.description} </h6>

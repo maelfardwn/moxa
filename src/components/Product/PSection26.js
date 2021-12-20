@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import iconAsuransi from '../../assets/img/iconAsuransi.png'
+import iconAsuransi from '../../assets/img'
 
 
 const PSection26 = (props) => {

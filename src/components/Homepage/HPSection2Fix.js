@@ -1,43 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import iconCar from "../../assets/img/IconCar.png";
-import iconMotor from "../../assets/img/iconMotor.png";
-import iconRental from "../../assets/img/iconRental.png";
-import iconAsuransi from "../../assets/img/iconAsuransi.png";
-import iconRp from "../../assets/img/iconRp.png";
-import iconMasjid from "../../assets/img/iconMasjid.png";
-import iconTractor from "../../assets/img/iconTractor.png";
-import iconElectric from "../../assets/img/iconElectric.png";
-import iconTabungan from "../../assets/img/iconTabungan.png";
 
 const HPSection2Fix = (props) => {
-  const [products, setProducts] = useState([
-    { image: iconCar, text: "Pembiayaan Mobil", link: "/product/car" },
-    { image: iconMotor, text: "Pembiayaan Motor", link: "/product/motor" },
-    { image: iconRental, text: "Rental", link: "/product/rental" },
-    {
-      image: iconAsuransi,
-      text: "Asuransi Kesehatan",
-      link: "/product/asuransi",
-    },
-    { image: iconRp, text: "Pinjaman Tunai", link: "/product/pinjaman" },
-    {
-      image: iconMasjid,
-      text: "Perjalanan Religi",
-      link: "/product/perjalanan",
-    },
-    {
-      image: iconTractor,
-      text: "Truk dan Alat Berat",
-      link: "/product/alatberat",
-    },
-    {
-      image: iconElectric,
-      text: "Elektronik dan Lainnya",
-      link: "/product/elektronik",
-    },
-    { image: iconTabungan, text: "Tabungan", link: "/product/tabungan" },
-  ]);
+
   const productsData =
     props.products.length > 0 ? (
       props.products.map((product, i) =>
@@ -72,7 +37,7 @@ const HPSection2Fix = (props) => {
               <img
                 height="128px"
                 width="128px"
-                src={`https://dev.moxa.id/cms/${product.icon.url}`}
+                src={process.env.REACT_APP_API_URL + `/${product.icon.url}`}
                 style={{ marginBottom: "15px" }}
               />
               <br />
@@ -110,7 +75,7 @@ const HPSection2Fix = (props) => {
               <img
                 height="128px"
                 width="128px"
-                src={`https://dev.moxa.id/cms/${product.icon.url}`}
+                src={process.env.REACT_APP_API_URL + `/${product.icon.url}`}
                 style={{ marginBottom: "15px" }}
               />
               <br />
@@ -126,7 +91,7 @@ const HPSection2Fix = (props) => {
               <img
                 height="128px"
                 width="128px"
-                src={`https://dev.moxa.id/cms/${product.icon.url}`}
+                src={process.env.REACT_APP_API_URL + `/${product.icon.url}`}
                 style={{ marginBottom: "15px" }}
               />
               <br />

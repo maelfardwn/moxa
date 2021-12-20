@@ -13,7 +13,7 @@ const PSection4 = (props) => {
   const [moreInfoLine2,setMoreInfoLine2] = useState('')
 
   useEffect(() => {
-        axios.get(`https://dev.moxa.id/cms/home-banners?_sort=order:asc`)
+        axios.get(process.env.REACT_APP_API_URL + `/home-banners?_sort=order:asc`)
       .then((res) => {
         
         setDownloadLink(res[0].data[0].button_link)
@@ -21,7 +21,7 @@ const PSection4 = (props) => {
       .catch((err) => {
         console.log(err);
       });
-      axios.get(`https://dev.moxa.id/cms/about-page`)
+      axios.get(process.env.REACT_APP_API_URL + `/about-page`)
       .then((res) => {
         const data = res.data.more_product_info.split('.')
         setMoreInfoLine1(data[0]+'.')

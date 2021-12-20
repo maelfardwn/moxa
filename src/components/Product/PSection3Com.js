@@ -131,7 +131,7 @@ const PSection3Com = (props) => {
             /uploads/
           ) ? (
             <img
-              src={`https://dev.moxa.id/cms/${props.variant[tabsIndex].guides[indexGuide].image.url}`}
+              src={process.env.REACT_APP_API_URL + `/${props.variant[tabsIndex].guides[indexGuide].image.url}`}
               className="SliderHp"
             />
           ) : (
@@ -204,7 +204,7 @@ const PSection3Com = (props) => {
             /uploads/
           ) ? (
             <img
-              src={`https://dev.moxa.id/cms/${props.variant[tabsIndex].guides[indexGuide].image.url}`}
+              src={process.env.REACT_APP_API_URL + `/${props.variant[tabsIndex].guides[indexGuide].image.url}`}
               className="SliderHp"
             />
           ) : (
