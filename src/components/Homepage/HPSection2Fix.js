@@ -9,15 +9,13 @@ const HPSection2Fix = (props) => {
         i == 5 ? (
           <div
             className="col HPSection2"
-            style={{ marginBottom: "30px", marginLeft: "120px" }}
+            style={{ marginBottom: "30px" }}
           >
             <a
               href={`/product/detail/${product.slug}`}
               style={{ cursor: "pointer", textDecoration: "none" }}
             >
               <img
-                height="128px"
-                width="128px"
                 src={product.icon.url}
                 style={{ marginBottom: "15px" }}
               />
@@ -28,15 +26,13 @@ const HPSection2Fix = (props) => {
         ) : i == 5 && product.icon.url.match(/uploads/) ? (
           <div
             className="col HPSection2"
-            style={{ marginBottom: "30px", marginLeft: "120px" }}
+            style={{ marginBottom: "30px" }}
           >
             <a
               href={`/product/detail/${product.slug}`}
               style={{ cursor: "pointer", textDecoration: "none" }}
             >
               <img
-                height="128px"
-                width="128px"
                 src={process.env.REACT_APP_API_URL + `/${product.icon.url}`}
                 style={{ marginBottom: "15px" }}
               />
@@ -47,15 +43,13 @@ const HPSection2Fix = (props) => {
         ) : i == 8 ? (
           <div
             className="col HPSection2"
-            style={{ marginBottom: "30px", marginRight: "120px" }}
+            style={{ marginBottom: "30px" }}
           >
             <a
               href={`/product/detail/${product.slug}`}
               style={{ cursor: "pointer", textDecoration: "none" }}
             >
               <img
-                height="128px"
-                width="128px"
                 src={product.icon.url}
                 style={{ marginBottom: "15px" }}
               />
@@ -66,15 +60,13 @@ const HPSection2Fix = (props) => {
         ) : i == 8 && product.icon.url.match(/uploads/) ? (
           <div
             className="col HPSection2"
-            style={{ marginBottom: "30px", marginRight: "120px" }}
+            style={{ marginBottom: "30px" }}
           >
             <a
               href={`/product/detail/${product.slug}`}
               style={{ cursor: "pointer", textDecoration: "none" }}
             >
               <img
-                height="128px"
-                width="128px"
                 src={process.env.REACT_APP_API_URL + `/${product.icon.url}`}
                 style={{ marginBottom: "15px" }}
               />
@@ -89,8 +81,6 @@ const HPSection2Fix = (props) => {
               style={{ cursor: "pointer", textDecoration: "none" }}
             >
               <img
-                height="128px"
-                width="128px"
                 src={process.env.REACT_APP_API_URL + `/${product.icon.url}`}
                 style={{ marginBottom: "15px" }}
               />
@@ -105,8 +95,6 @@ const HPSection2Fix = (props) => {
               style={{ cursor: "pointer", textDecoration: "none" }}
             >
               <img
-                height="128px"
-                width="128px"
                 src={product.icon.url}
                 style={{ marginBottom: "15px" }}
               />
@@ -125,7 +113,7 @@ const HPSection2Fix = (props) => {
       <div id="sub">
         <div className="wrapper">
           <div className="row" style={{ marginBottom: "35px" }}>
-            <div className="col-lg-10 m-auto">
+            <div className="col-lg-8 m-auto">
               <h1>Jelajahi Berbagai Pilihan Produk Moxa </h1>
               <p>
                 Rasakan kemudahan mengajukan beragam produk keuangan dalam satu
