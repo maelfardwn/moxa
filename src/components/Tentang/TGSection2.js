@@ -13,7 +13,7 @@ const TGSection2 = (props) => {
 
   const  getData= async()=> {
     let getData
-    await axios.get("https://dev.moxa.id/cms/products?_sort=order:asc") 
+    await axios.get(process.env.REACT_APP_API_URL + "/products?_sort=order:asc") 
     .then((res) => {
        getData = res.data 
       setLoading(false);

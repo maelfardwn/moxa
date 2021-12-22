@@ -116,7 +116,7 @@ const LayoutProduct = (props) => {
     "@type": "Product",
     "name": "Example product",
     "image": [
-      "https://moxa.vercel.app/assets/images/Moxa-logo.png",
+      "https://https://www.moxa.id/assets/images/Moxa-logo.png",
       "https://moxa.vercel.app/assets/images/Moxa-logo.png"
       
      ],
