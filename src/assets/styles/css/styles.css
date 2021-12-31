@@ -711,7 +711,7 @@ li .tentangKami{
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 34px;
   text-align: center;
   
@@ -4649,7 +4649,7 @@ button{
 .logo-partner {
   align-items: center;
   justify-content: center;
-  gap: 60px 40px;
+  gap: 40px 25px;
 }
 
 .jelajahi-produk .col-lg-4 {
