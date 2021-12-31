@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import svgTmp from '../../assets/img/2.png'
 
 const HPSection2Fix = (props) => {
 
@@ -81,7 +82,7 @@ const HPSection2Fix = (props) => {
               style={{ cursor: "pointer", textDecoration: "none" }}
             >
               <img
-                src={process.env.REACT_APP_API_URL + `/${product.icon.url}`}
+                src={svgTmp}
                 style={{ marginBottom: "15px" }}
               />
               <br />

@@ -4546,8 +4546,10 @@ button{
     transition: 0.25s linear;
 }
   .cover-zoom:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+          width: 100%;
+      border-radius: 90px 90px 60px 60px;
 }
 .titleBlog{
   margin: 20px 0 0;
