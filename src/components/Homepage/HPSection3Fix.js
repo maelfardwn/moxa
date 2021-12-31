@@ -14,7 +14,7 @@ const HPSection3Fix = (props) => {
   const partnerCom = partnersApi.length>0 ? 
                 partnersApi.map((partner=>{
                   return <div className="">
-                         <img src={partner.logo.url} style={{width:'auto',maxWidth:'130px'}}/>
+                         <img src={partner.logo.url} style={{width:'auto',maxWidth:'172px'}}/>
                      </div>
                 })): <p>Loading....</p>
   return (
