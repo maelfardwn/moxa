@@ -82,7 +82,7 @@ const HPSection2Fix = (props) => {
               style={{ cursor: "pointer", textDecoration: "none" }}
             >
               <img
-                src={svgTmp}
+                src={process.env.REACT_APP_API_URL_IMAGE + `${product.icon.url}`}
                 style={{ marginBottom: "15px" }}
               />
               <br />
