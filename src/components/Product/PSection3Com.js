@@ -72,17 +72,17 @@ const PSection3Com = (props) => {
                 justifyContent: "center",
               }}
             >
-              <button
+              <button class="btn-product"
                 style={{
                   paddingLeft: "2rem",
                   paddingRight: "2rem",
                   zIndex: "90",
-                  height: "74px",
+                  height: "60px",
                   marginTop: "30px",
                   color: isActtive[0].color,
                   background: isActtive[0].background,
                   borderRadius: "43px",
-                  fontSize: "28px",
+                  fontSize: "24px",
                   fontWeight: "700",
                   border: "none",
                 }}
@@ -105,12 +105,12 @@ const PSection3Com = (props) => {
                   paddingLeft: "2rem",
                   paddingRight: "2rem",
                   zIndex: "90",
-                  height: "74px",
+                  height: "60px",
                   marginTop: "30px",
                   color: notActive[0].color,
                   background: notActive[0].background,
                   borderRadius: "43px",
-                  fontSize: "28px",
+                  fontSize: "24px",
                   fontWeight: "700",
                   border: "none",
                 }}

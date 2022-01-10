@@ -14,7 +14,7 @@
   align-items: center;
   position: fixed;
   background: white;
-  height:166px;
+  height: 125px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 100%;
   z-index: 99;
@@ -63,8 +63,8 @@
 }
 
 #layout header .wrapper .main-logo .logo img {
-  width: 230px;
-  height: 78px;
+  width: 200px;
+  height: 68px;
   -webkit-transition: 0.25s ease-in;
   transition: 0.25s ease-in;
 }
@@ -124,7 +124,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 #layout header .wrapper nav ul li a:hover {
@@ -201,6 +201,7 @@
 }
 .HPSection2 img {
   width: 80%;
+  max-width: 116px;
 }
 .HPSection2 img:hover {
   transform: scale(1.3);
@@ -349,6 +350,7 @@
 
 #layout footer .f-1a .logo2 {
   margin-bottom: 30px;
+  width: 30%;
 }
 
 #layout footer .f-1a p {
@@ -408,7 +410,7 @@
 #layout footer .f-1b ul li a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #layout footer .f-1b ul > li {
@@ -475,7 +477,7 @@ li .tentangKami{
   font-family: Ubuntu;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 23px;
   /* identical to box height */
   
@@ -484,7 +486,7 @@ li .tentangKami{
 #layout footer .f-2 .wrapper a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #layout footer .f-2 .wrapper a:hover {
@@ -531,7 +533,7 @@ li .tentangKami{
 }
 
 #homepage #banner .wrapper {
-  height: 100vh;
+  height: 90vh;
   min-height: 640px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,7 +552,7 @@ li .tentangKami{
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 33px;
   /* identical to box height */
   color: #04325F;
   margin-bottom: 10px;
@@ -558,7 +560,7 @@ li .tentangKami{
 
 #homepage #banner .wrapper h2 {
   font-family: 'Ubuntu';
-  font-size: 28px;
+  font-size: 21px;
   color: #04325F;
   margin-bottom: 40px;
   letter-spacing: -1px;
@@ -575,7 +577,7 @@ li .tentangKami{
 }
 
 #homepage #banner .wrapper .download-btn a img {
-  height: 45px;
+  height: 40px;
 }
 
 #homepage #banner .wrapper .cta-product {
@@ -645,7 +647,7 @@ li .tentangKami{
   font-size: 30px;
   line-height: 40px;
   color: #04325F;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 #homepage #sub .wrapper h3 {
@@ -682,7 +684,7 @@ li .tentangKami{
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 30px;
   /* or 68% */
 
@@ -712,7 +714,7 @@ li .tentangKami{
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  line-height: 34px;
+  line-height: 40px;
   text-align: center;
   
   color: #04325F;
@@ -3641,6 +3643,74 @@ li .tentangKami{
   .logo-partner {
     padding: 0 20px;
   }
+
+  .HPSection2-wrapper {
+    padding: 0 10rem;
+    grid-gap: 25px 35px;
+    gap: 25px 35px
+  }
+
+  #homepage #sub .wrapper h1,
+  .partersSection h1 {
+    font-size: 26px;
+  }
+
+  #homepage #sub .wrapper p,
+  #homepage #sub .wrapper h5 {
+    font-size: 21px;
+  }
+
+  .partersSection p,
+  #homepage #sub .wrapper h3 {
+    font-size: 26px;
+  }
+
+  .productsWording {
+    font-size: 22px;
+  }
+
+  .titleBlog,
+  .product-title {
+    font-size: 22px !important;
+  }
+
+  .partersSection .logo-partner img {
+    width: 90% !important;
+  }
+
+  .logo-partner {
+    grid-gap: 40px 20px;
+    gap: 40px 20px;
+  }
+
+  .date,
+  .WrapperBackground4 p {
+    font-size: 18px !important;
+  }
+
+  .WrapperBackground4 h2 {
+    font-size: 26px !important;
+  }
+
+  .buttonWrapper .btnFaq,
+  .buttonWrapper .btnDownload {
+    height: 54px !important;
+    width: 250px !important;
+    font-size: 22px !important;
+  }
+
+  .product-description {
+    font-size: 16px !important;
+  }
+
+  .btn-variant .col-md-4 button {
+    min-width: 230px !important;
+  }
+
+  #homepage #banner .wrapper {
+    height: 80vh;
+  }
+
 }
 @media screen and (min-width: 1500px) {
   .logo-partner {
@@ -3955,7 +4025,7 @@ a .download-now:hover{
     display: flex;
     justify-content: center;
     margin-bottom: "300px";
-    margin-top: 100px;
+    margin-top: 75px;
     margin-left: 12vw;
     margin-right: 12vw;
   }
@@ -3975,22 +4045,22 @@ a .download-now:hover{
 
 @media screen and (max-width: 1470px) {
   .FrameHP {
-    width: 414px;
+    width: 316px;
     z-index: 9;
     background-repeat: no-repeat;
     position: absolute;
-    left: 61px;
+    left: 95px;
     bottom: 720px;
-    height: 700px;
+    height: 510px;
   }
   .SliderHp {
     background-repeat: no-repeat;
     position: absolute;
-    width: 282px;
-    top: 49px;
-    left: 127px;
+    width: 216px;
+    top: 36px;
+    left: 146px;
     bottom: 791px;
-    height: 595px;
+    height: 435px;
     border-radius: 20px;
     z-index: 9;
     will-change: opacity;
@@ -4003,16 +4073,16 @@ a .download-now:hover{
     position: absolute;
     left: -30vw;
     margin: auto;
-    margin-top: 130px;
-    width: 70vw;
+    margin-top: 96px;
+    width: 65vw;
     bottom: 973px;
-    height: 440px;
+    height: 350px;
     padding: 150px;
   }
   .titleSection3 {
     position: absolute;
     top: 40px;
-    left: 240px;
+    left: 160px;
     padding-bottom: "50px";
     color: #04325f;
     font-weight: 700;
@@ -4022,7 +4092,7 @@ a .download-now:hover{
   .subtitleSection3 {
     position: absolute;
     top:100px;
-    left: 240px;
+    left: 160px;
     margin-left: 50px;
     color: #04325f;
     font-weight: 400;
@@ -4030,7 +4100,8 @@ a .download-now:hover{
   }
   .nav-handler {
     position: absolute;
-    left: 290px;
+    left: 212px;
+    bottom: 120px;
   }
   #layout footer .f-1b ul > li {
     margin-left: 0;
@@ -4041,7 +4112,7 @@ a .download-now:hover{
 }
 @media screen and (max-device-width: 1470px) and (-webkit-min-device-pixel-ratio: 2) {
   .WrapperSection4{
-    margin-top:900px;
+    margin-top: 650px;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -4522,7 +4593,7 @@ button{
   height:28px;
 }
 .promoLink{
-  vertical-align: 0%;
+  vertical-align: text-bottom;
 }
 .C{
 
@@ -4712,7 +4783,7 @@ button:focus {
 
   .HPSection2 img {
     width: 100px;
-    height: 100px;
+    height: 110px;
   }
   .HPSection2:nth-child(6) {
     margin-left: 30px !important;

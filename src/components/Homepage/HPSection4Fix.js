@@ -112,7 +112,7 @@ const HPSection4Fix = (props) => {
           </div>
           <div  style={{margin:'auto',textAlign:'center',padding:'0'}}>
               
-                <a href="/artikel/blog" style={{fontSize:'28px',textDecoration:'none',fontWeight:'700', color:'#04325F'}}>Lihat Semua Blog </a> 
+                <a href="/artikel/blog" style={{fontSize:'1.5rem',textDecoration:'none',fontWeight:'700', color:'#04325F'}}>Lihat Semua Blog </a> 
               
                <img className='promoLink' height="20px" style={{verticalAlign:'auto'}}  src={arrowRight}/> 
           
